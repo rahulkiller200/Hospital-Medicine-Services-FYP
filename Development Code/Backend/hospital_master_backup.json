@@ -1,0 +1,307 @@
+{
+  "bloodbanks": [
+    {
+      "_id": "69d169069caecd1ce6dd720d",
+      "name": "Nepal Red Cross Society",
+      "available": true,
+      "phone": "01-4225067",
+      "address": {
+        "street": "Balkhu",
+        "city": "Kathmandu"
+      },
+      "position": {
+        "lat": 27.6841,
+        "lng": 85.2979
+      },
+      "bloodTypes": [
+        {
+          "group": "A+",
+          "available": 45
+        },
+        {
+          "group": "O+",
+          "available": 120
+        }
+      ]
+    },
+    {
+      "_id": "69d169069caecd1ce6dd720e",
+      "name": "Teaching Hospital Blood Bank",
+      "available": true,
+      "phone": "01-4412303",
+      "address": {
+        "street": "Maharajgunj",
+        "city": "Kathmandu"
+      },
+      "position": {
+        "lat": 27.736,
+        "lng": 85.331
+      },
+      "bloodTypes": [
+        {
+          "group": "B+",
+          "available": 32
+        }
+      ]
+    }
+  ],
+  "hospitals": [
+    {
+      "_id": "69d169069caecd1ce6dd720b",
+      "name": "Bir Hospital",
+      "available": true,
+      "phone": "01-4221988",
+      "address": {
+        "street": "Kanti Path",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "position": {
+        "lat": 27.7058,
+        "lng": 85.3146
+      },
+      "type": "Government"
+    },
+    {
+      "_id": "69d169069caecd1ce6dd720c",
+      "name": "Teaching Hospital",
+      "available": true,
+      "phone": "01-4412303",
+      "address": {
+        "street": "Maharajgunj",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "position": {
+        "lat": 27.7361,
+        "lng": 85.3316
+      },
+      "type": "Teaching"
+    }
+  ],
+  "medicineorders": [
+    {
+      "_id": "69d1693063d24de0458e1f36",
+      "patientId": "69d153da10a0fb3653aa5174",
+      "medicineId": "69d149a0cd169da3fb63e6dc",
+      "providerId": "69d169069caecd1ce6dd720a",
+      "providerType": "Pharmacy",
+      "quantity": 5,
+      "status": "Pending",
+      "notes": "None",
+      "createdAt": "2026-04-04T19:40:32.617Z",
+      "updatedAt": "2026-04-04T19:40:32.617Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d16c2be083e05c1bad689d",
+      "patientId": "69d153da10a0fb3653aa5174",
+      "medicineId": "69d149a0cd169da3fb63e6dc",
+      "providerId": "69d169069caecd1ce6dd7209",
+      "providerType": "Pharmacy",
+      "quantity": 7,
+      "status": "Pending",
+      "notes": "None",
+      "createdAt": "2026-04-04T19:53:15.246Z",
+      "updatedAt": "2026-04-04T19:53:15.246Z",
+      "__v": 0
+    }
+  ],
+  "medicines": [
+    {
+      "_id": "69d149a0cd169da3fb63e6dc",
+      "name": "Paracetamol",
+      "category": "Pain Relief",
+      "manufacturer": "NPL",
+      "description": "Used to treat fever and mild to moderate pain.",
+      "price": 5,
+      "prescriptionRequired": false,
+      "imageUrl": "",
+      "__v": 0,
+      "createdAt": "2026-04-04T17:25:52.565Z",
+      "updatedAt": "2026-04-04T17:25:52.565Z"
+    },
+    {
+      "_id": "69d149a0cd169da3fb63e6dd",
+      "name": "Amoxicillin",
+      "category": "Antibiotics",
+      "manufacturer": "Deurali Janta",
+      "description": "Antibiotic used to treat bacterial infections.",
+      "price": 15,
+      "prescriptionRequired": true,
+      "imageUrl": "",
+      "__v": 0,
+      "createdAt": "2026-04-04T17:25:52.566Z",
+      "updatedAt": "2026-04-04T17:25:52.566Z"
+    },
+    {
+      "_id": "69d149a0cd169da3fb63e6de",
+      "name": "Ibuprofen",
+      "category": "Pain Relief",
+      "manufacturer": "Quest Pharmaceuticals",
+      "description": "Nonsteroidal anti-inflammatory drug (NSAID) used for pain and fever.",
+      "price": 8,
+      "prescriptionRequired": false,
+      "imageUrl": "",
+      "__v": 0,
+      "createdAt": "2026-04-04T17:25:52.566Z",
+      "updatedAt": "2026-04-04T17:25:52.566Z"
+    },
+    {
+      "_id": "69d149a0cd169da3fb63e6df",
+      "name": "Cetirizine",
+      "category": "Others",
+      "manufacturer": "NPL",
+      "description": "Antihistamine used to treat allergy symptoms.",
+      "price": 10,
+      "prescriptionRequired": false,
+      "imageUrl": "",
+      "__v": 0,
+      "createdAt": "2026-04-04T17:25:52.566Z",
+      "updatedAt": "2026-04-04T17:25:52.566Z"
+    }
+  ],
+  "patienthistories": [
+    {
+      "_id": "69d17127e071513395b0be24",
+      "user": "69d153da10a0fb3653aa5174",
+      "fullName": "Rahul Jaiswal",
+      "dateOfBirth": "2002-07-21T00:00:00.000Z",
+      "gender": "male",
+      "bloodGroup": "O+",
+      "height": 156,
+      "weight": 78,
+      "address": "Dhobighat",
+      "phoneNumber": "9862738557",
+      "emergencyContact": {
+        "name": "kanchan Jaiswal",
+        "relationship": "Mother",
+        "phoneNumber": "984309779"
+      },
+      "allergies": [
+        "Brufin"
+      ],
+      "currentMedications": [
+        "None"
+      ],
+      "pastSurgeries": [],
+      "chronicConditions": [
+        "None"
+      ],
+      "familyHistory": [],
+      "lifestyle": {
+        "smoking": "never",
+        "alcohol": "never",
+        "exercise": "never",
+        "diet": ""
+      },
+      "createdAt": "2026-04-04T20:14:31.391Z",
+      "updatedAt": "2026-04-04T20:14:31.391Z",
+      "__v": 0
+    }
+  ],
+  "pharmacies": [
+    {
+      "_id": "69d169069caecd1ce6dd7209",
+      "name": "Sajha Bipani (Pharmacy)",
+      "available": true,
+      "phone": "01-424036",
+      "address": {
+        "street": "Teku",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "position": {
+        "lat": 27.6975,
+        "lng": 85.3055
+      },
+      "emergencyServices": true,
+      "hotline": "123",
+      "licenseNumber": "LIC-001"
+    },
+    {
+      "_id": "69d169069caecd1ce6dd720a",
+      "name": "Apollo Pharmacy",
+      "available": true,
+      "phone": "9841234567",
+      "address": {
+        "street": "Baneshwor",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "position": {
+        "lat": 27.6915,
+        "lng": 85.342
+      },
+      "emergencyServices": true,
+      "hotline": "123",
+      "licenseNumber": "LIC-002"
+    }
+  ],
+  "systemconfigs": [
+    {
+      "_id": "69d1a3e8f0e1bf255d3668a3",
+      "configId": "master_config",
+      "maintenanceMode": false,
+      "hospital2FAEnabled": false,
+      "__v": 0
+    }
+  ],
+  "users": [
+    {
+      "_id": "69d153da10a0fb3653aa5174",
+      "firstName": "Rahul",
+      "lastName": "Jaiswal",
+      "username": "rahul",
+      "email": "rahuljaiswal.473631@gmail.com",
+      "password": "$2b$10$k0UFI720C0276y.MVepiyOx3H44zMRjSTEMpvmTfbFI3Ppowp01m6",
+      "role": "patient",
+      "isVerified": true,
+      "createdAt": "2026-04-04T18:09:30.354Z",
+      "updatedAt": "2026-04-04T23:18:23.332Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d19bbca7aae9e72077e610",
+      "firstName": "Rishika",
+      "lastName": "Jaiswal",
+      "username": "rishika",
+      "email": "rj473631@gmail.com",
+      "password": "$2b$10$GniSlh8vXygzM1hwQ//WR.3c2BL/Nc/9PuV5IT2/SLJ.Ya.fZ79aG",
+      "role": "hospital",
+      "isVerified": true,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-04T23:16:12.916Z",
+      "updatedAt": "2026-04-04T23:18:23.332Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d19fd57d735591e201b9fe",
+      "firstName": "Rahul",
+      "lastName": "Jaiswal",
+      "username": "rahulkiller200",
+      "email": "rahul_jaiswal473631@yahoo.com",
+      "password": "$2b$10$Bbbuj7BrKi2ZT6wyoLQDIerd2x.bbQUMTpYF1f81IGVnFrU8sb6SO",
+      "role": "admin",
+      "isVerified": true,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-04T23:33:41.564Z",
+      "updatedAt": "2026-04-04T23:33:41.564Z",
+      "__v": 0
+    }
+  ]
+}

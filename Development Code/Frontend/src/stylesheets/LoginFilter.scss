@@ -1,0 +1,74 @@
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  .auth-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+
+    i {
+      font-size: 1rem;
+    }
+
+    &.login {
+      background: transparent;
+      color: #0A4D68;
+      border: 2px solid #0A4D68;
+
+      &:hover {
+        background: #0A4D68;
+        color: white;
+        transform: translateY(-2px);
+      }
+    }
+
+    &.signup {
+      background: #0A4D68;
+      color: white;
+
+      &:hover {
+        background: #083B4C;
+        transform: translateY(-2px);
+      }
+    }
+
+    &.logout {
+      background: #E63946;
+      color: white;
+
+      &:hover {
+        background: #c1121f;
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .auth-buttons {
+    gap: 0.5rem;
+
+    .auth-button {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.8rem;
+
+      span {
+        display: none;
+      }
+
+      i {
+        font-size: 1.1rem;
+      }
+    }
+  }
+} 

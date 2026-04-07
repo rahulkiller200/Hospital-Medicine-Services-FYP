@@ -1,0 +1,341 @@
+// Variables
+$primary: #0077b6;
+$secondary: #caf0f8;
+$accent: #00b4d8;
+$white: #fff;
+$border-radius: 8px;
+$shadow: 0 4px 24px rgba(0,0,0,0.08);
+$transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+
+  .sidebar {
+    width: 250px;
+    background-color: #1a237e;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+    .sidebar-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+      h2 {
+        margin: 0;
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+    }
+
+    .sidebar-menu {
+      flex: 1;
+      margin-top: 2rem;
+
+      .sidebar-menu-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        margin-bottom: 0.5rem;
+        border: none;
+        background: none;
+        color: rgba(255, 255, 255, 0.7);
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          color: white;
+        }
+
+        &.active {
+          background-color: rgba(255, 255, 255, 0.2);
+          color: white;
+        }
+      }
+    }
+
+    .sidebar-footer {
+      padding: 1rem 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+      .logout-button {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: none;
+        background: none;
+        color: rgba(255, 255, 255, 0.7);
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          color: white;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+
+    .dashboard-content {
+      max-width: 1200px;
+      margin: 0 auto;
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+
+        .info-item {
+          display: flex;
+          flex-direction: column;
+          gap: 0.25rem;
+          padding: 1rem;
+          background-color: white;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+          .label {
+            font-size: 0.875rem;
+            color: #666;
+          }
+
+          .value {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #333;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Loading state
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  gap: 1rem;
+}
+
+// Table styles
+.hospital-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+
+  th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+  }
+
+  tr:hover {
+    background-color: #f8f9fa;
+  }
+
+  .status {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    &.available {
+      background-color: #e8f5e9;
+      color: #2e7d32;
+    }
+
+    &.unavailable {
+      background-color: #ffebee;
+      color: #c62828;
+    }
+  }
+}
+
+// Form styles
+.add-hospital-form {
+  .MuiGrid-container {
+    margin-bottom: 2rem;
+  }
+
+  .MuiTextField-root {
+    margin-bottom: 1rem;
+  }
+}
+
+// Alert styles
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.success-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+// Responsive styles
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+
+    .sidebar {
+      width: 100%;
+      padding: 0.5rem;
+    }
+
+    .main-content {
+      padding: 1rem;
+    }
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hospital-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+// Component-specific styles
+.bed-management {
+  margin-top: 2rem;
+
+  .bed-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .bed-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .bed-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+
+    .bed-item {
+      background-color: $white;
+      padding: 1rem;
+      border-radius: $border-radius;
+      box-shadow: $shadow;
+
+      .bed-type {
+        font-weight: 600;
+        color: $primary;
+        margin-bottom: 0.5rem;
+      }
+
+      .bed-stats {
+        display: flex;
+        justify-content: space-between;
+        color: #666;
+      }
+    }
+  }
+}
+
+.doctor-management {
+  margin-top: 2rem;
+
+  .doctor-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .doctor-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .doctor-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+
+    .doctor-item {
+      background-color: $white;
+      padding: 1rem;
+      border-radius: $border-radius;
+      box-shadow: $shadow;
+
+      .doctor-name {
+        font-weight: 600;
+        color: $primary;
+        margin-bottom: 0.5rem;
+      }
+
+      .doctor-info {
+        color: #666;
+      }
+
+      .doctor-status {
+        margin-top: 0.5rem;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        display: inline-block;
+        font-size: 0.875rem;
+
+        &.available {
+          background-color: #e8f5e9;
+          color: #2e7d32;
+        }
+
+        &.unavailable {
+          background-color: #ffebee;
+          color: #c62828;
+        }
+      }
+    }
+  }
+} 

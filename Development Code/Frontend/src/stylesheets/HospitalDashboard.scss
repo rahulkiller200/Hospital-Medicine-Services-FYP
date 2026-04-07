@@ -1,0 +1,246 @@
+// Variables
+$primary: #0077b6;
+$secondary: #caf0f8;
+$accent: #00b4d8;
+$white: #fff;
+$border-radius: 12px;
+$shadow: 0 4px 24px rgba(0,0,0,0.10);
+$transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f5f5;
+
+  .sidebar {
+    width: 250px;
+    background: $primary;
+    color: $white;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: $shadow;
+
+    .sidebar-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+
+    .sidebar-menu-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1rem;
+      color: $white;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: $transition;
+      border-radius: $border-radius;
+      text-align: left;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      &.active {
+        background: rgba(255, 255, 255, 0.2);
+        font-weight: bold;
+      }
+    }
+
+    .sidebar-footer {
+      .logout-button {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: transparent;
+        border: 1px solid $white;
+        color: $white;
+        padding: 0.75rem 1rem;
+        border-radius: $border-radius;
+        cursor: pointer;
+        transition: $transition;
+        width: 100%;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.1);
+        }
+      }
+    }
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+
+    .dashboard-content {
+      max-width: 1200px;
+      margin: 0 auto;
+
+      h2 {
+        color: $primary;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+
+  .info-item {
+    background: $white;
+    padding: 1rem;
+    border-radius: $border-radius;
+    box-shadow: $shadow;
+    transition: $transition;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 30px rgba(0,0,0,0.15);
+    }
+
+    .label {
+      color: $accent;
+      font-size: 0.9rem;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .value {
+      color: #333;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  color: $primary;
+}
+
+// Card styles
+.MuiCard-root {
+  transition: $transition;
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(0,0,0,0.15);
+  }
+
+  .MuiCardContent-root {
+    padding: 1.5rem;
+  }
+}
+
+// Table styles
+.MuiTableContainer-root {
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: $shadow;
+
+  .MuiTableHead-root {
+    background: $primary;
+    
+    .MuiTableCell-head {
+      color: $white;
+      font-weight: 600;
+    }
+  }
+
+  .MuiTableBody-root {
+    .MuiTableRow-root {
+      transition: $transition;
+
+      &:hover {
+        background: rgba(0, 119, 182, 0.05);
+      }
+    }
+  }
+}
+
+// Button styles
+.MuiButton-root {
+  text-transform: none;
+  font-weight: 500;
+  border-radius: $border-radius;
+  padding: 0.5rem 1rem;
+}
+
+// Responsive styles
+@media (max-width: 960px) {
+  .dashboard-container {
+    flex-direction: column;
+
+    .sidebar {
+      width: 100%;
+      padding: 1rem;
+
+      .sidebar-header {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .main-content {
+      padding: 1rem;
+    }
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Animation keyframes
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes slideIn {
+  from { 
+    transform: translateX(-20px); 
+    opacity: 0; 
+  }
+  to { 
+    transform: translateX(0); 
+    opacity: 1; 
+  }
+}
+
+// Apply animations
+.dashboard-content {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.info-item {
+  animation: slideIn 0.5s ease-out;
+}

@@ -1,0 +1,20 @@
+# HMS Workspace Ignore
+node_modules/
+dist/
+build/
+.env
+.env.local
+.DS_Store
+
+# Large Archives
+*.zip
+*.rar
+*.7z
+Development Code.zip
+Screenshots.zip
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.log

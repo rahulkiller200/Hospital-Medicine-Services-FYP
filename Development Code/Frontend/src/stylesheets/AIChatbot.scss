@@ -1,0 +1,91 @@
+$primary-color: #4a90e2; // Using a blue from your profile styles
+$background-light: #f5f7fa;
+$border-color: #e1e4e8;
+$white: #fff;
+$text-color: #333;
+
+.ai-chatbot-container {
+  // Standard card style
+  background: $white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  height: 80vh; 
+
+  h2 {
+    color: $primary-color;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid $border-color;
+    padding-bottom: 0.5rem;
+  }
+
+  .chat-window {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .message {
+    padding: 0.8rem 1.2rem;
+    max-width: 75%;
+    border-radius: 18px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    transition: transform 0.2s ease;
+
+    &.user {
+      align-self: flex-end;
+      background-color: $primary-color;
+      color: $white;
+      border-bottom-right-radius: 4px;
+      margin-left: auto;
+    }
+
+    &.ai {
+      align-self: flex-start;
+      background-color: $background-light;
+      color: $text-color;
+      border-bottom-left-radius: 4px;
+      margin-right: auto;
+    }
+
+    i {
+        color: $primary-color;
+    }
+  }
+
+  .chat-input-form {
+    display: flex;
+    gap: 0.5rem;
+    padding-top: 1rem;
+
+    input[type="text"] {
+      flex-grow: 1;
+      padding: 0.8rem 1rem;
+      border: 1px solid $border-color;
+      border-radius: 25px;
+      font-size: 1rem;
+
+      &:focus {
+        border-color: $primary-color;
+        box-shadow: 0 0 0 2px rgba($primary-color, 0.2);
+        outline: none;
+      }
+    }
+
+    button {
+      background-color: $primary-color;
+      &:disabled {
+        background-color: #ccc;
+      }
+    }
+  }
+}

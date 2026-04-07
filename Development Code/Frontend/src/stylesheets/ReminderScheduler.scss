@@ -1,0 +1,113 @@
+$primary-color: #2ecc71; // Using a green color for scheduling/health reminders
+$background-light: #f9f9f9;
+$border-color: #ddd;
+$white: #fff;
+$text-color: #333;
+$error-color: #e74c3c;
+
+.reminder-scheduler-container {
+  // Standard card style
+  background: $white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 2.5rem;
+  max-width: 700px;
+  margin: 2rem auto;
+
+  h2 {
+    color: $primary-color;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .reminder-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid $border-color;
+    
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+
+    input, select {
+      padding: 0.75rem;
+      border: 1px solid $border-color;
+      border-radius: 6px;
+      font-size: 1rem;
+      color: $text-color;
+      transition: border-color 0.3s;
+      
+      &:focus {
+        border-color: $primary-color;
+        outline: none;
+      }
+    }
+
+    button[type="submit"] {
+      background-color: $primary-color;
+      color: $white;
+      border: none;
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s;
+      
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+
+  .status-message {
+    padding: 0.75rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+    font-weight: 500;
+    text-align: center;
+    background-color: lighten($primary-color, 35%);
+    color: darken($primary-color, 20%);
+  }
+
+  h3 {
+    color: $text-color;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .reminders-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      border-bottom: 1px dashed $border-color;
+
+      span {
+        font-size: 1rem;
+        color: $text-color;
+      }
+
+      button {
+        background-color: $error-color;
+        color: $white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        
+        &:hover {
+          background-color: darken($error-color, 10%);
+        }
+      }
+    }
+  }
+}

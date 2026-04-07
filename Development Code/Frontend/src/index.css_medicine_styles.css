@@ -1,0 +1,197 @@
+/* Medicine Portal Styling */
+.medicine-portal {
+  padding: 60px 10%;
+  background-color: var(--color-bg-light);
+  min-height: 100vh;
+}
+
+.med-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.med-header h1 {
+  font-size: 2.5rem;
+  color: var(--color-navy);
+}
+
+.search-filters {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+  background: white;
+  padding: 20px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-subtle);
+}
+
+.search-input-group {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid var(--color-border);
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+}
+
+.search-input-group input {
+  border: none;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-filters select {
+  padding: 10px 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: white;
+  cursor: pointer;
+}
+
+.med-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.med-card {
+  background: white;
+  padding: 25px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s;
+}
+
+.med-card:hover {
+  transform: translateY(-5px);
+}
+
+.med-info h3 {
+  margin: 0;
+  color: var(--color-navy);
+}
+
+.med-cat {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 700;
+  display: block;
+  margin-top: 5px;
+}
+
+.med-desc {
+  margin: 15px 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.med-price {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--color-navy);
+  margin-bottom: 10px;
+}
+
+.rx-badge {
+  background-color: #ffeef0;
+  color: #d73a49;
+  font-size: 0.7rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.med-btn {
+  background-color: var(--color-navy);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.med-btn:hover {
+  background-color: var(--color-navy-light);
+}
+
+/* Modal Styling */
+.med-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.med-modal {
+  background: white;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.upload-box {
+  margin: 20px 0;
+  padding: 20px;
+  background: var(--color-bg-light);
+  border: 1px dashed var(--color-navy);
+  border-radius: var(--radius-md);
+}
+
+.upload-box label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--color-navy);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn-cancel {
+  flex: 1;
+  padding: 12px;
+  background: #eee;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-confirm {
+  flex: 2;
+  padding: 12px;
+  background: var(--color-navy);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-confirm:hover {
+  background-color: var(--color-navy-light);
+}

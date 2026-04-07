@@ -1,0 +1,2002 @@
+[
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    },
+    {
+        "instruction": "I have frequent thirst, fatigue, and unexplained weight loss. Could I have diabetes?",
+        "output": "These are common symptoms of diabetes. It's recommended to get a blood sugar test (fasting glucose or HbA1c) to confirm. If diagnosed, managing diet, exercise, and medication as prescribed by a doctor is essential."
+    },
+    {
+        "instruction": "My blood pressure is often above 140/90. What should I do?",
+        "output": "You may have high blood pressure (hypertension). Reduce salt intake, exercise regularly, manage stress, and monitor blood pressure daily. Consult a doctor for possible medication if lifestyle changes are not sufficient."
+    },
+    {
+        "instruction": "What foods should a diabetic patient in Kathmandu eat to control blood sugar?",
+        "output": "Eat fiber-rich foods like whole grains, lentils, and green vegetables. Include lean proteins like fish and chicken. Avoid sugary drinks, white rice, and processed foods. Drink plenty of water and monitor portion sizes."
+    },
+    {
+        "instruction": "I often feel dizzy and experience rapid heartbeat. Could this be related to high blood pressure?",
+        "output": "Yes, dizziness and rapid heartbeat can be symptoms of hypertension. Avoid stress, caffeine, and alcohol. Stay hydrated and check blood pressure regularly. If symptoms persist, consult a cardiologist."
+    },
+    {
+        "instruction": "What are the early symptoms of type 2 diabetes in Kathmandu residents?",
+        "output": "Early symptoms include frequent urination, extreme thirst, fatigue, blurred vision, and slow-healing wounds. If you experience these, get a blood sugar test immediately."
+    },
+    {
+        "instruction": "How can I naturally lower my blood sugar levels?",
+        "output": "Exercise regularly, consume fiber-rich foods, stay hydrated, reduce carb intake, and manage stress through meditation or yoga. Regularly monitor your blood sugar levels."
+    },
+    {
+        "instruction": "I have swelling in my legs and shortness of breath. Could it be related to hypertension?",
+        "output": "Swelling and shortness of breath can indicate complications from high blood pressure, possibly heart or kidney-related issues. Seek immediate medical consultation for proper evaluation."
+    },
+    {
+        "instruction": "Are there any traditional remedies in Nepal for diabetes control?",
+        "output": "Some traditional remedies include consuming fenugreek seeds, bitter gourd juice, and neem leaves. However, these should be used as complementary treatments along with a doctor-recommended diabetes management plan."
+    },
+    {
+        "instruction": "What lifestyle changes help in managing hypertension in Kathmandu?",
+        "output": "Reduce salt intake, engage in regular physical activity, maintain a healthy weight, practice stress management techniques, and avoid alcohol and smoking."
+    },
+    {
+        "instruction": "I feel extremely tired and weak throughout the day. Could it be diabetes-related?",
+        "output": "Chronic fatigue is a common symptom of high or low blood sugar levels. Monitor your glucose levels and maintain a balanced diet. Consult a doctor for proper diabetes management."
+    }
+]

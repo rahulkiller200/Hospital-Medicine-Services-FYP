@@ -1,0 +1,186 @@
+// Variables
+$primary: #0077b6;
+$secondary: #caf0f8;
+$accent: #00b4d8;
+$white: #fff;
+$border-radius: 16px;
+$shadow: 0 4px 24px rgba(0,0,0,0.08);
+$transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+
+.hospital-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #f1fff8;
+  min-height: 100vh;
+
+  .hospital-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    background: #b2dfdb;
+    padding: 2rem 1rem 1rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(56, 142, 60, 0.04);
+  }
+
+  .hospital-title {
+    font-size: 2.5rem;
+    color: #2e7d32;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .hospital-map-btn {
+    margin: 0.5rem 0;
+    padding: 0.5rem 1.5rem;
+    background-color: #43a047;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: #2e7d32;
+    }
+  }
+
+  .hospital-loading {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    font-size: 1.2rem;
+  }
+
+  .hospital-error {
+    color: #f44336;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .hospital-table-wrapper {
+    overflow-x: auto;
+    margin-top: 1rem;
+    box-shadow: 0 0 10px rgba(56, 142, 60, 0.08);
+    border-radius: 12px;
+    background: #fff;
+  }
+
+  .hospital-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #f6fff7;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(56, 142, 60, 0.10);
+    border: 2px solid #43a047;
+
+    th, td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid #c8e6c9;
+    }
+
+    th {
+      background: linear-gradient(90deg, #388e3c 60%, #a5d6a7 100%);
+      font-weight: 900;
+      color: #fff;
+      font-size: 1.15rem;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid #43a047;
+      text-shadow: 0 1px 2px rgba(44, 62, 80, 0.08);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:nth-child(even) {
+      background-color: #e8f5e9;
+    }
+
+    tr:hover {
+      background-color: #b9f6ca;
+    }
+
+    .status {
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      &.available {
+        background-color: #c8e6c9;
+        color: #1b5e20;
+      }
+      &.unavailable {
+        background-color: #ffcdd2;
+        color: #b71c1c;
+      }
+    }
+
+    .bed-info, .doctor-info {
+      font-size: 0.95rem;
+      div {
+        margin-bottom: 0.25rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .hospital-show-btn {
+    padding: 0.4rem 1rem;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: #1976D2;
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: 800px) {
+  .hospital-page {
+    .hospital-table-wrapper {
+      padding: 1rem 0.2rem;
+    }
+    .hospital-table {
+      font-size: 0.95rem;
+      th, td {
+        padding: 0.6rem 0.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .hospital-page {
+    padding: 1rem 0.2rem;
+    .hospital-title {
+      font-size: 1.2rem;
+    }
+    .hospital-table-wrapper {
+      padding: 0.5rem 0.1rem;
+    }
+    .hospital-table {
+      font-size: 0.85rem;
+      th, td {
+        padding: 0.4rem 0.2rem;
+      }
+    }
+  }
+} 

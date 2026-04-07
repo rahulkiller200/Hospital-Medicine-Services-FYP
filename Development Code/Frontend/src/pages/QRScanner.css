@@ -1,0 +1,152 @@
+.qr-scanner-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  font-family: 'Inter', sans-serif;
+}
+
+.qr-header {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.back-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: transparent;
+  border: none;
+  color: #2b4c7e;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s;
+}
+
+.back-btn:hover {
+  transform: translateX(-5px);
+}
+
+.qr-header h2 {
+  color: #2b4c7e;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.qr-header p {
+  color: #666;
+}
+
+.scanner-wrapper {
+  border: 4px dashed #e1e8ed;
+  border-radius: 16px;
+  padding: 20px;
+  background: #fdfdfd;
+}
+
+/* Override html5-qrcode standard ugly styles */
+#reader {
+  border: none !important;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#reader__dashboard_section_csr button {
+  background: #2b4c7e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 10px 5px;
+}
+
+#reader__dashboard_section_csr button:hover {
+  background: #1e365c;
+}
+
+#reader video {
+  border-radius: 12px;
+}
+
+.verification-results {
+  text-align: center;
+  padding: 20px;
+}
+
+.result-card {
+  padding: 40px;
+  border-radius: 16px;
+  animation: fadeIn 0.5s ease;
+}
+
+.verified-safe {
+  background: #f0fdf4;
+  border: 2px solid #22c55e;
+}
+
+.verified-danger {
+  background: #fef2f2;
+  border: 2px solid #ef4444;
+}
+
+.result-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.verified-safe .result-icon {
+  color: #22c55e;
+}
+
+.verified-danger .result-icon {
+  color: #ef4444;
+}
+
+.med-details-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  margin-top: 20px;
+  text-align: left;
+}
+
+.verified-badge {
+  display: inline-block;
+  margin-top: 15px;
+  background: #22c55e;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.fraud-warning {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  color: #ef4444;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.scan-again-btn {
+  margin-top: 30px;
+  padding: 12px 30px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

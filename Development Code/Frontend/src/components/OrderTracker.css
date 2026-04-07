@@ -1,0 +1,118 @@
+/* Order Tracking Progress Bar (Pizza Style) */
+.order-tracker-container {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    background: #fdfdfd;
+    border-radius: 10px;
+    border: 1px solid #f1f1f1;
+}
+
+.progress-track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 40px;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    flex: 1;
+}
+
+.step-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #e2e8f0;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.4s ease;
+    border: 3px solid white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.step-item.active .step-icon {
+    background: var(--color-navy);
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(28, 40, 51, 0.3);
+}
+
+.step-item.completed .step-icon {
+    background: #27ae60;
+    color: white;
+}
+
+.check-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 18px;
+    height: 18px;
+    background: #2ecc71;
+    color: white;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    animation: bounce 0.3s ease-out;
+}
+
+.step-line {
+    position: absolute;
+    top: 22px;
+    left: calc(50% + 22px);
+    width: calc(100% - 44px);
+    height: 4px;
+    background: #e2e8f0;
+    z-index: 1;
+    transition: all 0.4s ease;
+}
+
+.step-item.completed .step-line {
+    background: #2ecc71;
+}
+
+.step-label {
+    margin-top: 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.step-item.active .step-label {
+    color: var(--color-navy);
+}
+
+@keyframes bounce {
+    0% { transform: scale(0); }
+    70% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Error/Cancelled state */
+.order-progress-cancelled {
+    padding: 15px;
+    background: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    border-left: 5px solid #e74c3c;
+}
+
+.error-icon { font-size: 1.5rem; }
