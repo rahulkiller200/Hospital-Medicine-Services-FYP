@@ -6,6 +6,11 @@ build/
 .env.local
 .DS_Store
 
+# User Uploads (Should be hosted on Cloudinary/S3 in prod)
+uploads/
+Development Code/uploads/
+Development Code/Backend/uploads/
+
 # Large Archives
 *.zip
 *.rar
