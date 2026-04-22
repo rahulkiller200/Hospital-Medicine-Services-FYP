@@ -28,8 +28,15 @@ import EditMedicalHistoryForm from "./components/Forms/EditMedicalHistoryForm.js
 import EditProfileForm from "./components/Forms/EditProfileForm.jsx";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import About from "./pages/About.jsx";
+import ServicesPage from "./pages/ServicesPage.jsx";
+import MedicalTeam from "./pages/MedicalTeam.jsx";
+import Coverage from "./pages/Coverage.jsx";
+import Privacy from "./pages/Privacy.jsx";
+import Terms from "./pages/Terms.jsx";
+import { API_BASE_URL } from "./config/apiConfig";
 
-const socket = io('http://localhost:3001', { withCredentials: true });
+const socket = io(API_BASE_URL, { withCredentials: true });
 
 // Wrapper to conditionally hide the button on the home page if desired, 
 // but user requested it on ALL pages. Let's show it everywhere, except 
@@ -59,9 +66,9 @@ function AppContent() {
   return (
     <>
       <ToastContainer />
-      {!isDashboard && <Header />}
+      <Header />
       
-      <main className={!isDashboard ? "main-content-area" : ""}>
+      <main className="main-content-area">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/home" element={<Index />} />
@@ -71,6 +78,12 @@ function AppContent() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/emergency" element={<Emergency />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/medical-team" element={<MedicalTeam />} />
+          <Route path="/coverage" element={<Coverage />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
           
           {/* Protected Patient Routes */}
           <Route path="/hospital" element={<PrivateRoute element={<Hospital />} />} />
@@ -93,7 +106,7 @@ function AppContent() {
         </Routes>
       </main>
 
-      {!isDashboard && <Footer />}
+      <Footer />
       <Chatbot />
     </>
   );

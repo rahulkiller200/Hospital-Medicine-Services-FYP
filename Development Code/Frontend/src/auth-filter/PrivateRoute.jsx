@@ -2,6 +2,7 @@ import { Navigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { setAuthToken, clearAuthData } from '../utils/auth';
+import { API_V1_URL } from '../config/apiConfig';
 
 function PrivateRoute({ element: Element }) {
     const [authState, setAuthState] = useState({
@@ -26,7 +27,7 @@ function PrivateRoute({ element: Element }) {
                 setAuthToken(token);
                 
                 // Make the request with detailed error handling
-                const response = await axios.get('http://localhost:3001/api/v1/users/check-auth', {
+                const response = await axios.get(`${API_V1_URL}/users/check-auth`, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     },
@@ -107,11 +108,13 @@ function PrivateRoute({ element: Element }) {
     
     const currentPath = window.location.pathname.toLowerCase();
     
-    // Restrict access to specific routes for non-patient users
-    const patientOnlyRoutes = ['/home', '/hospital', '/bloodbank', '/medicine', '/map'];
+    // Redirect users to their specific dashboards if they try to access general patient routes
+    const patientOnlyRoutes = ['/hospital', '/bloodbank', '/medicine', '/map'];
     if (patientOnlyRoutes.includes(currentPath) && authState.userRole !== 'patient') {
-        console.log("Access denied: This page is only accessible to patients");
-        return <Navigate to="/" />;
+        if (authState.userRole === 'hospital') return <Navigate to="/hospital-dashboard" />;
+        if (authState.userRole === 'bloodbank') return <Navigate to="/bloodbank-dashboard" />;
+        if (authState.userRole === 'pharmacy') return <Navigate to="/pharmacy-dashboard" />;
+        if (authState.userRole === 'admin') return <Navigate to="/admin-dashboard" />;
     }
     if (currentPath === '/admin-dashboard' && authState.userRole !== 'admin') {
         return <Navigate to="/login" />;

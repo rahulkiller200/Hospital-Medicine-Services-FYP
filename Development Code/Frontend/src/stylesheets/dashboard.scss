@@ -16,15 +16,18 @@
 
   .sidebar-header {
     padding: 2rem 1.5rem 1rem 1.5rem;
+
     h2 {
       font-size: 1.5rem;
       font-weight: 700;
       margin-bottom: 0.5rem;
     }
+
     p {
       font-size: 1rem;
       margin-bottom: 0.2rem;
     }
+
     .user-role {
       font-size: 0.9rem;
       color: #bbdefb;
@@ -36,6 +39,7 @@
     flex-direction: column;
     gap: 0.5rem;
     padding: 0 1.5rem;
+
     .nav-item {
       display: flex;
       align-items: center;
@@ -49,9 +53,12 @@
       border-radius: 8px;
       cursor: pointer;
       transition: background 0.2s;
-      &:hover, &.active {
+
+      &:hover,
+      &.active {
         background: #1565c0;
       }
+
       svg {
         font-size: 1.2rem;
       }
@@ -60,6 +67,7 @@
 
   .sidebar-footer {
     padding: 1.5rem;
+
     .logout-button {
       width: 100%;
       background: #e53935;
@@ -75,9 +83,11 @@
       gap: 0.7rem;
       cursor: pointer;
       transition: background 0.2s;
+
       &:hover {
         background: #b71c1c;
       }
+
       svg {
         font-size: 1.2rem;
       }
@@ -87,15 +97,128 @@
 
 .main-content {
   flex: 1;
-  padding: 2.5rem 2rem;
-  background: #f5f7fa;
+  background: #f8fafc;
   min-height: 100vh;
-  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Admin Header Styles */
+.admin-header {
+  background: white;
+  padding: 1.2rem 2.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+
+  .header-left {
+    .active-title {
+      font-size: 1.5rem;
+      color: #022c57;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .system-date {
+      color: #64748b;
+      font-size: 0.85rem;
+      margin-top: 2px;
+    }
+  }
+
+  .admin-profile-pill {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f1f5f9;
+    padding: 6px 16px;
+    border-radius: 30px;
+    border: 1px solid #e2e8f0;
+
+    .profile-icon {
+      font-size: 1.8rem;
+      color: #022c57;
+    }
+
+    .profile-text {
+      display: flex;
+      flex-direction: column;
+
+      .profile-name {
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: #1e293b;
+        line-height: 1.2;
+      }
+
+      .profile-status {
+        font-size: 0.75rem;
+        color: #f26522;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.dashboard-view-wrapper {
+  flex: 1;
+  padding: 2.5rem;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Admin Footer Styles */
+.admin-footer {
+  background: white;
+  padding: 1rem 2.5rem;
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 0.85rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    .system-tag {
+      background: #f1f5f9;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #059669;
+      font-weight: 600;
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        background: #10b981;
+        border-radius: 50%;
+        box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+      }
+    }
+  }
 }
 
 .dashboard-content {
   max-width: 1100px;
   margin: 0 auto;
+
   h2 {
     color: #1976d2;
     margin-bottom: 2rem;
@@ -120,17 +243,20 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
   svg {
     color: #1976d2;
     font-size: 2.2rem;
     margin-bottom: 0.7rem;
   }
+
   h3 {
     color: #333;
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0.3rem;
   }
+
   p {
     color: #1976d2;
     font-size: 1.5rem;
@@ -144,13 +270,16 @@
   grid-template-columns: 1fr 1fr;
   gap: 1.2rem 2rem;
   margin-bottom: 2rem;
+
   .info-item {
     display: flex;
     gap: 0.7rem;
+
     .label {
       color: #1565c0;
       font-weight: 600;
     }
+
     .value {
       color: #333;
       font-weight: 500;
@@ -168,10 +297,12 @@ iframe[title="Google Maps"] {
   color: #43a047;
   font-weight: 700;
 }
+
 .bed-status-yellow {
   color: #fbc02d;
   font-weight: 700;
 }
+
 .bed-status-red {
   color: #e53935;
   font-weight: 700;
@@ -193,6 +324,7 @@ iframe[title="Google Maps"] {
   min-width: 36px;
   padding: 6px 10px;
   margin-right: 0.3rem;
+
   svg {
     font-size: 1.1rem;
   }
@@ -202,11 +334,15 @@ iframe[title="Google Maps"] {
 @media (max-width: 900px) {
   .sidebar {
     width: 100px;
-    .sidebar-header, .sidebar-footer {
+
+    .sidebar-header,
+    .sidebar-footer {
       padding: 1rem 0.5rem;
     }
+
     .sidebar-nav {
       padding: 0 0.5rem;
+
       .nav-item {
         font-size: 0.9rem;
         padding: 0.5rem 0.5rem;
@@ -214,16 +350,20 @@ iframe[title="Google Maps"] {
       }
     }
   }
+
   .main-content {
     padding: 1rem 0.5rem;
   }
+
   .dashboard-content h2 {
     font-size: 1.2rem;
   }
+
   .stats-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+
   .info-grid {
     grid-template-columns: 1fr;
     gap: 0.7rem;

@@ -2,7 +2,22 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { API_V1_URL } from "../../config/apiConfig";
-import { FaSignOutAlt, FaHospital, FaPhone, FaBed, FaUserMd, FaTimes } from "react-icons/fa";
+import "./HospitalDashboard.css";
+import { 
+  FaSignOutAlt, 
+  FaHospital, 
+  FaPhone, 
+  FaBed, 
+  FaUserMd, 
+  FaTimes, 
+  FaStethoscope, 
+  FaRegClock, 
+  FaMapMarkerAlt, 
+  FaGlobe,
+  FaCheckCircle,
+  FaExclamationCircle,
+  FaArrowLeft
+} from "react-icons/fa";
 import { 
   TextField, 
   Button, 
@@ -16,26 +31,16 @@ import {
   Snackbar, 
   Alert, 
   MenuItem,
-  Card,
-  CardContent,
-  Typography,
-  Grid,
   IconButton,
-  Tooltip,
   CircularProgress,
-  FormControlLabel,
-  Switch,
-  Tabs,
-  Tab,
-  Box,
   Dialog,
   DialogActions,
   DialogContent,
   DialogContentText,
-  DialogTitle
+  DialogTitle,
+  Switch
 } from "@mui/material";
 
-// Import bed types and specializations from model
 const BedTypes = {
   ICU: 'ICU',
   GENERAL: 'General',
@@ -54,855 +59,37 @@ const Specializations = {
   EMERGENCY: 'Emergency'
 };
 
-function BedManagement({ beds, setBeds, onSave }) {
-  const [editIdx, setEditIdx] = useState(null);
-  const [bedForm, setBedForm] = useState({ type: "", total: "", available: "" });
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setBedForm((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleAdd = async () => {
-    if (!bedForm.type || !bedForm.total || !bedForm.available) return;
-    if (parseInt(bedForm.available) > parseInt(bedForm.total)) {
-      alert("Available beds cannot exceed total beds");
-      return;
-    }
-    setLoading(true);
-    try {
-      const updatedBeds = [...beds, { 
-        type: bedForm.type,
-        total: parseInt(bedForm.total),
-        available: parseInt(bedForm.available)
-      }];
-      await onSave(updatedBeds);
-      setBeds(updatedBeds);
-      setBedForm({ type: "", total: "", available: "" });
-    } catch (error) {
-      console.error('Error adding bed:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleEdit = (idx) => {
-    setEditIdx(idx);
-    setBedForm({
-      type: beds[idx].type,
-      total: beds[idx].total.toString(),
-      available: beds[idx].available.toString()
-    });
-  };
-
-  const handleUpdate = async () => {
-    if (parseInt(bedForm.available) > parseInt(bedForm.total)) {
-      alert("Available beds cannot exceed total beds");
-      return;
-    }
-    setLoading(true);
-    try {
-      const updatedBeds = beds.map((b, i) => (i === editIdx ? { 
-        type: bedForm.type,
-        total: parseInt(bedForm.total),
-        available: parseInt(bedForm.available)
-      } : b));
-      await onSave(updatedBeds);
-      setBeds(updatedBeds);
-    setEditIdx(null);
-      setBedForm({ type: "", total: "", available: "" });
-    } catch (error) {
-      console.error('Error updating bed:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleRemove = async (idx) => {
-    setLoading(true);
-    try {
-      const updatedBeds = beds.filter((_, i) => i !== idx);
-      await onSave(updatedBeds);
-      setBeds(updatedBeds);
-    } catch (error) {
-      console.error('Error removing bed:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  return (
-    <Card sx={{ mt: 2 }}>
-      <CardContent>
-        <Typography variant="h6" gutterBottom>
-          <FaBed style={{ marginRight: 8 }} />
-          Bed Management
-        </Typography>
-      <TableContainer component={Paper} sx={{ mt: 2 }}>
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell>Ward/Type</TableCell>
-              <TableCell>Total Beds</TableCell>
-                <TableCell>Available</TableCell>
-              <TableCell>Occupied</TableCell>
-              <TableCell>Actions</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {beds.map((bed, idx) => (
-              <TableRow key={idx}>
-                <TableCell>{bed.type}</TableCell>
-                <TableCell>{bed.total}</TableCell>
-                  <TableCell>{bed.available}</TableCell>
-                  <TableCell>{bed.total - bed.available}</TableCell>
-                <TableCell>
-                    <Tooltip title="Edit">
-                      <IconButton size="small" onClick={() => handleEdit(idx)}>
-                    Edit
-                      </IconButton>
-                    </Tooltip>
-                    <Tooltip title="Remove">
-                      <IconButton size="small" color="error" onClick={() => handleRemove(idx)}>
-                    Remove
-                      </IconButton>
-                    </Tooltip>
-                </TableCell>
-              </TableRow>
-            ))}
-            <TableRow>
-              <TableCell>
-                <TextField
-                  select
-                  name="type"
-                  value={bedForm.type}
-                  onChange={handleChange}
-                  size="small"
-                  fullWidth
-                >
-                    {Object.values(BedTypes).map((type) => (
-                    <MenuItem key={type} value={type}>
-                      {type}
-                    </MenuItem>
-                  ))}
-                </TextField>
-              </TableCell>
-              <TableCell>
-                <TextField
-                  name="total"
-                  value={bedForm.total}
-                  onChange={handleChange}
-                  size="small"
-                  type="number"
-                  fullWidth
-                    inputProps={{ min: 0 }}
-                />
-              </TableCell>
-              <TableCell>
-                <TextField
-                    name="available"
-                    value={bedForm.available}
-                  onChange={handleChange}
-                  size="small"
-                  type="number"
-                  fullWidth
-                    inputProps={{ min: 0 }}
-                  />
-                </TableCell>
-                <TableCell>
-                  {bedForm.total && bedForm.available ? bedForm.total - bedForm.available : '-'}
-                </TableCell>
-                <TableCell>
-                  {loading ? (
-                    <CircularProgress size={24} />
-                  ) : editIdx === null ? (
-                    <Button size="small" onClick={handleAdd} variant="contained" color="primary">
-                      Add
-                    </Button>
-                  ) : (
-                    <Button size="small" onClick={handleUpdate} variant="contained" color="primary">
-                      Update
-                    </Button>
-                  )}
-                </TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
-        </TableContainer>
-      </CardContent>
-    </Card>
-  );
-}
-
-function DoctorManagement({ doctors, setDoctors, onSave }) {
-  const [editIdx, setEditIdx] = useState(null);
-  const [doctorForm, setDoctorForm] = useState({
-    name: '',
-    specialization: Object.values(Specializations)[0],
-    available: true
-  });
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setDoctorForm(prev => ({
-      ...prev,
-      [name]: type === 'checkbox' ? checked : value
-    }));
-  };
-
-  const handleAdd = async () => {
-    if (!doctorForm.name || !doctorForm.specialization) return;
-    setLoading(true);
-    try {
-      const updatedDoctors = [...doctors, { ...doctorForm }];
-      await onSave(updatedDoctors);
-      setDoctors(updatedDoctors);
-      setDoctorForm({ name: '', specialization: Object.values(Specializations)[0], available: true });
-    } catch (error) {
-      console.error('Error adding doctor:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleEdit = (idx) => {
-    setEditIdx(idx);
-    setDoctorForm(doctors[idx]);
-  };
-
-  const handleUpdate = async () => {
-    setLoading(true);
-    try {
-      const updatedDoctors = doctors.map((d, i) => (i === editIdx ? { ...doctorForm } : d));
-      await onSave(updatedDoctors);
-      setDoctors(updatedDoctors);
-      setEditIdx(null);
-      setDoctorForm({ name: '', specialization: Object.values(Specializations)[0], available: true });
-    } catch (error) {
-      console.error('Error updating doctor:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleRemove = async (idx) => {
-    setLoading(true);
-    try {
-      const updatedDoctors = doctors.filter((_, i) => i !== idx);
-      await onSave(updatedDoctors);
-      setDoctors(updatedDoctors);
-    } catch (error) {
-      console.error('Error removing doctor:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  return (
-    <Card sx={{ mt: 2 }}>
-      <CardContent>
-        <Typography variant="h6" gutterBottom>
-          <FaUserMd style={{ marginRight: 8 }} />
-          Doctor Management
-        </Typography>
-        <TableContainer component={Paper} sx={{ mt: 2 }}>
-          <Table>
-            <TableHead>
-              <TableRow>
-                <TableCell>Name</TableCell>
-                <TableCell>Specialization</TableCell>
-                <TableCell>Status</TableCell>
-                <TableCell>Actions</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {doctors.map((doctor, idx) => (
-                <TableRow key={idx}>
-                  <TableCell>Dr. {doctor.name}</TableCell>
-                  <TableCell>{doctor.specialization}</TableCell>
-                  <TableCell>
-                    <span style={{ 
-                      color: doctor.available ? '#4CAF50' : '#f44336',
-                      fontWeight: 'bold'
-                    }}>
-                      {doctor.available ? 'Available' : 'Unavailable'}
-                    </span>
-                  </TableCell>
-                  <TableCell>
-                    <Tooltip title="Edit">
-                      <IconButton size="small" onClick={() => handleEdit(idx)}>
-                        Edit
-                      </IconButton>
-                    </Tooltip>
-                    <Tooltip title="Remove">
-                      <IconButton size="small" color="error" onClick={() => handleRemove(idx)}>
-                        Remove
-                      </IconButton>
-                    </Tooltip>
-                  </TableCell>
-                </TableRow>
-              ))}
-              <TableRow>
-                <TableCell>
-                  <TextField
-                    name="name"
-                    value={doctorForm.name}
-                    onChange={handleChange}
-                    size="small"
-                    fullWidth
-                    placeholder="Doctor Name"
-                  />
-                </TableCell>
-                <TableCell>
-                  <TextField
-                    select
-                    name="specialization"
-                    value={doctorForm.specialization}
-                    onChange={handleChange}
-                    size="small"
-                    fullWidth
-                  >
-                    {Object.values(Specializations).map((spec) => (
-                      <MenuItem key={spec} value={spec}>
-                        {spec}
-                      </MenuItem>
-                    ))}
-                  </TextField>
-                </TableCell>
-                <TableCell>
-                  <FormControlLabel
-                    control={
-                      <Switch
-                        checked={doctorForm.available}
-                        onChange={handleChange}
-                        name="available"
-                        size="small"
-                      />
-                    }
-                    label={doctorForm.available ? 'Available' : 'Unavailable'}
-                />
-              </TableCell>
-              <TableCell>
-                  {loading ? (
-                    <CircularProgress size={24} />
-                  ) : editIdx === null ? (
-                    <Button size="small" onClick={handleAdd} variant="contained" color="primary">
-                    Add
-                  </Button>
-                ) : (
-                    <Button size="small" onClick={handleUpdate} variant="contained" color="primary">
-                    Update
-                  </Button>
-                )}
-              </TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
-      </TableContainer>
-      </CardContent>
-    </Card>
-  );
-}
-
-function HospitalInfoForm({ hospital, onUpdate, onClose }) {
-  const [form, setForm] = useState({
-    hotline: hospital?.hotline || '',
-    website: hospital?.website || '',
-    description: hospital?.description || '',
-    available: hospital?.available ?? true,
-    emergencyServices: hospital?.emergencyServices ?? true
-  });
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
-
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setForm(prev => ({
-      ...prev,
-      [name]: type === 'checkbox' ? checked : value
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setError('');
-    try {
-      await onUpdate({
-        ...form,
-        // Include all required fields from current hospital state
-        name: hospital.name,
-        type: hospital.type,
-        contact: hospital.phone,
-        email: hospital.email,
-        address: `${hospital.address.street}, ${hospital.address.city}, ${hospital.address.state}`,
-        position: hospital.position,
-        beds: hospital.beds,
-        doctors: hospital.doctors
-      });
-      onClose();
-    } catch (error) {
-      console.error('Error updating hospital info:', error);
-      setError(error.response?.data?.error || 'Error updating hospital information');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  return (
-    <Card sx={{ mt: 2 }}>
-      <CardContent>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-          <Typography variant="h6">
-            Update Hospital Information
-          </Typography>
-          <IconButton onClick={onClose} size="small">
-            <FaTimes />
-          </IconButton>
-    </div>
-        {error && (
-          <Alert severity="error" sx={{ mb: 2 }}>
-            {error}
-          </Alert>
-        )}
-        <form onSubmit={handleSubmit}>
-          <Grid container spacing={2}>
-            <Grid item xs={12}>
-              <TextField
-                fullWidth
-                label="Emergency Hotline"
-                name="hotline"
-                value={form.hotline}
-                onChange={handleChange}
-                placeholder="Enter emergency hotline number"
-                inputProps={{
-                  pattern: "^\\d{10}$",
-                  title: "Enter a valid Nepali phone number (10 digits)"
-                }}
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <TextField
-                fullWidth
-                label="Website"
-                name="website"
-                value={form.website}
-                onChange={handleChange}
-                placeholder="https://example.com"
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <TextField
-                fullWidth
-                label="Description"
-                name="description"
-                value={form.description}
-                onChange={handleChange}
-                multiline
-                rows={4}
-                placeholder="Enter hospital description"
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <FormControlLabel
-                control={
-                  <Switch
-                    checked={form.available}
-                    onChange={handleChange}
-                    name="available"
-                  />
-                }
-                label="Hospital Open"
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <FormControlLabel
-                control={
-                  <Switch
-                    checked={form.emergencyServices}
-                    onChange={handleChange}
-                    name="emergencyServices"
-                  />
-                }
-                label="Emergency Services Available"
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <Button
-                type="submit"
-                variant="contained"
-                color="primary"
-                disabled={loading}
-                fullWidth
-              >
-                {loading ? <CircularProgress size={24} /> : 'Update Information'}
-              </Button>
-            </Grid>
-          </Grid>
-        </form>
-      </CardContent>
-    </Card>
-  );
-}
-
-function Profile({ hospital, onUpdate }) {
-  const [form, setForm] = useState({
-    hospitalInfo: {
-      name: hospital?.name || '',
-      email: hospital?.email || '',
-      phone: hospital?.phone || '',
-      address: {
-        street: hospital?.address?.street || '',
-        city: hospital?.address?.city || '',
-        state: hospital?.address?.state || ''
-      }
-    },
-    userInfo: {
-      name: '',
-      email: '',
-      currentPassword: '',
-      newPassword: '',
-      confirmPassword: ''
-    }
-  });
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
-  const [success, setSuccess] = useState('');
-  const [activeTab, setActiveTab] = useState('hospital'); // 'hospital' or 'user'
-
-  useEffect(() => {
-    // Get user data from token
-    const token = localStorage.getItem('token');
-    if (token) {
-      try {
-        const decodedToken = JSON.parse(atob(token.split('.')[1]));
-        setForm(prev => ({
-          ...prev,
-          userInfo: {
-            ...prev.userInfo,
-            name: decodedToken.name || '',
-            email: decodedToken.email || ''
-          }
-        }));
-      } catch (error) {
-        console.error('Error decoding token:', error);
-      }
-    }
-  }, []);
-
-  const handleChange = (section, e) => {
-    const { name, value } = e.target;
-    if (section === 'hospitalInfo') {
-      if (name.includes('address.')) {
-        const addressField = name.split('.')[1];
-        setForm(prev => ({
-          ...prev,
-          hospitalInfo: {
-            ...prev.hospitalInfo,
-            address: {
-              ...prev.hospitalInfo.address,
-              [addressField]: value
-            }
-          }
-        }));
-      } else {
-        setForm(prev => ({
-          ...prev,
-          hospitalInfo: {
-            ...prev.hospitalInfo,
-            [name]: value
-          }
-        }));
-      }
-    } else {
-      setForm(prev => ({
-        ...prev,
-        userInfo: {
-          ...prev.userInfo,
-          [name]: value
-        }
-      }));
-    }
-  };
-
-  const handleHospitalSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setError('');
-    setSuccess('');
-    try {
-      await onUpdate({
-        ...form.hospitalInfo,
-        address: `${form.hospitalInfo.address.street}, ${form.hospitalInfo.address.city}, ${form.hospitalInfo.address.state}`
-      });
-      setSuccess('Hospital information updated successfully');
-    } catch (error) {
-      setError(error.response?.data?.error || 'Error updating hospital information');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleUserSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setError('');
-    setSuccess('');
-
-    // Validate passwords match if updating password
-    if (form.userInfo.newPassword) {
-      if (form.userInfo.newPassword !== form.userInfo.confirmPassword) {
-        setError('New passwords do not match');
-        setLoading(false);
-        return;
-      }
-      if (!form.userInfo.currentPassword) {
-        setError('Current password is required to update password');
-        setLoading(false);
-        return;
-      }
-    }
-
-    try {
-      const token = localStorage.getItem('token');
-      const response = await axios.put(
-        `${API_V1_URL}/users/profile`,
-        {
-          name: form.userInfo.name,
-          email: form.userInfo.email,
-          currentPassword: form.userInfo.currentPassword,
-          newPassword: form.userInfo.newPassword
-        },
-        {
-          headers: { Authorization: `Bearer ${token}` }
-        }
-      );
-
-      if (response.data.success) {
-        setSuccess('User information updated successfully');
-        // Clear password fields
-        setForm(prev => ({
-          ...prev,
-          userInfo: {
-            ...prev.userInfo,
-            currentPassword: '',
-            newPassword: '',
-            confirmPassword: ''
-          }
-        }));
-      }
-    } catch (error) {
-      setError(error.response?.data?.error || 'Error updating user information');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  return (
-    <Card>
-      <CardContent>
-        <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 2 }}>
-          <Tabs value={activeTab} onChange={(e, newValue) => setActiveTab(newValue)}>
-            <Tab label="Hospital Profile" value="hospital" />
-            <Tab label="User Account" value="user" />
-          </Tabs>
-        </Box>
-
-        {error && (
-          <Alert severity="error" sx={{ mb: 2 }}>
-            {error}
-          </Alert>
-        )}
-        {success && (
-          <Alert severity="success" sx={{ mb: 2 }}>
-            {success}
-          </Alert>
-        )}
-
-        {activeTab === 'hospital' ? (
-          <form onSubmit={handleHospitalSubmit}>
-            <Grid container spacing={2}>
-              <Grid item xs={12}>
-                <TextField
-                  fullWidth
-                  label="Hospital Name"
-                  name="name"
-                  value={form.hospitalInfo.name}
-                  onChange={(e) => handleChange('hospitalInfo', e)}
-                  required
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  fullWidth
-                  label="Email"
-                  name="email"
-                  type="email"
-                  value={form.hospitalInfo.email}
-                  onChange={(e) => handleChange('hospitalInfo', e)}
-                  required
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  fullWidth
-                  label="Phone"
-                  name="phone"
-                  value={form.hospitalInfo.phone}
-                  onChange={(e) => handleChange('hospitalInfo', e)}
-                  required
-                  inputProps={{
-                    pattern: "^\\d{10}$",
-                    title: "Enter a valid Nepali phone number (10 digits)"
-                  }}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  fullWidth
-                  label="Street Address"
-                  name="address.street"
-                  value={form.hospitalInfo.address.street}
-                  onChange={(e) => handleChange('hospitalInfo', e)}
-                  required
-                />
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  fullWidth
-                  label="City"
-                  name="address.city"
-                  value={form.hospitalInfo.address.city}
-                  onChange={(e) => handleChange('hospitalInfo', e)}
-                  required
-                />
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  fullWidth
-                  label="State"
-                  name="address.state"
-                  value={form.hospitalInfo.address.state}
-                  onChange={(e) => handleChange('hospitalInfo', e)}
-                  required
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <Button
-                  type="submit"
-                  variant="contained"
-                  color="primary"
-                  disabled={loading}
-                  fullWidth
-                >
-                  {loading ? <CircularProgress size={24} /> : 'Update Hospital Profile'}
-                </Button>
-              </Grid>
-            </Grid>
-          </form>
-        ) : (
-          <form onSubmit={handleUserSubmit}>
-            <Grid container spacing={2}>
-              <Grid item xs={12}>
-                <TextField
-                  fullWidth
-                  label="Name"
-                  name="name"
-                  value={form.userInfo.name}
-                  onChange={(e) => handleChange('userInfo', e)}
-                  required
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  fullWidth
-                  label="Email"
-                  name="email"
-                  type="email"
-                  value={form.userInfo.email}
-                  onChange={(e) => handleChange('userInfo', e)}
-                  required
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  fullWidth
-                  label="Current Password"
-                  name="currentPassword"
-                  type="password"
-                  value={form.userInfo.currentPassword}
-                  onChange={(e) => handleChange('userInfo', e)}
-                  helperText="Required to update password"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  fullWidth
-                  label="New Password"
-                  name="newPassword"
-                  type="password"
-                  value={form.userInfo.newPassword}
-                  onChange={(e) => handleChange('userInfo', e)}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  fullWidth
-                  label="Confirm New Password"
-                  name="confirmPassword"
-                  type="password"
-                  value={form.userInfo.confirmPassword}
-                  onChange={(e) => handleChange('userInfo', e)}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <Button
-                  type="submit"
-                  variant="contained"
-                  color="primary"
-                  disabled={loading}
-                  fullWidth
-                >
-                  {loading ? <CircularProgress size={24} /> : 'Update User Account'}
-                </Button>
-              </Grid>
-            </Grid>
-          </form>
-        )}
-      </CardContent>
-    </Card>
-  );
-}
-
 const DashboardHospital = () => {
   const navigate = useNavigate();
   const [hospital, setHospital] = useState(null);
   const [alert, setAlert] = useState({ open: false, message: "", severity: "success" });
-  const [logoutDialogOpen, setLogoutDialogOpen] = useState(false); // New state for logout dialog
+  const [logoutDialogOpen, setLogoutDialogOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [activeSection, setActiveSection] = useState('overview');
   const [hotline, setHotline] = useState("");
-  const [editingHotline, setEditingHotline] = useState(false);
   const [beds, setBeds] = useState([]);
   const [doctors, setDoctors] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [showUpdateForm, setShowUpdateForm] = useState(false);
-  const [activeSection, setActiveSection] = useState('overview');
+
+  const [allHospitals, setAllHospitals] = useState([]);
 
   useEffect(() => {
     fetchHospital();
+    fetchAllHospitals();
   }, []);
+
+  const fetchAllHospitals = async () => {
+    try {
+      const res = await axios.get(`${API_V1_URL}/hospitals`);
+      setAllHospitals(res.data.data);
+    } catch (e) { console.error("Network fetch failed"); }
+  };
 
   const fetchHospital = async () => {
     try {
       setLoading(true);
       const token = localStorage.getItem("token");
       if (!token) {
-        setAlert({ 
-          open: true, 
-          message: "No authentication token found. Please login again.", 
-          severity: "error" 
-        });
         navigate("/login");
         return;
       }
@@ -911,10 +98,6 @@ const DashboardHospital = () => {
         headers: { Authorization: `Bearer ${token}` }
       });
       
-      if (!response.data || !response.data.success) {
-        throw new Error("No data received from server");
-      }
-
       const hospitalData = response.data.data;
       setHospital(hospitalData);
       setHotline(hospitalData.hotline || "");
@@ -924,14 +107,9 @@ const DashboardHospital = () => {
       console.error("Error fetching hospital:", error);
       setAlert({ 
         open: true, 
-        message: error.response?.data?.message || "Error fetching hospital info. Please try again.", 
+        message: "Error connecting to hospital node. Please try again.", 
         severity: "error" 
       });
-      
-      if (error.response?.status === 401) {
-        localStorage.removeItem("token");
-        navigate("/login");
-      }
     } finally {
       setLoading(false);
     }
@@ -939,461 +117,593 @@ const DashboardHospital = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("token");
+    localStorage.removeItem("role");
     navigate("/login");
   };
 
-  const openLogoutDialog = () => {
-    setLogoutDialogOpen(true);
-  };
-
-  const closeLogoutDialog = () => {
-    setLogoutDialogOpen(false);
-  };
-
-  const handleHotlineSave = async () => {
+  const handleSaveBeds = async (updatedBeds) => {
     try {
       const token = localStorage.getItem("token");
-      await axios.put(`${API_V1_URL}/hospitals/profile`, { hotline }, {
+      const updateData = { ...hospital, beds: updatedBeds };
+      await axios.put(`${API_V1_URL}/hospitals/profile`, updateData, {
         headers: { Authorization: `Bearer ${token}` }
       });
-      setEditingHotline(false);
-      setAlert({ open: true, message: "Hotline updated successfully", severity: "success" });
+      setAlert({ open: true, message: "Beds updated successfully", severity: "success" });
       fetchHospital();
     } catch (error) {
-      setAlert({ 
-        open: true, 
-        message: error.response?.data?.message || "Error updating hotline", 
-        severity: "error" 
-      });
+      setAlert({ open: true, message: "Update failed", severity: "error" });
     }
   };
 
-  const handleBedSave = async (updatedBeds) => {
+  const handleSaveDoctors = async (updatedDoctors) => {
     try {
       const token = localStorage.getItem("token");
-      // Format beds data according to the model
-      const formattedBeds = updatedBeds.map(bed => ({
-        type: bed.type,
-        total: parseInt(bed.total),
-        available: parseInt(bed.available)
-      }));
-
-      // Include all required fields from current hospital state
-      const updateData = {
-        name: hospital.name,
-        type: hospital.type,
-        contact: hospital.phone,
-        hotline: hospital.hotline,
-        email: hospital.email,
-        address: `${hospital.address.street}, ${hospital.address.city}, ${hospital.address.state}`,
-        position: hospital.position,
-        available: hospital.available,
-        emergencyServices: hospital.emergencyServices,
-        beds: formattedBeds,
-        doctors: hospital.doctors // Keep existing doctors
-      };
-
-      await axios.put(`${API_V1_URL}/hospitals/profile`, 
-        updateData,
-        { headers: { Authorization: `Bearer ${token}` } }
-      );
-      setAlert({ open: true, message: "Bed information updated successfully", severity: "success" });
-      fetchHospital();
-    } catch (error) {
-      console.error('Error updating beds:', error.response?.data);
-      setAlert({ 
-        open: true, 
-        message: error.response?.data?.errors?.map(e => e.msg).join(', ') || "Error updating beds", 
-        severity: "error" 
-      });
-    }
-  };
-
-  const handleHospitalUpdate = async (formData) => {
-    try {
-      const token = localStorage.getItem("token");
-      console.log('Updating hospital with data:', formData);
-      
-      const response = await axios.put(
-        `${API_V1_URL}/hospitals/profile`,
-        formData,
-        {
-          headers: { Authorization: `Bearer ${token}` }
-        }
-      );
-
-      if (response.data.success) {
-        setAlert({ 
-          open: true, 
-          message: "Hospital information updated successfully", 
-          severity: "success" 
-        });
-        setShowUpdateForm(false);
-        fetchHospital(); // Refresh hospital data
-      } else {
-        throw new Error(response.data.error || 'Failed to update hospital information');
-      }
-    } catch (error) {
-      console.error('Error updating hospital:', error);
-      setAlert({ 
-        open: true, 
-        message: error.response?.data?.error || "Error updating hospital information", 
-        severity: "error" 
-      });
-    }
-  };
-
-  const handleDoctorSave = async (updatedDoctors) => {
-    try {
-      const token = localStorage.getItem("token");
-      // Format doctors data according to the model
-      const formattedDoctors = updatedDoctors.map(doctor => ({
-        name: doctor.name,
-        specialization: doctor.specialization,
-        available: doctor.available
-      }));
-
-      // Include all required fields from current hospital state
-      const updateData = {
-        name: hospital.name,
-        type: hospital.type,
-        contact: hospital.phone,
-        hotline: hospital.hotline,
-        email: hospital.email,
-        address: `${hospital.address.street}, ${hospital.address.city}, ${hospital.address.state}`,
-        position: hospital.position,
-        available: hospital.available,
-        emergencyServices: hospital.emergencyServices,
-        beds: hospital.beds, // Keep existing beds
-        doctors: formattedDoctors
-      };
-
-      await axios.put(`${API_V1_URL}/hospitals/profile`, 
-        updateData,
-        { headers: { Authorization: `Bearer ${token}` } }
-      );
-      setAlert({ open: true, message: "Doctor information updated successfully", severity: "success" });
-      fetchHospital();
-    } catch (error) {
-      console.error('Error updating doctors:', error.response?.data);
-      setAlert({ 
-        open: true, 
-        message: error.response?.data?.errors?.map(e => e.msg).join(', ') || "Error updating doctors", 
-        severity: "error" 
-      });
-    }
-  };
-
-  const handleProfileUpdate = async (formData) => {
-    try {
-      const token = localStorage.getItem("token");
-      await axios.put(`${API_V1_URL}/hospitals/profile`, formData, {
+      const updateData = { ...hospital, doctors: updatedDoctors };
+      await axios.put(`${API_V1_URL}/hospitals/profile`, updateData, {
         headers: { Authorization: `Bearer ${token}` }
       });
-      setAlert({ open: true, message: "Profile updated successfully", severity: "success" });
+      setAlert({ open: true, message: "Doctor registry updated", severity: "success" });
       fetchHospital();
     } catch (error) {
-      setAlert({ 
-        open: true, 
-        message: error.response?.data?.message || "Error updating profile", 
-        severity: "error" 
-      });
+      setAlert({ open: true, message: "Update failed", severity: "error" });
     }
   };
+
+  const [managingHospital, setManagingHospital] = useState(null);
 
   if (loading) {
     return (
-      <div className="dashboard-container">
-        <div className="loading-container">
-          <CircularProgress />
-          <Typography variant="h6" sx={{ mt: 2 }}>Loading hospital information...</Typography>
+      <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: '#0a192f', color: 'white' }}>
+        <CircularProgress size={60} sx={{ color: '#ff6b35', mb: 2 }} />
+        <h3>Accessing Secure Hospital Node...</h3>
+      </div>
+    );
+  }
+
+  const totalBedsCount = beds.reduce((acc, curr) => acc + (curr.total || 0), 0);
+  const availableBedsCount = beds.reduce((acc, curr) => acc + (curr.available || 0), 0);
+
+  const renderStats = () => {
+    if (activeSection === 'beds') {
+      const globalTotal = allHospitals.reduce((acc, h) => acc + (h.beds?.reduce((a, b) => a + (b.total || 0), 0) || 0), 0);
+      const globalAvail = allHospitals.reduce((acc, h) => acc + (h.beds?.reduce((a, b) => a + (b.available || 0), 0) || 0), 0);
+      
+      const total = managingHospital ? (managingHospital.beds?.reduce((a, b) => a + (b.total || 0), 0) || 0) : globalTotal;
+      const avail = managingHospital ? (managingHospital.beds?.reduce((a, b) => a + (b.available || 0), 0) || 0) : globalAvail;
+      const label = managingHospital ? managingHospital.name : 'Global Network';
+
+      return (
+        <div className="stat-card">
+          <div className="stat-icon-box" style={{ background: '#ebf8ff', color: '#2b6cb0' }}><FaBed /></div>
+          <div className="stat-info">
+            <h3>{avail} / {total}</h3>
+            <p>Available Beds ({label})</p>
+          </div>
+        </div>
+      );
+    }
+    if (activeSection === 'doctors') {
+      const globalDocs = allHospitals.reduce((acc, h) => acc + (h.doctors?.length || 0), 0);
+      const displayCount = managingHospital ? (managingHospital.doctors?.length || 0) : globalDocs;
+      const label = managingHospital ? managingHospital.name : 'Global Network';
+
+      return (
+        <div className="stat-card">
+          <div className="stat-icon-box" style={{ background: '#f0fff4', color: '#2f855a' }}><FaUserMd /></div>
+          <div className="stat-info">
+            <h3>{displayCount}</h3>
+            <p>Registered Doctors ({label})</p>
+          </div>
+        </div>
+      );
+    }
+    return (
+      <>
+        <div className="stat-card">
+          <div className="stat-icon-box" style={{ background: '#ebf8ff', color: '#2b6cb0' }}><FaBed /></div>
+          <div className="stat-info">
+            <h3>{allHospitals.reduce((acc, h) => acc + (h.beds?.reduce((a, b) => a + (b.available || 0), 0) || 0), 0)}</h3>
+            <p>Total Network Beds</p>
+          </div>
+        </div>
+        <div className="stat-card">
+          <div className="stat-icon-box" style={{ background: '#f0fff4', color: '#2f855a' }}><FaUserMd /></div>
+          <div className="stat-info">
+            <h3>{allHospitals.reduce((acc, h) => acc + (h.doctors?.length || 0), 0)}</h3>
+            <p>Total Network Doctors</p>
+          </div>
+        </div>
+      </>
+    );
+  };
+
+  return (
+    <div className="hospital-dashboard-root">
+      {/* Sidebar */}
+      <aside className="hospital-sidebar">
+        <div className="sidebar-brand">
+          <FaHospital size={32} style={{ color: '#ff6b35' }} />
+          <div>
+            <h2>HMS MASTER</h2>
+            <p style={{ fontSize: '0.6rem', color: 'rgba(255,255,255,0.5)', margin: 0 }}>HOSPITAL PANEL V2.1</p>
+          </div>
+        </div>
+
+        <nav className="sidebar-nav">
+          <button className={`nav-item ${activeSection === 'overview' ? 'active' : ''}`} onClick={() => {setActiveSection('overview'); setManagingHospital(null);}}>
+            <FaHospital /> Overview
+          </button>
+          <button className={`nav-item ${activeSection === 'beds' ? 'active' : ''}`} onClick={() => {setActiveSection('beds'); setManagingHospital(null);}}>
+            <FaBed /> Bed Management
+          </button>
+          <button className={`nav-item ${activeSection === 'doctors' ? 'active' : ''}`} onClick={() => {setActiveSection('doctors'); setManagingHospital(null);}}>
+            <FaStethoscope /> Doctors Registry
+          </button>
+          <button className={`nav-item ${activeSection === 'network' ? 'active' : ''}`} onClick={() => {setActiveSection('network'); setManagingHospital(null);}}>
+            <FaGlobe /> Network Management
+          </button>
+          <button className={`nav-item ${activeSection === 'profile' ? 'active' : ''}`} onClick={() => {setActiveSection('profile'); setManagingHospital(null);}}>
+            <FaUserMd /> Hospital Profile
+          </button>
+        </nav>
+
+        <div className="sidebar-footer">
+          <button className="btn-logout" onClick={() => setLogoutDialogOpen(true)}>
+            <FaSignOutAlt /> Logout
+          </button>
+        </div>
+      </aside>
+
+      {/* Main Content */}
+      <main className="hospital-main">
+        <header className="hospital-header">
+          <div className="welcome-text">
+            <h1>{managingHospital ? managingHospital.name : (hospital?.name || "Unregistered Hospital")}</h1>
+            <p>Node Authorization: <span style={{ color: '#059669', fontWeight: 600 }}>Active</span> • Last Sync: {new Date().toLocaleTimeString()}</p>
+          </div>
+          <div className={`status-indicator ${hospital?.available ? 'status-online' : 'status-offline'}`}>
+            {hospital?.available ? <FaCheckCircle /> : <FaExclamationCircle />}
+            {hospital?.available ? 'SYSTEM ONLINE' : 'SYSTEM OFFLINE'}
+          </div>
+        </header>
+
+        {/* Stats Grid */}
+        <section className="hospital-stats-grid">
+          {renderStats()}
+          <div className="stat-card">
+            <div className="stat-icon-box" style={{ background: '#fff5f5', color: '#e53e3e' }}>
+              <FaGlobe />
+            </div>
+            <div className="stat-info">
+              <h3>{managingHospital ? 'REMOTE' : 'LOCAL'}</h3>
+              <p>View Mode</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Main Panels */}
+        <div className="glass-panel">
+          {activeSection === 'overview' && <OverviewSection hospital={hospital} hotline={hotline} />}
+          {activeSection === 'beds' && <BedSection setAlert={setAlert} setManagingHospital={setManagingHospital} hospitals={allHospitals} fetchHospitals={fetchAllHospitals} />}
+          {activeSection === 'doctors' && <DoctorSection setAlert={setAlert} setManagingHospital={setManagingHospital} hospitals={allHospitals} fetchHospitals={fetchAllHospitals} />}
+          {activeSection === 'network' && <NetworkManagementSection setAlert={setAlert} />}
+          {activeSection === 'profile' && <ProfileSection hospital={hospital} fetchHospital={fetchHospital} setAlert={setAlert} />}
+        </div>
+      </main>
+
+      {/* Logout Dialog */}
+      <Dialog open={logoutDialogOpen} onClose={() => setLogoutDialogOpen(false)}>
+        <DialogTitle>Confirm System Logout</DialogTitle>
+        <DialogContent>
+          <DialogContentText>Are you sure you want to terminate the current session and logout from the Hospital Node?</DialogContentText>
+        </DialogContent>
+        <DialogActions sx={{ p: 2 }}>
+          <Button onClick={() => setLogoutDialogOpen(false)}>Cancel</Button>
+          <Button onClick={handleLogout} variant="contained" color="error">Confirm Logout</Button>
+        </DialogActions>
+      </Dialog>
+
+      <Snackbar open={alert.open} autoHideDuration={4000} onClose={() => setAlert({ ...alert, open: false })}>
+        <Alert severity={alert.severity} sx={{ width: '100%' }}>{alert.message}</Alert>
+      </Snackbar>
+    </div>
+  );
+};
+
+/* Sub-Sections for cleaner code */
+
+const OverviewSection = ({ hospital, hotline }) => (
+  <div className="overview-container">
+    <h3 className="section-title"><FaHospital /> General Information</h3>
+    <div className="hospital-info-display" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '2rem' }}>
+      <div className="info-block">
+        <label style={{ fontSize: '0.8rem', color: '#64748b', textTransform: 'uppercase' }}>Physical Address</label>
+        <p style={{ fontSize: '1.1rem', fontWeight: 600, color: '#0a192f' }}>
+          <FaMapMarkerAlt style={{ color: '#ff6b35', marginRight: 8 }} />
+          {hospital?.address ? `${hospital.address.street}, ${hospital.address.city}` : 'Update Required'}
+        </p>
+      </div>
+      <div className="info-block">
+        <label style={{ fontSize: '0.8rem', color: '#64748b', textTransform: 'uppercase' }}>Contact Hotline</label>
+        <p style={{ fontSize: '1.1rem', fontWeight: 600, color: '#0a192f' }}>
+          <FaPhone style={{ color: '#ff6b35', marginRight: 8 }} />
+          {hotline || 'Not Set'}
+        </p>
+      </div>
+      <div className="info-block">
+        <label style={{ fontSize: '0.8rem', color: '#64748b', textTransform: 'uppercase' }}>Official Website</label>
+        <p style={{ fontSize: '1.1rem', fontWeight: 600, color: '#0a192f' }}>
+          <FaGlobe style={{ color: '#ff6b35', marginRight: 8 }} />
+          {hospital?.website || 'N/A'}
+        </p>
+      </div>
+    </div>
+  </div>
+);
+
+const BedSection = ({ setAlert, setManagingHospital, hospitals, fetchHospitals }) => {
+  const [selectedHospital, setSelectedHospital] = useState(null);
+  const loading = !hospitals.length;
+
+  const handleSelect = (h) => {
+    setSelectedHospital(h);
+    setManagingHospital(h);
+  };
+
+  const handleSaveBeds = async (updatedBeds) => {
+    try {
+      const token = localStorage.getItem("token");
+      await axios.put(`${API_V1_URL}/hospitals/${selectedHospital._id}`, { beds: updatedBeds }, {
+        headers: { Authorization: `Bearer ${token}` }
+      });
+      setAlert({ open: true, message: "Beds Updated Successfully", severity: "success" });
+      fetchHospitals();
+      const updated = { ...selectedHospital, beds: updatedBeds };
+      setSelectedHospital(updated);
+      setManagingHospital(updated);
+    } catch (e) { setAlert({ open: true, message: "Update Failed", severity: "error" }); }
+  };
+
+  if (loading) return <div style={{textAlign: 'center', padding: '40px'}}><CircularProgress /></div>;
+
+  if (selectedHospital) {
+    return (
+      <div>
+        <Button startIcon={<FaArrowLeft />} onClick={() => {setSelectedHospital(null); setManagingHospital(null);}}>Back to Hospital List</Button>
+        <div style={{ marginTop: '20px' }}>
+          <h3 className="section-title">Manage Beds: {selectedHospital.name}</h3>
+          <BedAllocationForm beds={selectedHospital.beds || []} onSave={handleSaveBeds} />
         </div>
       </div>
     );
   }
 
   return (
-    <div className="dashboard-container">
-      <div className="sidebar">
-        <div className="sidebar-header">
-          <FaHospital size={24} />
-          <h2>Hospital Panel</h2>
-        </div>
-        <div className="sidebar-menu">
-          <button 
-            className={`sidebar-menu-item ${activeSection === 'overview' ? 'active' : ''}`}
-            onClick={() => setActiveSection('overview')}
-          >
-            <FaHospital style={{ marginRight: 8 }} />
-            Overview
-          </button>
-          <button 
-            className={`sidebar-menu-item ${activeSection === 'profile' ? 'active' : ''}`}
-            onClick={() => setActiveSection('profile')}
-          >
-            <FaUserMd style={{ marginRight: 8 }} />
-            Profile
-          </button>
-        </div>
-        <div className="sidebar-footer">
-          <button className="logout-button" onClick={openLogoutDialog}>
-            <FaSignOutAlt /> <span>Logout</span>
-          </button>
-        </div>
-      </div>
-      <div className="main-content">
-        <div className="dashboard-content">
-          <Typography variant="h4" gutterBottom>
-            {activeSection === 'overview' ? 'Hospital Overview' : 'Hospital Profile'}
-          </Typography>
-          
-          {!hospital ? (
-            <Card>
-              <CardContent>
-                <Typography variant="h6" color="error" gutterBottom>
-                  No Hospital Data Available
-                </Typography>
-                <Typography variant="body1">
-                  Please make sure you have registered your hospital information.
-                </Typography>
-                <Button 
-                  variant="contained" 
-                  color="primary" 
-                  onClick={() => navigate("/add-hospital")}
-                  sx={{ mt: 2 }}
-                >
-                  Add Hospital Information
-                </Button>
-              </CardContent>
-            </Card>
-          ) : (
-            <Grid container spacing={3}>
-              {activeSection === 'overview' ? (
-                <>
-                  <Grid sx={{ width: { xs: '100%', md: '50%' } }}>
-                    <Card>
-                      <CardContent>
-                        <Typography variant="h6" gutterBottom>
-                          <FaHospital style={{ marginRight: 8 }} />
-                          Hospital Information
-                        </Typography>
-            <div className="info-grid">
-              <div className="info-item">
-                <span className="label">Name:</span>
-                            <span className="value">{hospital?.name || 'N/A'}</span>
-                          </div>
-                          <div className="info-item">
-                            <span className="label">Type:</span>
-                            <span className="value">{hospital?.type || 'N/A'}</span>
-              </div>
-              <div className="info-item">
-                <span className="label">Address:</span>
-                            <span className="value">
-                              {hospital?.address ? 
-                                `${hospital.address.street}, ${hospital.address.city}, ${hospital.address.state}` : 
-                                'N/A'}
-                            </span>
-                          </div>
-                          <div className="info-item">
-                            <span className="label">Phone:</span>
-                            <span className="value">{hospital?.phone || 'N/A'}</span>
-              </div>
-              <div className="info-item">
-                            <span className="label">Email:</span>
-                            <span className="value">{hospital?.email || 'N/A'}</span>
-              </div>
-              <div className="info-item">
-                <span className="label">Status:</span>
-                            <span className="value" style={{ 
-                              color: hospital?.available ? '#4CAF50' : '#f44336',
-                              fontWeight: 'bold'
-                            }}>
-                              {hospital?.available ? "Open" : "Closed"}
-                            </span>
-              </div>
-                          <div className="info-item">
-                            <span className="label">Emergency Services:</span>
-                            <span className="value" style={{ 
-                              color: hospital?.emergencyServices ? '#4CAF50' : '#f44336',
-                              fontWeight: 'bold'
-                            }}>
-                              {hospital?.emergencyServices ? "Available" : "Unavailable"}
-                            </span>
+    <div>
+      <h3 className="section-title">Select Hospital to Manage Beds</h3>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1.5rem' }}>
+        {hospitals.map(h => (
+          <div key={h._id} className="stat-card" style={{ cursor: 'pointer', border: '1px solid #edf2f7', display: 'flex', gap: '15px' }} onClick={() => handleSelect(h)}>
+            <div className="stat-icon-box" style={{ background: '#ebf8ff', color: '#2b6cb0', minWidth: '50px' }}><FaHospital /></div>
+            <div className="stat-info">
+              <h4 style={{ margin: 0 }}>{h.name}</h4>
+              <p style={{ margin: 0, fontSize: '0.8rem' }}>{h.beds?.reduce((a,b)=>a+(b.available||0),0) || 0} Beds Available</p>
             </div>
-                          <div className="info-item">
-                            <span className="label">Location:</span>
-                            <span className="value">
-                              {hospital?.position && (hospital.position.lat !== 0 || hospital.position.lng !== 0) ? (
-                                <>
-                                  Lat: {hospital.position.lat.toFixed(4)}, Lng: {hospital.position.lng.toFixed(4)}
-              </>
-            ) : (
-                                'Location not set'
-                              )}
-                            </span>
-                          </div>
-                          <div className="info-item">
-                            <span className="label">Last Updated:</span>
-                            <span className="value">
-                              {hospital?.updatedAt ? new Date(hospital.updatedAt).toLocaleString() : 'N/A'}
-                            </span>
-                          </div>
           </div>
-                      </CardContent>
-                    </Card>
-                  </Grid>
+        ))}
+      </div>
+    </div>
+  );
+};
 
-                  <Grid sx={{ width: { xs: '100%', md: '50%' } }}>
-                    <Card>
-                      <CardContent>
-                        <Typography variant="h6" gutterBottom>
-                          <FaPhone style={{ marginRight: 8 }} />
-                          Emergency Hotline
-                        </Typography>
-                        {editingHotline ? (
-                          <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-                            <TextField 
-                              value={hotline} 
-                              onChange={e => setHotline(e.target.value)}
-                              fullWidth
-                              placeholder="Enter emergency hotline number"
-                              inputProps={{
-                                pattern: "^\\d{10}$",
-                                title: "Enter a valid Nepali phone number (10 digits)"
-                              }}
-                            />
-                            <Button 
-                              onClick={handleHotlineSave}
-                              variant="contained"
-                              color="primary"
-                            >
-                              Save
-                            </Button>
-                            <Button 
-                              onClick={() => setEditingHotline(false)}
-                              variant="outlined"
-                            >
-                              Cancel
-                            </Button>
-          </div>
-                        ) : (
-                          <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-                            <Typography variant="body1" style={{ fontWeight: 600 }}>
-                              {hotline || 'No hotline set'}
-                            </Typography>
-                            <Button 
-                              onClick={() => setEditingHotline(true)}
-                              variant="outlined"
-                              size="small"
-                            >
-                              Edit
-                            </Button>
-          </div>
-                        )}
-                      </CardContent>
-                    </Card>
+const BedAllocationForm = ({ beds, onSave }) => {
+  const [currentBeds, setCurrentBeds] = useState(beds);
 
-                    <Card sx={{ mt: 2 }}>
-                      <CardContent>
-                        <Typography variant="h6" gutterBottom>
-                          <FaUserMd style={{ marginRight: 8 }} />
-                          Quick Actions
-                        </Typography>
-                        <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-                          <Button 
-                            variant="contained" 
-                            color="primary"
-                            onClick={() => setShowUpdateForm(true)}
-                          >
-                            Update Hospital Info
-                          </Button>
-                          {hospital.position && (
-                            <Button 
-                              variant="outlined" 
-                              color="primary"
-                              onClick={() => window.open(`https://www.google.com/maps?q=${hospital.position.lat},${hospital.position.lng}`, '_blank')}
-                            >
-                              View on Map
-                            </Button>
-                          )}
-          </div>
-                      </CardContent>
-                    </Card>
-                  </Grid>
+  return (
+    <div className="glass-panel" style={{ background: '#f8fafc', padding: '20px', borderRadius: '15px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
+        <h4 style={{ margin: 0 }}>Current Allocation</h4>
+        <Button variant="contained" size="small" style={{background: '#0a192f'}} onClick={() => setCurrentBeds([...currentBeds, { type: 'General', total: 0, available: 0 }])}>Add Ward</Button>
+      </div>
+      <TableContainer component={Paper} elevation={0} style={{ background: 'transparent' }}>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell>Ward Type</TableCell>
+              <TableCell>Total Capacity</TableCell>
+              <TableCell>Available</TableCell>
+              <TableCell>Actions</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {currentBeds.map((bed, i) => (
+              <TableRow key={i}>
+                <TableCell>
+                  <TextField select size="small" value={bed.type} onChange={(e) => {
+                    const next = [...currentBeds];
+                    next[i].type = e.target.value;
+                    setCurrentBeds(next);
+                  }}>
+                    {Object.values(BedTypes).map(t => <MenuItem key={t} value={t}>{t}</MenuItem>)}
+                  </TextField>
+                </TableCell>
+                <TableCell>
+                  <TextField type="number" size="small" value={bed.total} onChange={(e) => {
+                    const next = [...currentBeds];
+                    next[i].total = parseInt(e.target.value);
+                    setCurrentBeds(next);
+                  }} />
+                </TableCell>
+                <TableCell>
+                  <TextField type="number" size="small" value={bed.available} onChange={(e) => {
+                    const next = [...currentBeds];
+                    next[i].available = parseInt(e.target.value);
+                    setCurrentBeds(next);
+                  }} />
+                </TableCell>
+                <TableCell>
+                  <Button color="error" onClick={() => setCurrentBeds(currentBeds.filter((_, idx) => idx !== i))}>Remove</Button>
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+      <Button variant="contained" fullWidth style={{ marginTop: '20px', background: '#0a192f' }} onClick={() => onSave(currentBeds)}>Save All Changes</Button>
+    </div>
+  );
+};
 
-                  {showUpdateForm && (
-                    <Grid sx={{ width: '100%' }}>
-                      <HospitalInfoForm 
-                        hospital={hospital}
-                        onUpdate={handleHospitalUpdate}
-                        onClose={() => setShowUpdateForm(false)}
-                      />
-                    </Grid>
-                  )}
+const DoctorSection = ({ setAlert, setManagingHospital, hospitals, fetchHospitals }) => {
+  const [selectedHospital, setSelectedHospital] = useState(null);
+  const loading = !hospitals.length;
 
-                  <Grid sx={{ width: '100%' }}>
-                    <BedManagement 
-                      beds={beds} 
-                      setBeds={setBeds} 
-                      onSave={handleBedSave} 
-                    />
-                  </Grid>
+  const handleSelect = (h) => {
+    setSelectedHospital(h);
+    setManagingHospital(h);
+  };
 
-                  <Grid sx={{ width: '100%' }}>
-                    <DoctorManagement 
-                      doctors={doctors}
-                      setDoctors={setDoctors}
-                      onSave={handleDoctorSave}
-                    />
-                  </Grid>
-                </>
-              ) : (
-                <Grid sx={{ width: '100%' }}>
-                  <Profile 
-                    hospital={hospital}
-                    onUpdate={handleProfileUpdate}
-                  />
-                </Grid>
-              )}
-            </Grid>
-          )}
+  const handleSaveDoctors = async (updatedDocs) => {
+    try {
+      const token = localStorage.getItem("token");
+      await axios.put(`${API_V1_URL}/hospitals/${selectedHospital._id}`, { doctors: updatedDocs }, {
+        headers: { Authorization: `Bearer ${token}` }
+      });
+      setAlert({ open: true, message: "Staff Registry Updated Successfully", severity: "success" });
+      fetchHospitals();
+      const updated = { ...selectedHospital, doctors: updatedDocs };
+      setSelectedHospital(updated);
+      setManagingHospital(updated);
+    } catch (e) { setAlert({ open: true, message: "Update Failed", severity: "error" }); }
+  };
+
+  if (loading) return <div style={{textAlign: 'center', padding: '40px'}}><CircularProgress /></div>;
+
+  if (selectedHospital) {
+    return (
+      <div>
+        <Button startIcon={<FaArrowLeft />} onClick={() => {setSelectedHospital(null); setManagingHospital(null);}}>Back to Hospital List</Button>
+        <div style={{ marginTop: '20px' }}>
+          <h3 className="section-title">Manage Staff: {selectedHospital.name}</h3>
+          <DoctorRegistryForm doctors={selectedHospital.doctors || []} onSave={handleSaveDoctors} />
         </div>
       </div>
+    );
+  }
 
-      {/* Logout Confirmation Dialog */}
-      <Dialog
-        open={logoutDialogOpen}
-        onClose={closeLogoutDialog}
-      >
-        <DialogTitle>Confirm Logout</DialogTitle>
+  return (
+    <div>
+      <h3 className="section-title">Select Hospital to Manage Staff</h3>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1.5rem' }}>
+        {hospitals.map(h => (
+          <div key={h._id} className="stat-card" style={{ cursor: 'pointer', border: '1px solid #edf2f7', display: 'flex', gap: '15px' }} onClick={() => handleSelect(h)}>
+            <div className="stat-icon-box" style={{ background: '#f0fff4', color: '#2f855a', minWidth: '50px' }}><FaUserMd /></div>
+            <div className="stat-info">
+              <h4 style={{ margin: 0 }}>{h.name}</h4>
+              <p style={{ margin: 0, fontSize: '0.8rem' }}>{h.doctors?.length || 0} Registered Doctors</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const DoctorRegistryForm = ({ doctors, onSave }) => {
+  const [isAdding, setIsAdding] = useState(false);
+  const [currentDocs, setCurrentDocs] = useState(doctors);
+  const [newDoc, setNewDoc] = useState({ name: '', specialization: 'General', available: true });
+
+  return (
+    <div>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+        <h4 style={{ margin: 0 }}>Active Registry</h4>
+        <Button variant="contained" size="small" style={{background: '#0a192f'}} onClick={() => setIsAdding(true)}>Add Physician</Button>
+      </div>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '1rem' }}>
+        {currentDocs.map((doc, i) => (
+          <div key={i} style={{ background: '#f8fafc', padding: '1rem', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
+            <h5 style={{ margin: '0 0 5px 0' }}>Dr. {doc.name}</h5>
+            <p style={{ margin: '0 0 10px 0', fontSize: '0.8rem', color: '#64748b' }}>{doc.specialization}</p>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <Switch size="small" checked={doc.available} onChange={(e) => {
+                const next = [...currentDocs];
+                next[i].available = e.target.checked;
+                setCurrentDocs(next);
+              }} />
+              <Button size="small" color="error" onClick={() => {
+                const next = currentDocs.filter((_, idx) => idx !== i);
+                setCurrentDocs(next);
+              }}>Remove</Button>
+            </div>
+          </div>
+        ))}
+      </div>
+      <Button variant="contained" fullWidth style={{ marginTop: '20px', background: '#0a192f' }} onClick={() => onSave(currentDocs)}>Save Registry Changes</Button>
+
+      <Dialog open={isAdding} onClose={() => setIsAdding(false)}>
+        <DialogTitle>New Doctor Registration</DialogTitle>
         <DialogContent>
-          <DialogContentText>
-            Are you sure you want to log out?
-          </DialogContentText>
+          <TextField fullWidth label="Full Name" margin="dense" onChange={(e) => setNewDoc({...newDoc, name: e.target.value})} />
+          <TextField select fullWidth label="Specialization" margin="dense" value={newDoc.specialization} onChange={(e) => setNewDoc({...newDoc, specialization: e.target.value})}>
+            {Object.values(Specializations).map(s => <MenuItem key={s} value={s}>{s}</MenuItem>)}
+          </TextField>
         </DialogContent>
         <DialogActions>
-          <Button onClick={closeLogoutDialog} color="primary">
-            Cancel
-          </Button>
-          <Button onClick={handleLogout} color="error">
-            Logout
-          </Button>
+          <Button onClick={() => setIsAdding(false)}>Cancel</Button>
+          <Button variant="contained" onClick={() => { setCurrentDocs([...currentDocs, newDoc]); setIsAdding(false); }}>Add to List</Button>
         </DialogActions>
       </Dialog>
+    </div>
+  );
+};
 
-      <Snackbar
-        open={alert.open}
-        autoHideDuration={6000} 
-        onClose={() => setAlert({ ...alert, open: false })}
-      >
-        <Alert 
-          onClose={() => setAlert({ ...alert, open: false })}
-          severity={alert.severity}
-          sx={{ width: '100%' }}
-        >
-            {alert.message}
-          </Alert>
-        </Snackbar>
+const ProfileSection = ({ hospital, fetchHospital, setAlert }) => {
+  const [form, setForm] = useState({
+    name: hospital?.name || '',
+    hotline: hospital?.hotline || '',
+    phone: hospital?.phone || '',
+    website: hospital?.website || '',
+    available: hospital?.available || true
+  });
+
+  const handleUpdate = async () => {
+    try {
+      const token = localStorage.getItem("token");
+      await axios.put(`${API_V1_URL}/hospitals/profile`, form, {
+        headers: { Authorization: `Bearer ${token}` }
+      });
+      setAlert({ open: true, message: "Profile Updated", severity: "success" });
+      fetchHospital();
+    } catch (e) { setAlert({ open: true, message: "Update Failed", severity: "error" }); }
+  };
+
+  return (
+    <div style={{ maxWidth: '600px' }}>
+      <h3 className="section-title"><FaUserMd /> Secure Profile Update</h3>
+      <div className="form-group">
+        <label>Display Name</label>
+        <input className="input-premium" value={form.name} onChange={(e) => setForm({...form, name: e.target.value})} />
+      </div>
+      <div className="form-group">
+        <label>Public Hotline</label>
+        <input className="input-premium" value={form.hotline} onChange={(e) => setForm({...form, hotline: e.target.value})} />
+      </div>
+      <div className="form-group">
+        <label>Website URL</label>
+        <input className="input-premium" value={form.website} onChange={(e) => setForm({...form, website: e.target.value})} />
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' }}>
+        <Switch checked={form.available} onChange={(e) => setForm({...form, available: e.target.checked})} />
+        <span style={{ fontWeight: 600 }}>System Availability (Online/Offline)</span>
+      </div>
+      <Button variant="contained" style={{ background: '#ff6b35' }} onClick={handleUpdate}>Update Node Configuration</Button>
+    </div>
+  );
+};
+
+const NetworkManagementSection = ({ setAlert }) => {
+  const [hospitals, setHospitals] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [selectedHospital, setSelectedHospital] = useState(null);
+  const [isEditing, setIsEditing] = useState(false);
+
+  useEffect(() => {
+    fetchNetwork();
+  }, []);
+
+  const fetchNetwork = async () => {
+    try {
+      setLoading(true);
+      const response = await axios.get(`${API_V1_URL}/hospitals`);
+      setHospitals(response.data.data);
+    } catch (e) {
+      setAlert({ open: true, message: "Network Link Failed", severity: "error" });
+    } finally { setLoading(false); }
+  };
+
+  const handleGlobalUpdate = async (updatedData) => {
+    try {
+      const token = localStorage.getItem("token");
+      await axios.put(`${API_V1_URL}/hospitals/${selectedHospital._id}`, updatedData, {
+        headers: { Authorization: `Bearer ${token}` }
+      });
+      setAlert({ open: true, message: "Global Node Updated", severity: "success" });
+      setIsEditing(false);
+      fetchNetwork();
+    } catch (e) { setAlert({ open: true, message: "Override Denied", severity: "error" }); }
+  };
+
+  if (loading) return <div style={{textAlign: 'center', padding: '40px'}}><CircularProgress /></div>;
+
+  if (isEditing && selectedHospital) {
+    return (
+      <div>
+        <Button startIcon={<FaArrowLeft />} onClick={() => setIsEditing(false)}>Back to Network Registry</Button>
+        <div style={{ marginTop: '20px' }}>
+          <h3 className="section-title">Override: {selectedHospital.name}</h3>
+          <HospitalOverrideForm hospital={selectedHospital} onSave={handleGlobalUpdate} />
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="network-registry">
+      <h3 className="section-title"><FaGlobe /> Global Hospital Registry</h3>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1rem' }}>
+        {hospitals.map(h => (
+          <div key={h._id} className="stat-card" style={{ cursor: 'pointer', border: '1px solid #edf2f7', display: 'flex', gap: '15px' }} onClick={() => { setSelectedHospital(h); setIsEditing(true); }}>
+            <div className="stat-icon-box" style={{ background: '#f8fafc', minWidth: '50px' }}><FaHospital /></div>
+            <div className="stat-info">
+              <h4 style={{ margin: 0 }}>{h.name}</h4>
+              <p style={{ margin: 0, fontSize: '0.7rem' }}>{h.type} • {h.address?.city || 'Location N/A'}</p>
+              <div style={{ marginTop: '10px', display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                <span className="badge badge-blue" style={{background: '#ebf8ff', color: '#2b6cb0', padding: '2px 8px', borderRadius: '4px', fontSize: '0.7rem'}}>
+                  {h.beds?.reduce((a,b)=>a+(b.available||0), 0) || 0} Beds
+                </span>
+                <span className={`badge`} style={{ 
+                  background: h.available ? '#f0fff4' : '#fff5f5', 
+                  color: h.available ? '#2f855a' : '#e53e3e',
+                  padding: '2px 8px', borderRadius: '4px', fontSize: '0.7rem'
+                }}>
+                  {h.available ? 'Online' : 'Offline'}
+                </span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const HospitalOverrideForm = ({ hospital, onSave }) => {
+  const [data, setData] = useState({ ...hospital });
+
+  return (
+    <div className="glass-panel" style={{ background: '#f8fafc', padding: '20px', borderRadius: '15px' }}>
+      <div style={{ marginBottom: '20px' }}>
+        <h4 style={{marginBottom: '15px'}}>Beds Allocation Management</h4>
+        {data.beds?.map((bed, i) => (
+          <div key={i} style={{ display: 'flex', gap: '10px', marginBottom: '12px', alignItems: 'center' }}>
+            <span style={{minWidth: '100px', fontWeight: 600}}>{bed.type}</span>
+            <TextField size="small" label="Total" type="number" value={bed.total} onChange={(e) => {
+              const newBeds = [...data.beds];
+              newBeds[i].total = parseInt(e.target.value);
+              setData({...data, beds: newBeds});
+            }} />
+            <TextField size="small" label="Available" type="number" value={bed.available} onChange={(e) => {
+              const newBeds = [...data.beds];
+              newBeds[i].available = parseInt(e.target.value);
+              setData({...data, beds: newBeds});
+            }} />
+          </div>
+        ))}
+      </div>
+      <div style={{ display: 'flex', gap: '10px' }}>
+        <Button variant="contained" style={{background: '#0a192f'}} onClick={() => onSave(data)}>Apply Global Override</Button>
+      </div>
     </div>
   );
 };

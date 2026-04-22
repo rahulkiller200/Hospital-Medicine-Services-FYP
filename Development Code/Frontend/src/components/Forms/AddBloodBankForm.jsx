@@ -127,7 +127,7 @@ const AddBloodBank = () => {
         available: form.available,
         bloodTypes: form.bloodTypes.map(bt => ({ group: bt.group, available: Number(bt.available) }))
       };
-      await axios.post('http://localhost:3001/api/v1/blood-banks', formData, { headers });
+      await axios.post(`${API_V1_URL}/blood-banks`, formData, { headers });
       setSuccess('Blood Bank added successfully');
       setTimeout(() => navigate('/bloodbank-dashboard'), 1200);
     } catch (err) {

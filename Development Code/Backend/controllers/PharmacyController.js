@@ -16,21 +16,33 @@ exports.getPharmacyProfile = async (req, res) => {
 // Update Pharmacy Inventory
 exports.updateInventory = async (req, res) => {
   try {
-    const { medicineId, stock } = req.body;
-    let pharmacy = await Pharmacy.findOne({ userId: req.user.id });
+    const { medicineId, stock, medicineData } = req.body;
+    let finalMedicineId = medicineId;
 
+    // Support creating new medicine on the fly
+    if (!medicineId && medicineData) {
+      const Medicine = require("../models/MedicineModel");
+      let existingMed = await Medicine.findOne({ name: { $regex: new RegExp("^" + medicineData.name + "$", "i") } });
+      if (!existingMed) {
+        existingMed = await Medicine.create(medicineData);
+      }
+      finalMedicineId = existingMed._id;
+    }
+
+    let pharmacy = await Pharmacy.findOne({ userId: req.user.id });
     if (!pharmacy) return res.status(404).json({ success: false, message: "Pharmacy not found" });
 
-    const itemIndex = pharmacy.inventory.findIndex(item => item.medicineId.toString() === medicineId);
+    const itemIndex = pharmacy.inventory.findIndex(item => item.medicineId.toString() === finalMedicineId.toString());
 
     if (itemIndex > -1) {
       pharmacy.inventory[itemIndex].stock = stock;
     } else {
-      pharmacy.inventory.push({ medicineId, stock });
+      pharmacy.inventory.push({ medicineId: finalMedicineId, stock });
     }
 
     await pharmacy.save();
-    res.status(200).json({ success: true, message: "Inventory updated", data: pharmacy });
+    const updatedPharmacy = await Pharmacy.findById(pharmacy._id).populate("inventory.medicineId");
+    res.status(200).json({ success: true, message: "Inventory updated successfully", data: updatedPharmacy });
   } catch (error) {
     res.status(500).json({ success: false, message: "Error updating inventory", error: error.message });
   }

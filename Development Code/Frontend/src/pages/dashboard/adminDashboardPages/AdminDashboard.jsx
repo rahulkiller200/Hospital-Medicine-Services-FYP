@@ -11,13 +11,16 @@ import {
   FaChartLine,
   FaHistory,
   FaCog,
-  FaExclamationTriangle
+  FaExclamationTriangle,
+  FaUserCircle
 } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 import UserManagement from './UserManagement';
+import HospitalManagement from './HospitalManagement';
 import { logout, getUserRole, getUsername } from '../../../utils/auth';
 import axios from 'axios';
 import { API_V1_URL } from '../../../config/apiConfig';
+import '../HospitalDashboard.css'; // Applying the professional theme
 
 const AdminDashboard = () => {
   const navigate = useNavigate();
@@ -122,6 +125,8 @@ const AdminDashboard = () => {
     switch (activeSection) {
       case 'users':
         return <UserManagement />;
+      case 'hospitals':
+        return <HospitalManagement />;
       case 'analytics':
         return (
           <div className="dashboard-content">
@@ -331,12 +336,14 @@ const AdminDashboard = () => {
   };
 
   return (
-    <div className="dashboard-container">
-      <div className="sidebar">
-        <div className="sidebar-header">
-          <h2>Admin Panel</h2>
-          <p>Welcome, {username}</p>
-          <span className="user-role">{userRole}</span>
+    <div className="hospital-dashboard-root">
+      <aside className="hospital-sidebar">
+        <div className="sidebar-brand" style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
+          <FaUserCircle size={40} style={{ color: '#ff6b35' }} />
+          <div>
+            <h2 style={{ fontSize: '1.2rem', margin: 0 }}>ADMIN PANEL</h2>
+            <p style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.5)', margin: 0 }}>MASTER NODE</p>
+          </div>
         </div>
         <div className="sidebar-nav">
           <button
@@ -352,6 +359,13 @@ const AdminDashboard = () => {
           >
             <FaUsers />
             <span>User Management</span>
+          </button>
+          <button
+            className={`nav-item ${activeSection === 'hospitals' ? 'active' : ''}`}
+            onClick={() => setActiveSection('hospitals')}
+          >
+            <FaHospital />
+            <span>Hospital Management</span>
           </button>
           <button
             className={`nav-item ${activeSection === 'analytics' ? 'active' : ''}`}
@@ -405,10 +419,47 @@ const AdminDashboard = () => {
             )}
           </button>
         </div>
-      </div>
-      <div className="main-content">
-        {renderDashboardContent()}
-      </div>
+      </aside>
+      <main className="hospital-main">
+        {/* Top Admin Header */}
+        <div className="admin-header">
+          <div className="header-left">
+            <h1 className="active-title">
+              {activeSection.charAt(0).toUpperCase() + activeSection.slice(1).replace('-', ' ')}
+            </h1>
+            <p className="system-date">{new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
+          </div>
+          <div className="header-right">
+            <div className="admin-profile-pill">
+              <FaUserCircle className="profile-icon" />
+              <div className="profile-text">
+                <span className="profile-name">{username}</span>
+                <span className="profile-status">Master Node</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="dashboard-view-wrapper">
+          {renderDashboardContent()}
+        </div>
+
+        {/* Sticky Admin Footer */}
+        <footer className="admin-footer">
+          <div className="footer-content">
+            <div className="footer-left">
+              <span>© 2026 HMS Platform. All Rights Reserved.</span>
+            </div>
+            <div className="footer-right">
+              <span className="system-tag">System Version: 2.1.0-Cloud</span>
+              <span className="status-indicator">
+                <span className="dot"></span> 
+                Cloud Engine: Operational
+              </span>
+            </div>
+          </div>
+        </footer>
+      </main>
     </div>
   );
 };

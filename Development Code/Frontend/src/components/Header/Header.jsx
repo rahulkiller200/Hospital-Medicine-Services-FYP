@@ -105,11 +105,11 @@ const Header = () => {
                     <Link to="/hospital">Hospitals</Link>
                     <Link to="/medicine">Medicines</Link>
                     <Link to="/bloodbank">Blood Bank</Link>
-                    {userRole === 'admin' ? (
-                        <Link to="/admin-dashboard" className="admin-nav-link">Admin Dashboard</Link>
-                    ) : (
-                        username && <Link to="/profile">Profile</Link>
-                    )}
+                    {userRole === 'admin' && <Link to="/admin-dashboard">Admin Dashboard</Link>}
+                    {userRole === 'hospital' && <Link to="/hospital-dashboard">Hospital Dashboard</Link>}
+                    {userRole === 'pharmacy' && <Link to="/pharmacy-dashboard">Pharmacy Dashboard</Link>}
+                    {userRole === 'bloodbank' && <Link to="/bloodbank-dashboard">Blood Bank Dashboard</Link>}
+                    {username && userRole === 'patient' && <Link to="/profile">My Profile</Link>}
                 </nav>
 
                 <div className="header-actions">

@@ -163,12 +163,17 @@ exports.updateHospital = async (req, res) => {
     }
 
     // Update hospital
-    hospital.name = name;
-    hospital.type = type;
-    hospital.position = position;
-    hospital.address = address;
-    hospital.contact = contact;
-    hospital.available = available;
+    hospital.name = name || hospital.name;
+    hospital.type = type || hospital.type;
+    hospital.position = position || hospital.position;
+    hospital.address = address || hospital.address;
+    hospital.contact = contact || hospital.contact;
+    hospital.available = available !== undefined ? available : hospital.available;
+
+    // Enable bed and doctor updates through this route
+    if (req.body.beds) hospital.beds = req.body.beds;
+    if (req.body.doctors) hospital.doctors = req.body.doctors;
+    if (req.body.hotline) hospital.hotline = req.body.hotline;
 
     await hospital.save();
 

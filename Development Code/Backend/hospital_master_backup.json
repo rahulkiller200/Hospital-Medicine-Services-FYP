@@ -43,6 +43,285 @@
           "available": 32
         }
       ]
+    },
+    {
+      "_id": "69d21dbf5781d7f1bcec4d1f",
+      "name": "Nepal Red Cross Society Blood Center",
+      "__v": 0,
+      "address": {
+        "street": "Kalimati",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "bloodTypes": [
+        {
+          "group": "A+",
+          "available": 45,
+          "_id": "69d671a3ff71a32c7c623c7c"
+        },
+        {
+          "group": "A-",
+          "available": 12,
+          "_id": "69d671a3ff71a32c7c623c7d"
+        },
+        {
+          "group": "B+",
+          "available": 56,
+          "_id": "69d671a3ff71a32c7c623c7e"
+        },
+        {
+          "group": "O+",
+          "available": 89,
+          "_id": "69d671a3ff71a32c7c623c7f"
+        },
+        {
+          "group": "O-",
+          "available": 5,
+          "_id": "69d671a3ff71a32c7c623c80"
+        }
+      ],
+      "createdAt": "2026-04-05T08:30:55.169Z",
+      "hotline": "0142706500",
+      "phone": "0142706500",
+      "position": {
+        "lat": 27.7001,
+        "lng": 85.2954
+      },
+      "updatedAt": "2026-04-08T15:17:55.479Z",
+      "userId": "69d21dbf3e23f07de6ed4f81"
+    },
+    {
+      "_id": "69d21dbf5781d7f1bcec4d20",
+      "name": "HAMS Hospital Blood Bank",
+      "__v": 0,
+      "address": {
+        "street": "Dhumbarahi",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "bloodTypes": [
+        {
+          "group": "AB+",
+          "available": 22,
+          "_id": "69d671a3ff71a32c7c623c88"
+        },
+        {
+          "group": "O+",
+          "available": 34,
+          "_id": "69d671a3ff71a32c7c623c89"
+        }
+      ],
+      "createdAt": "2026-04-05T08:30:55.244Z",
+      "hotline": "0143712345",
+      "phone": "0143712345",
+      "position": {
+        "lat": 27.733,
+        "lng": 85.352
+      },
+      "updatedAt": "2026-04-08T15:17:55.482Z",
+      "userId": "69d21dbf3e23f07de6ed4f8a"
+    },
+    {
+      "_id": "69d221865781d7f1bcec4d5e",
+      "name": "Nepal Red Cross Society - Bhaktapur Center",
+      "__v": 0,
+      "address": {
+        "street": "Dudhpati",
+        "city": "Bhaktapur",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "bloodTypes": [
+        {
+          "group": "A+",
+          "available": 30,
+          "_id": "69d221868774965afcfb3de3"
+        },
+        {
+          "group": "B+",
+          "available": 45,
+          "_id": "69d221868774965afcfb3de4"
+        },
+        {
+          "group": "O+",
+          "available": 60,
+          "_id": "69d221868774965afcfb3de5"
+        },
+        {
+          "group": "AB+",
+          "available": 10,
+          "_id": "69d221868774965afcfb3de6"
+        }
+      ],
+      "createdAt": "2026-04-05T08:47:02.183Z",
+      "hotline": "016612266",
+      "phone": "016612266",
+      "position": {
+        "lat": 27.6715,
+        "lng": 85.4295
+      },
+      "updatedAt": "2026-04-05T08:47:02.183Z",
+      "userId": "69d221868774965afcfb3de1"
+    },
+    {
+      "_id": "69d221865781d7f1bcec4d5f",
+      "name": "Nepal Red Cross Society - Lalitpur Center",
+      "__v": 0,
+      "address": {
+        "street": "Patan-DH",
+        "city": "Lalitpur",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "bloodTypes": [
+        {
+          "group": "A+",
+          "available": 25,
+          "_id": "69d221868774965afcfb3deb"
+        },
+        {
+          "group": "B+",
+          "available": 32,
+          "_id": "69d221868774965afcfb3dec"
+        },
+        {
+          "group": "O+",
+          "available": 40,
+          "_id": "69d221868774965afcfb3ded"
+        },
+        {
+          "group": "O-",
+          "available": 2,
+          "_id": "69d221868774965afcfb3dee"
+        }
+      ],
+      "createdAt": "2026-04-05T08:47:02.246Z",
+      "hotline": "015522742",
+      "phone": "015522742",
+      "position": {
+        "lat": 27.675,
+        "lng": 85.322
+      },
+      "updatedAt": "2026-04-05T08:47:02.246Z",
+      "userId": "69d221868774965afcfb3de9"
+    },
+    {
+      "_id": "69d221865781d7f1bcec4d60",
+      "name": "Nepal Mediciti Blood Bank",
+      "__v": 0,
+      "address": {
+        "street": "Bhaisepati",
+        "city": "Lalitpur",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "bloodTypes": [
+        {
+          "group": "A+",
+          "available": 50,
+          "_id": "69d221868774965afcfb3df3"
+        },
+        {
+          "group": "B+",
+          "available": 50,
+          "_id": "69d221868774965afcfb3df4"
+        },
+        {
+          "group": "O+",
+          "available": 100,
+          "_id": "69d221868774965afcfb3df5"
+        },
+        {
+          "group": "AB+",
+          "available": 15,
+          "_id": "69d221868774965afcfb3df6"
+        },
+        {
+          "group": "O-",
+          "available": 10,
+          "_id": "69d221868774965afcfb3df7"
+        }
+      ],
+      "createdAt": "2026-04-05T08:47:02.306Z",
+      "hotline": "014217766",
+      "phone": "014217766",
+      "position": {
+        "lat": 27.658,
+        "lng": 85.305
+      },
+      "updatedAt": "2026-04-05T08:47:02.306Z",
+      "userId": "69d221868774965afcfb3df1"
+    },
+    {
+      "_id": "69d221865781d7f1bcec4d61",
+      "name": "Civil Service Hospital Blood Center",
+      "__v": 0,
+      "address": {
+        "street": "Minbhawan",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "bloodTypes": [
+        {
+          "group": "A+",
+          "available": 12,
+          "_id": "69d221868774965afcfb3dfc"
+        },
+        {
+          "group": "B+",
+          "available": 18,
+          "_id": "69d221868774965afcfb3dfd"
+        },
+        {
+          "group": "O+",
+          "available": 22,
+          "_id": "69d221868774965afcfb3dfe"
+        }
+      ],
+      "createdAt": "2026-04-05T08:47:02.366Z",
+      "hotline": "014489977",
+      "phone": "014489977",
+      "position": {
+        "lat": 27.6885,
+        "lng": 85.3365
+      },
+      "updatedAt": "2026-04-05T08:47:02.366Z",
+      "userId": "69d221868774965afcfb3dfa"
+    },
+    {
+      "_id": "69d221865781d7f1bcec4d62",
+      "name": "Norvic Hospital Blood Bank",
+      "__v": 0,
+      "address": {
+        "street": "Thapathali",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "bloodTypes": [
+        {
+          "group": "AB-",
+          "available": 5,
+          "_id": "69d221868774965afcfb3e03"
+        },
+        {
+          "group": "O+",
+          "available": 45,
+          "_id": "69d221868774965afcfb3e04"
+        }
+      ],
+      "createdAt": "2026-04-05T08:47:02.425Z",
+      "hotline": "014258554",
+      "phone": "014258554",
+      "position": {
+        "lat": 27.6923,
+        "lng": 85.3195
+      },
+      "updatedAt": "2026-04-05T08:47:02.425Z",
+      "userId": "69d221868774965afcfb3e01"
     }
   ],
   "hospitals": [
@@ -50,17 +329,44 @@
       "_id": "69d169069caecd1ce6dd720b",
       "name": "Bir Hospital",
       "available": true,
-      "phone": "01-4221988",
+      "phone": "0142212345",
       "address": {
-        "street": "Kanti Path",
+        "street": "Kantipath",
         "city": "Kathmandu",
         "state": "Bagmati"
       },
       "position": {
-        "lat": 27.7058,
-        "lng": 85.3146
+        "lat": 27.7052,
+        "lng": 85.3134
       },
-      "type": "Government"
+      "type": "Government Hospital",
+      "beds": [
+        {
+          "type": "General",
+          "total": 500,
+          "available": 12,
+          "_id": "69d671a3ff71a32c7c623c6c"
+        },
+        {
+          "type": "Emergency",
+          "total": 100,
+          "available": 5,
+          "_id": "69d671a3ff71a32c7c623c6d"
+        }
+      ],
+      "doctors": [
+        {
+          "name": "Dr. Gopal Rai",
+          "specialization": "Orthopedics",
+          "available": true,
+          "_id": "69d671a3ff71a32c7c623c6e"
+        }
+      ],
+      "email": "admin@birhospital.gov.np",
+      "emergencyServices": true,
+      "hotline": "0142212345",
+      "updatedAt": "2026-04-08T15:17:55.474Z",
+      "userId": "69d21dbe3e23f07de6ed4f73"
     },
     {
       "_id": "69d169069caecd1ce6dd720c",
@@ -77,6 +383,558 @@
         "lng": 85.3316
       },
       "type": "Teaching"
+    },
+    {
+      "_id": "69d21dbe5781d7f1bcec4d1d",
+      "name": "Tribhuvan University Teaching Hospital (TUTH)",
+      "__v": 0,
+      "address": {
+        "street": "Maharajgunj Road",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "beds": [
+        {
+          "type": "General",
+          "total": 400,
+          "available": 45,
+          "_id": "69d671a3ff71a32c7c623c5e"
+        },
+        {
+          "type": "ICU",
+          "total": 24,
+          "available": 2,
+          "_id": "69d671a3ff71a32c7c623c5f"
+        },
+        {
+          "type": "Emergency",
+          "total": 60,
+          "available": 8,
+          "_id": "69d671a3ff71a32c7c623c60"
+        }
+      ],
+      "createdAt": "2026-04-05T08:30:54.958Z",
+      "doctors": [
+        {
+          "name": "Dr. Ram Sharma",
+          "specialization": "Cardiology",
+          "available": true,
+          "_id": "69d671a3ff71a32c7c623c61"
+        },
+        {
+          "name": "Dr. Sita Poudel",
+          "specialization": "Neurology",
+          "available": true,
+          "_id": "69d671a3ff71a32c7c623c62"
+        },
+        {
+          "name": "Dr. Hari Thapa",
+          "specialization": "General",
+          "available": false,
+          "_id": "69d671a3ff71a32c7c623c63"
+        }
+      ],
+      "email": "admin@tuth.edu.np",
+      "emergencyServices": true,
+      "hotline": "0144123456",
+      "phone": "0144123456",
+      "position": {
+        "lat": 27.7303,
+        "lng": 85.334
+      },
+      "type": "Teaching Hospital",
+      "updatedAt": "2026-04-08T15:17:55.447Z",
+      "userId": "69d21dbe3e23f07de6ed4f69"
+    },
+    {
+      "_id": "69d21dbf5781d7f1bcec4d1e",
+      "name": "Norvic International Hospital",
+      "__v": 0,
+      "address": {
+        "street": "Thapathali",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "beds": [
+        {
+          "type": "ICU",
+          "total": 30,
+          "available": 12,
+          "_id": "69d671a3ff71a32c7c623c74"
+        },
+        {
+          "type": "General",
+          "total": 150,
+          "available": 22,
+          "_id": "69d671a3ff71a32c7c623c75"
+        }
+      ],
+      "createdAt": "2026-04-05T08:30:55.109Z",
+      "doctors": [
+        {
+          "name": "Dr. Bharat Rawat",
+          "specialization": "Cardiology",
+          "available": true,
+          "_id": "69d671a3ff71a32c7c623c76"
+        }
+      ],
+      "email": "info@norvichospital.com",
+      "emergencyServices": true,
+      "hotline": "0142585550",
+      "phone": "0142585550",
+      "position": {
+        "lat": 27.6923,
+        "lng": 85.3195
+      },
+      "type": "Private International Hospital",
+      "updatedAt": "2026-04-08T15:17:55.477Z",
+      "userId": "69d21dbf3e23f07de6ed4f7a"
+    },
+    {
+      "_id": "69d220ed5781d7f1bcec4d54",
+      "name": "Kanti Children's Hospital",
+      "__v": 0,
+      "address": {
+        "street": "Maharajgunj",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "beds": [
+        {
+          "type": "Pediatric",
+          "total": 350,
+          "available": 60,
+          "_id": "69d220ed088eb717e0d12f77"
+        },
+        {
+          "type": "Emergency",
+          "total": 40,
+          "available": 12,
+          "_id": "69d220ed088eb717e0d12f78"
+        },
+        {
+          "type": "ICU",
+          "total": 15,
+          "available": 1,
+          "_id": "69d220ed088eb717e0d12f79"
+        }
+      ],
+      "createdAt": "2026-04-05T08:44:29.968Z",
+      "doctors": [
+        {
+          "name": "Dr. Ajit Rayamajhi",
+          "specialization": "Pediatrics",
+          "available": true,
+          "_id": "69d220ed088eb717e0d12f7a"
+        }
+      ],
+      "email": "info@kantichildrenhospital.gov.np",
+      "emergencyServices": true,
+      "hotline": "0144556677",
+      "phone": "0144556677",
+      "position": {
+        "lat": 27.7315,
+        "lng": 85.334
+      },
+      "type": "Pediatric Government Hospital",
+      "updatedAt": "2026-04-05T08:44:29.968Z",
+      "userId": "69d220ed088eb717e0d12f74"
+    },
+    {
+      "_id": "69d220ee5781d7f1bcec4d55",
+      "name": "Nepal Medical College (NMC)",
+      "__v": 0,
+      "address": {
+        "street": "Attarkhel, Jorpati",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "beds": [
+        {
+          "type": "General",
+          "total": 600,
+          "available": 85,
+          "_id": "69d220ee088eb717e0d12f7f"
+        }
+      ],
+      "createdAt": "2026-04-05T08:44:30.033Z",
+      "doctors": [
+        {
+          "name": "Dr. Sunil Sharma",
+          "specialization": "General",
+          "available": true,
+          "_id": "69d220ee088eb717e0d12f80"
+        }
+      ],
+      "email": "info@nmcth.edu",
+      "emergencyServices": true,
+      "hotline": "0144556677",
+      "phone": "0144556677",
+      "position": {
+        "lat": 27.717,
+        "lng": 85.385
+      },
+      "type": "Medical College & Hospital",
+      "updatedAt": "2026-04-05T08:44:30.033Z",
+      "userId": "69d220ed088eb717e0d12f7d"
+    },
+    {
+      "_id": "69d220ee5781d7f1bcec4d56",
+      "name": "Civil Service Hospital",
+      "__v": 0,
+      "address": {
+        "street": "Minbhawan",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "beds": [
+        {
+          "type": "General",
+          "total": 200,
+          "available": 22,
+          "_id": "69d220ee088eb717e0d12f85"
+        },
+        {
+          "type": "ICU",
+          "total": 10,
+          "available": 3,
+          "_id": "69d220ee088eb717e0d12f86"
+        }
+      ],
+      "createdAt": "2026-04-05T08:44:30.092Z",
+      "doctors": [
+        {
+          "name": "Dr. Bimal Pandey",
+          "specialization": "Neurology",
+          "available": true,
+          "_id": "69d220ee088eb717e0d12f87"
+        }
+      ],
+      "email": "admin@civilhospital.gov.np",
+      "emergencyServices": true,
+      "hotline": "0144556677",
+      "phone": "0144556677",
+      "position": {
+        "lat": 27.6885,
+        "lng": 85.3365
+      },
+      "type": "Government Hospital",
+      "updatedAt": "2026-04-05T08:44:30.092Z",
+      "userId": "69d220ee088eb717e0d12f83"
+    },
+    {
+      "_id": "69d220ee5781d7f1bcec4d57",
+      "name": "Om Hospital & Research Center",
+      "__v": 0,
+      "address": {
+        "street": "Chabahil",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "beds": [
+        {
+          "type": "General",
+          "total": 150,
+          "available": 34,
+          "_id": "69d220ee088eb717e0d12f8c"
+        },
+        {
+          "type": "Maternity",
+          "total": 30,
+          "available": 10,
+          "_id": "69d220ee088eb717e0d12f8d"
+        }
+      ],
+      "createdAt": "2026-04-05T08:44:30.152Z",
+      "doctors": [
+        {
+          "name": "Dr. Bhola Rijal",
+          "specialization": "Gynecology",
+          "available": true,
+          "_id": "69d220ee088eb717e0d12f8e"
+        }
+      ],
+      "email": "info@omhospitalnepal.com",
+      "emergencyServices": true,
+      "hotline": "0144556677",
+      "phone": "0144556677",
+      "position": {
+        "lat": 27.718,
+        "lng": 85.3485
+      },
+      "type": "Private Research Hospital",
+      "updatedAt": "2026-04-05T08:44:30.152Z",
+      "userId": "69d220ee088eb717e0d12f8a"
+    },
+    {
+      "_id": "69d220ee5781d7f1bcec4d58",
+      "name": "Kathmandu Medical College (KMC)",
+      "__v": 0,
+      "address": {
+        "street": "Sinamangal",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "beds": [
+        {
+          "type": "General",
+          "total": 450,
+          "available": 50,
+          "_id": "69d220ee088eb717e0d12f93"
+        },
+        {
+          "type": "Emergency",
+          "total": 50,
+          "available": 15,
+          "_id": "69d220ee088eb717e0d12f94"
+        }
+      ],
+      "createdAt": "2026-04-05T08:44:30.214Z",
+      "doctors": [
+        {
+          "name": "Dr. Prajwal Man Shrestha",
+          "specialization": "Cardiology",
+          "available": true,
+          "_id": "69d220ee088eb717e0d12f95"
+        }
+      ],
+      "email": "info@kmcs.edu.np",
+      "emergencyServices": true,
+      "hotline": "0144556677",
+      "phone": "0144556677",
+      "position": {
+        "lat": 27.6975,
+        "lng": 85.3525
+      },
+      "type": "Medical College Hospital",
+      "updatedAt": "2026-04-05T08:44:30.214Z",
+      "userId": "69d220ee088eb717e0d12f91"
+    },
+    {
+      "_id": "69d220ee5781d7f1bcec4d59",
+      "name": "Shahid Gangalal National Heart Center",
+      "__v": 0,
+      "address": {
+        "street": "Bansbari",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "beds": [
+        {
+          "type": "ICU",
+          "total": 50,
+          "available": 4,
+          "_id": "69d220ee088eb717e0d12f9a"
+        },
+        {
+          "type": "General",
+          "total": 150,
+          "available": 18,
+          "_id": "69d220ee088eb717e0d12f9b"
+        }
+      ],
+      "createdAt": "2026-04-05T08:44:30.274Z",
+      "doctors": [
+        {
+          "name": "Dr. Chandramani Adhikari",
+          "specialization": "Cardiology",
+          "available": true,
+          "_id": "69d220ee088eb717e0d12f9c"
+        }
+      ],
+      "email": "admin@sgnhc.org.np",
+      "emergencyServices": true,
+      "hotline": "0144556677",
+      "phone": "0144556677",
+      "position": {
+        "lat": 27.739,
+        "lng": 85.3395
+      },
+      "type": "Specialized Heart Center",
+      "updatedAt": "2026-04-05T08:44:30.274Z",
+      "userId": "69d220ee088eb717e0d12f98"
+    },
+    {
+      "_id": "69d220ee5781d7f1bcec4d5a",
+      "name": "Alka Hospital",
+      "__v": 0,
+      "address": {
+        "street": "Jawalakhel",
+        "city": "Lalitpur",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "beds": [
+        {
+          "type": "General",
+          "total": 100,
+          "available": 15,
+          "_id": "69d220ee088eb717e0d12fa1"
+        },
+        {
+          "type": "ICU",
+          "total": 8,
+          "available": 2,
+          "_id": "69d220ee088eb717e0d12fa2"
+        }
+      ],
+      "createdAt": "2026-04-05T08:44:30.332Z",
+      "doctors": [
+        {
+          "name": "Dr. Shishir Lakhey",
+          "specialization": "Orthopedics",
+          "available": true,
+          "_id": "69d220ee088eb717e0d12fa3"
+        }
+      ],
+      "email": "info@alkahospital.com",
+      "emergencyServices": true,
+      "hotline": "0144556677",
+      "phone": "0144556677",
+      "position": {
+        "lat": 27.6695,
+        "lng": 85.3125
+      },
+      "type": "Private General Hospital",
+      "updatedAt": "2026-04-05T08:44:30.332Z",
+      "userId": "69d220ee088eb717e0d12f9f"
+    },
+    {
+      "_id": "69d220ee5781d7f1bcec4d5b",
+      "name": "Nepal Mediciti Hospital",
+      "__v": 0,
+      "address": {
+        "street": "Bhaisepati, Nakkhu",
+        "city": "Lalitpur",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "beds": [
+        {
+          "type": "General",
+          "total": 700,
+          "available": 250,
+          "_id": "69d220ee088eb717e0d12fa8"
+        },
+        {
+          "type": "ICU",
+          "total": 60,
+          "available": 15,
+          "_id": "69d220ee088eb717e0d12fa9"
+        }
+      ],
+      "createdAt": "2026-04-05T08:44:30.391Z",
+      "doctors": [
+        {
+          "name": "Dr. Upendra Devkota",
+          "specialization": "Neurology",
+          "available": true,
+          "_id": "69d220ee088eb717e0d12faa"
+        }
+      ],
+      "email": "client@nepalmediciti.com",
+      "emergencyServices": true,
+      "hotline": "0144556677",
+      "phone": "0144556677",
+      "position": {
+        "lat": 27.658,
+        "lng": 85.305
+      },
+      "type": "Luxury Multispecialty Hospital",
+      "updatedAt": "2026-04-05T08:44:30.391Z",
+      "userId": "69d220ee088eb717e0d12fa6"
+    },
+    {
+      "_id": "69d220ee5781d7f1bcec4d5c",
+      "name": "B&B Hospital",
+      "__v": 0,
+      "address": {
+        "street": "Gwarko",
+        "city": "Lalitpur",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "beds": [
+        {
+          "type": "General",
+          "total": 150,
+          "available": 40,
+          "_id": "69d220ee088eb717e0d12faf"
+        }
+      ],
+      "createdAt": "2026-04-05T08:44:30.449Z",
+      "doctors": [
+        {
+          "name": "Dr. Jagdish Lal Baidya",
+          "specialization": "Orthopedics",
+          "available": true,
+          "_id": "69d220ee088eb717e0d12fb0"
+        }
+      ],
+      "email": "bb@hospital.com",
+      "emergencyServices": true,
+      "hotline": "0144556677",
+      "phone": "0144556677",
+      "position": {
+        "lat": 27.6655,
+        "lng": 85.3325
+      },
+      "type": "Orthopedic Specialized",
+      "updatedAt": "2026-04-05T08:44:30.449Z",
+      "userId": "69d220ee088eb717e0d12fad"
+    },
+    {
+      "_id": "69d220ee5781d7f1bcec4d5d",
+      "name": "Vayodha City Hospital",
+      "__v": 0,
+      "address": {
+        "street": "Balkhu",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "beds": [
+        {
+          "type": "General",
+          "total": 100,
+          "available": 30,
+          "_id": "69d220ee088eb717e0d12fb5"
+        },
+        {
+          "type": "Emergency",
+          "total": 15,
+          "available": 5,
+          "_id": "69d220ee088eb717e0d12fb6"
+        }
+      ],
+      "createdAt": "2026-04-05T08:44:30.507Z",
+      "doctors": [
+        {
+          "name": "Dr. Sanjay Kumar",
+          "specialization": "Cardiology",
+          "available": true,
+          "_id": "69d220ee088eb717e0d12fb7"
+        }
+      ],
+      "email": "info@vayodha.com",
+      "emergencyServices": true,
+      "hotline": "0144556677",
+      "phone": "0144556677",
+      "position": {
+        "lat": 27.684,
+        "lng": 85.295
+      },
+      "type": "Private Life Care Hospital",
+      "updatedAt": "2026-04-05T08:44:30.507Z",
+      "userId": "69d220ee088eb717e0d12fb3"
     }
   ],
   "medicineorders": [
@@ -104,6 +962,32 @@
       "notes": "None",
       "createdAt": "2026-04-04T19:53:15.246Z",
       "updatedAt": "2026-04-04T19:53:15.246Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d1b36c130b4a56b99d83f4",
+      "patientId": "69d153da10a0fb3653aa5174",
+      "medicineId": "69d149a0cd169da3fb63e6dc",
+      "providerId": "69d169069caecd1ce6dd720a",
+      "providerType": "Pharmacy",
+      "quantity": 5,
+      "status": "Pending",
+      "notes": "NONE",
+      "createdAt": "2026-04-05T00:57:16.857Z",
+      "updatedAt": "2026-04-05T00:57:16.857Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d53b5a88de5769ebf8048e",
+      "patientId": "69d153da10a0fb3653aa5174",
+      "medicineId": "69d21e4f5781d7f1bcec4d32",
+      "providerId": "69d169069caecd1ce6dd7209",
+      "providerType": "Pharmacy",
+      "quantity": 3,
+      "status": "Pending",
+      "notes": "",
+      "createdAt": "2026-04-07T17:14:02.822Z",
+      "updatedAt": "2026-04-07T17:14:02.822Z",
       "__v": 0
     }
   ],
@@ -159,6 +1043,687 @@
       "__v": 0,
       "createdAt": "2026-04-04T17:25:52.566Z",
       "updatedAt": "2026-04-04T17:25:52.566Z"
+    },
+    {
+      "_id": "69d21dbe5781d7f1bcec4d13",
+      "name": "Paracetamol 500mg",
+      "__v": 0,
+      "category": "Fever",
+      "createdAt": "2026-04-05T08:30:54.814Z",
+      "description": "Effective for fever and mild pain relief.",
+      "imageUrl": "",
+      "manufacturer": "NPL",
+      "prescriptionRequired": false,
+      "price": 15,
+      "updatedAt": "2026-04-08T15:17:55.408Z"
+    },
+    {
+      "_id": "69d21dbe5781d7f1bcec4d14",
+      "name": "Azithromycin 500mg",
+      "__v": 0,
+      "category": "Antibiotics",
+      "createdAt": "2026-04-05T08:30:54.853Z",
+      "description": "Broad-spectrum antibiotic for bacterial infections.",
+      "imageUrl": "",
+      "manufacturer": "Deurali Janta",
+      "prescriptionRequired": true,
+      "price": 120,
+      "updatedAt": "2026-04-08T15:17:55.431Z"
+    },
+    {
+      "_id": "69d21dbe5781d7f1bcec4d15",
+      "name": "Ibuprofen 400mg",
+      "__v": 0,
+      "category": "Pain Relief",
+      "createdAt": "2026-04-05T08:30:54.854Z",
+      "description": "Effective for inflammatory pain.",
+      "imageUrl": "",
+      "manufacturer": "Asian Pharma",
+      "prescriptionRequired": false,
+      "price": 40,
+      "updatedAt": "2026-04-08T15:17:55.433Z"
+    },
+    {
+      "_id": "69d21dbe5781d7f1bcec4d16",
+      "name": "Cetirizine 10mg",
+      "__v": 0,
+      "category": "Cough & Cold",
+      "createdAt": "2026-04-05T08:30:54.855Z",
+      "description": "Antihistamine for allergy relief.",
+      "imageUrl": "",
+      "manufacturer": "Lomus",
+      "prescriptionRequired": false,
+      "price": 20,
+      "updatedAt": "2026-04-08T15:17:55.434Z"
+    },
+    {
+      "_id": "69d21dbe5781d7f1bcec4d17",
+      "name": "Metformin 500mg",
+      "__v": 0,
+      "category": "Chronic Diseases",
+      "createdAt": "2026-04-05T08:30:54.856Z",
+      "description": "First-line medication for type 2 diabetes.",
+      "imageUrl": "",
+      "manufacturer": "Quest",
+      "prescriptionRequired": true,
+      "price": 60,
+      "updatedAt": "2026-04-08T15:17:55.435Z"
+    },
+    {
+      "_id": "69d21dbe5781d7f1bcec4d18",
+      "name": "Amoxicillin 500mg",
+      "__v": 0,
+      "category": "Antibiotics",
+      "createdAt": "2026-04-05T08:30:54.857Z",
+      "description": "Penicillin-type antibiotic.",
+      "imageUrl": "",
+      "manufacturer": "NPL",
+      "prescriptionRequired": true,
+      "price": 85,
+      "updatedAt": "2026-04-08T15:17:55.436Z"
+    },
+    {
+      "_id": "69d21dbe5781d7f1bcec4d19",
+      "name": "ORS (Sachet)",
+      "__v": 0,
+      "category": "First Aid",
+      "createdAt": "2026-04-05T08:30:54.858Z",
+      "description": "Oral Rehydration Salts for dehydration.",
+      "imageUrl": "",
+      "manufacturer": "Lomus",
+      "prescriptionRequired": false,
+      "price": 10,
+      "updatedAt": "2026-04-08T15:17:55.437Z"
+    },
+    {
+      "_id": "69d21dbe5781d7f1bcec4d1a",
+      "name": "Omeprazole 20mg",
+      "__v": 0,
+      "category": "Chronic Diseases",
+      "createdAt": "2026-04-05T08:30:54.858Z",
+      "description": "Reduces stomach acid production.",
+      "imageUrl": "",
+      "manufacturer": "Deurali Janta",
+      "prescriptionRequired": true,
+      "price": 55,
+      "updatedAt": "2026-04-08T15:17:55.438Z"
+    },
+    {
+      "_id": "69d21dbe5781d7f1bcec4d1b",
+      "name": "Salbutamol Inhaler",
+      "__v": 0,
+      "category": "Others",
+      "createdAt": "2026-04-05T08:30:54.859Z",
+      "description": "Quick relief for asthma symptoms.",
+      "imageUrl": "",
+      "manufacturer": "Cipla",
+      "prescriptionRequired": true,
+      "price": 350,
+      "updatedAt": "2026-04-08T15:17:55.439Z"
+    },
+    {
+      "_id": "69d21dbe5781d7f1bcec4d1c",
+      "name": "Betadine 100ml",
+      "__v": 0,
+      "category": "First Aid",
+      "createdAt": "2026-04-05T08:30:54.860Z",
+      "description": "Antiseptic solution for wound cleaning.",
+      "imageUrl": "",
+      "manufacturer": "Win-Medicare",
+      "prescriptionRequired": false,
+      "price": 180,
+      "updatedAt": "2026-04-08T15:17:55.440Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d21",
+      "name": "Diclofenac 50mg",
+      "__v": 0,
+      "category": "Pain Relief",
+      "createdAt": "2026-04-05T08:33:19.503Z",
+      "description": "Nonsteroidal anti-inflammatory drug (NSAID).",
+      "imageUrl": "",
+      "manufacturer": "Deurali Janta",
+      "prescriptionRequired": true,
+      "price": 35,
+      "updatedAt": "2026-04-05T08:33:19.503Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d22",
+      "name": "Naproxen 250mg",
+      "__v": 0,
+      "category": "Pain Relief",
+      "createdAt": "2026-04-05T08:33:19.512Z",
+      "description": "Long-acting pain relief for joint and muscle pain.",
+      "imageUrl": "",
+      "manufacturer": "Quest",
+      "prescriptionRequired": true,
+      "price": 45,
+      "updatedAt": "2026-04-05T08:33:19.512Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d23",
+      "name": "Tramadol 50mg",
+      "__v": 0,
+      "category": "Pain Relief",
+      "createdAt": "2026-04-05T08:33:19.513Z",
+      "description": "Opioid pain medication for moderate to severe pain.",
+      "imageUrl": "",
+      "manufacturer": "Cipla",
+      "prescriptionRequired": true,
+      "price": 150,
+      "updatedAt": "2026-04-05T08:33:19.513Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d24",
+      "name": "Mefenamic Acid 500mg",
+      "__v": 0,
+      "category": "Pain Relief",
+      "createdAt": "2026-04-05T08:33:19.514Z",
+      "description": "Used for menstrual and general muscle pain.",
+      "imageUrl": "",
+      "manufacturer": "Lomus",
+      "prescriptionRequired": false,
+      "price": 50,
+      "updatedAt": "2026-04-05T08:33:19.514Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d25",
+      "name": "Ciprofloxacin 500mg",
+      "__v": 0,
+      "category": "Antibiotics",
+      "createdAt": "2026-04-05T08:33:19.515Z",
+      "description": "Broad-spectrum fluoroquinolone antibiotic.",
+      "imageUrl": "",
+      "manufacturer": "NPL",
+      "prescriptionRequired": true,
+      "price": 95,
+      "updatedAt": "2026-04-05T08:33:19.515Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d26",
+      "name": "Clarithromycin 500mg",
+      "__v": 0,
+      "category": "Antibiotics",
+      "createdAt": "2026-04-05T08:33:19.516Z",
+      "description": "Effective for respiratory tract infections.",
+      "imageUrl": "",
+      "manufacturer": "Deurali Janta",
+      "prescriptionRequired": true,
+      "price": 210,
+      "updatedAt": "2026-04-05T08:33:19.516Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d27",
+      "name": "Doxycycline 100mg",
+      "__v": 0,
+      "category": "Antibiotics",
+      "createdAt": "2026-04-05T08:33:19.517Z",
+      "description": "Tetracycline antibiotic used for various infections.",
+      "imageUrl": "",
+      "manufacturer": "Asian Pharma",
+      "prescriptionRequired": true,
+      "price": 70,
+      "updatedAt": "2026-04-05T08:33:19.517Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d28",
+      "name": "Cephalexin 500mg",
+      "__v": 0,
+      "category": "Antibiotics",
+      "createdAt": "2026-04-05T08:33:19.518Z",
+      "description": "Cephalosporin antibiotic.",
+      "imageUrl": "",
+      "manufacturer": "Quest",
+      "prescriptionRequired": true,
+      "price": 110,
+      "updatedAt": "2026-04-05T08:33:19.518Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d29",
+      "name": "Nimesulide 100mg",
+      "__v": 0,
+      "category": "Fever",
+      "createdAt": "2026-04-05T08:33:19.519Z",
+      "description": "Antipyretic and analgesic properties.",
+      "imageUrl": "",
+      "manufacturer": "Lomus",
+      "prescriptionRequired": true,
+      "price": 30,
+      "updatedAt": "2026-04-05T08:33:19.519Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d2a",
+      "name": "Aspirin 300mg",
+      "__v": 0,
+      "category": "Fever",
+      "createdAt": "2026-04-05T08:33:19.519Z",
+      "description": "Standard fever and pain relief medication.",
+      "imageUrl": "",
+      "manufacturer": "Bayer",
+      "prescriptionRequired": false,
+      "price": 25,
+      "updatedAt": "2026-04-05T08:33:19.519Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d2b",
+      "name": "Levocetirizine 5mg",
+      "__v": 0,
+      "category": "Cough & Cold",
+      "createdAt": "2026-04-05T08:33:19.520Z",
+      "description": "Next-gen antihistamine for allergies.",
+      "imageUrl": "",
+      "manufacturer": "NPL",
+      "prescriptionRequired": false,
+      "price": 25,
+      "updatedAt": "2026-04-05T08:33:19.520Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d2c",
+      "name": "Guaifenesin Syrup 100ml",
+      "__v": 0,
+      "category": "Cough & Cold",
+      "createdAt": "2026-04-05T08:33:19.521Z",
+      "description": "Expectorant for chest congestion.",
+      "imageUrl": "",
+      "manufacturer": "Dabur",
+      "prescriptionRequired": false,
+      "price": 120,
+      "updatedAt": "2026-04-05T08:33:19.521Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d2d",
+      "name": "Montelukast 10mg",
+      "__v": 0,
+      "category": "Cough & Cold",
+      "createdAt": "2026-04-05T08:33:19.522Z",
+      "description": "Prevents asthma and allergy symptoms.",
+      "imageUrl": "",
+      "manufacturer": "Quest",
+      "prescriptionRequired": true,
+      "price": 80,
+      "updatedAt": "2026-04-05T08:33:19.522Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d2e",
+      "name": "Chlorpheniramine 4mg",
+      "__v": 0,
+      "category": "Cough & Cold",
+      "createdAt": "2026-04-05T08:33:19.522Z",
+      "description": "Relief for common cold symptoms.",
+      "imageUrl": "",
+      "manufacturer": "Lomus",
+      "prescriptionRequired": false,
+      "price": 15,
+      "updatedAt": "2026-04-05T08:33:19.522Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d2f",
+      "name": "Povidone-Iodine Ointment",
+      "__v": 0,
+      "category": "First Aid",
+      "createdAt": "2026-04-05T08:33:19.523Z",
+      "description": "Topical antiseptic for minor cuts.",
+      "imageUrl": "",
+      "manufacturer": "Cipla",
+      "prescriptionRequired": false,
+      "price": 90,
+      "updatedAt": "2026-04-05T08:33:19.523Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d30",
+      "name": "Elastic Bandage (6 inch)",
+      "__v": 0,
+      "category": "First Aid",
+      "createdAt": "2026-04-05T08:33:19.523Z",
+      "description": "For sprains and muscle support.",
+      "imageUrl": "",
+      "manufacturer": "Generic",
+      "prescriptionRequired": false,
+      "price": 250,
+      "updatedAt": "2026-04-05T08:33:19.523Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d31",
+      "name": "Sterile Gauze Pads (X5)",
+      "__v": 0,
+      "category": "First Aid",
+      "createdAt": "2026-04-05T08:33:19.524Z",
+      "description": "Wound dressing material.",
+      "imageUrl": "",
+      "manufacturer": "Generic",
+      "prescriptionRequired": false,
+      "price": 60,
+      "updatedAt": "2026-04-05T08:33:19.524Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d32",
+      "name": "Adhesive Bandages (X10)",
+      "__v": 0,
+      "category": "First Aid",
+      "createdAt": "2026-04-05T08:33:19.525Z",
+      "description": "Standard adhesive strips for minor cuts.",
+      "imageUrl": "",
+      "manufacturer": "Johnson & Johnson",
+      "prescriptionRequired": false,
+      "price": 40,
+      "updatedAt": "2026-04-05T08:33:19.525Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d33",
+      "name": "Amlodipine 5mg",
+      "__v": 0,
+      "category": "Chronic Diseases",
+      "createdAt": "2026-04-05T08:33:19.525Z",
+      "description": "Calcium channel blocker for hypertension.",
+      "imageUrl": "",
+      "manufacturer": "NPL",
+      "prescriptionRequired": true,
+      "price": 75,
+      "updatedAt": "2026-04-05T08:33:19.525Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d34",
+      "name": "Lisinopril 10mg",
+      "__v": 0,
+      "category": "Chronic Diseases",
+      "createdAt": "2026-04-05T08:33:19.526Z",
+      "description": "ACE inhibitor for blood pressure control.",
+      "imageUrl": "",
+      "manufacturer": "Deurali Janta",
+      "prescriptionRequired": true,
+      "price": 85,
+      "updatedAt": "2026-04-05T08:33:19.526Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d35",
+      "name": "Atorvastatin 20mg",
+      "__v": 0,
+      "category": "Chronic Diseases",
+      "createdAt": "2026-04-05T08:33:19.526Z",
+      "description": "Lipid-lowering medication (statin).",
+      "imageUrl": "",
+      "manufacturer": "Quest",
+      "prescriptionRequired": true,
+      "price": 130,
+      "updatedAt": "2026-04-05T08:33:19.526Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d36",
+      "name": "Losartan 50mg",
+      "__v": 0,
+      "category": "Chronic Diseases",
+      "createdAt": "2026-04-05T08:33:19.527Z",
+      "description": "Angiotensin II receptor antagonist.",
+      "imageUrl": "",
+      "manufacturer": "Lomus",
+      "prescriptionRequired": true,
+      "price": 95,
+      "updatedAt": "2026-04-05T08:33:19.527Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d37",
+      "name": "Levothyroxine 50mcg",
+      "__v": 0,
+      "category": "Chronic Diseases",
+      "createdAt": "2026-04-05T08:33:19.527Z",
+      "description": "Thyroid hormone replacement.",
+      "imageUrl": "",
+      "manufacturer": "NPL",
+      "prescriptionRequired": true,
+      "price": 60,
+      "updatedAt": "2026-04-05T08:33:19.527Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d38",
+      "name": "Gliclazide 80mg",
+      "__v": 0,
+      "category": "Chronic Diseases",
+      "createdAt": "2026-04-05T08:33:19.528Z",
+      "description": "Sulfonylurea for type 2 diabetes.",
+      "imageUrl": "",
+      "manufacturer": "Deurali Janta",
+      "prescriptionRequired": true,
+      "price": 110,
+      "updatedAt": "2026-04-05T08:33:19.528Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d39",
+      "name": "Warfarin 5mg",
+      "__v": 0,
+      "category": "Chronic Diseases",
+      "createdAt": "2026-04-05T08:33:19.529Z",
+      "description": "Anticoagulant (blood thinner).",
+      "imageUrl": "",
+      "manufacturer": "Quest",
+      "prescriptionRequired": true,
+      "price": 140,
+      "updatedAt": "2026-04-05T08:33:19.529Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d3a",
+      "name": "Furosemide 40mg",
+      "__v": 0,
+      "category": "Chronic Diseases",
+      "createdAt": "2026-04-05T08:33:19.529Z",
+      "description": "Diuretic for fluid retention (edema).",
+      "imageUrl": "",
+      "manufacturer": "NPL",
+      "prescriptionRequired": true,
+      "price": 40,
+      "updatedAt": "2026-04-05T08:33:19.529Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d3b",
+      "name": "Multivitamin Tabs (X30)",
+      "__v": 0,
+      "category": "Others",
+      "createdAt": "2026-04-05T08:33:19.530Z",
+      "description": "General health supplement.",
+      "imageUrl": "",
+      "manufacturer": "HealthKart",
+      "prescriptionRequired": false,
+      "price": 450,
+      "updatedAt": "2026-04-05T08:33:19.530Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d3c",
+      "name": "Vitamin C Chewable (X20)",
+      "__v": 0,
+      "category": "Others",
+      "createdAt": "2026-04-05T08:33:19.530Z",
+      "description": "Immunity support supplement.",
+      "imageUrl": "",
+      "manufacturer": "Lomus",
+      "prescriptionRequired": false,
+      "price": 150,
+      "updatedAt": "2026-04-05T08:33:19.530Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d3d",
+      "name": "Calcium + Vitamin D3",
+      "__v": 0,
+      "category": "Others",
+      "createdAt": "2026-04-05T08:33:19.531Z",
+      "description": "Bone health support.",
+      "imageUrl": "",
+      "manufacturer": "Quest",
+      "prescriptionRequired": false,
+      "price": 280,
+      "updatedAt": "2026-04-05T08:33:19.531Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d3e",
+      "name": "Iron Supplement Drops",
+      "__v": 0,
+      "category": "Others",
+      "createdAt": "2026-04-05T08:33:19.531Z",
+      "description": "For pediatric iron deficiency.",
+      "imageUrl": "",
+      "manufacturer": "NPL",
+      "prescriptionRequired": false,
+      "price": 190,
+      "updatedAt": "2026-04-05T08:33:19.531Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d3f",
+      "name": "Magnesium Hydroxide Syrup",
+      "__v": 0,
+      "category": "Others",
+      "createdAt": "2026-04-05T08:33:19.532Z",
+      "description": "Antacid and laxative.",
+      "imageUrl": "",
+      "manufacturer": "Lomus",
+      "prescriptionRequired": false,
+      "price": 110,
+      "updatedAt": "2026-04-05T08:33:19.532Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d40",
+      "name": "Eye Drops (Lubricating)",
+      "__v": 0,
+      "category": "Others",
+      "createdAt": "2026-04-05T08:33:19.533Z",
+      "description": "Relief for dry or tired eyes.",
+      "imageUrl": "",
+      "manufacturer": "Entod",
+      "prescriptionRequired": false,
+      "price": 230,
+      "updatedAt": "2026-04-05T08:33:19.533Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d41",
+      "name": "Hydrocortisone Cream",
+      "__v": 0,
+      "category": "Others",
+      "createdAt": "2026-04-05T08:33:19.534Z",
+      "description": "Topical steroid for skin irritation.",
+      "imageUrl": "",
+      "manufacturer": "Quest",
+      "prescriptionRequired": true,
+      "price": 85,
+      "updatedAt": "2026-04-05T08:33:19.534Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d42",
+      "name": "Metronidazole 400mg",
+      "__v": 0,
+      "category": "Others",
+      "createdAt": "2026-04-05T08:33:19.534Z",
+      "description": "For certain bacterial and parasitic infections.",
+      "imageUrl": "",
+      "manufacturer": "NPL",
+      "prescriptionRequired": true,
+      "price": 65,
+      "updatedAt": "2026-04-05T08:33:19.534Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d43",
+      "name": "Fluconazole 150mg",
+      "__v": 0,
+      "category": "Others",
+      "createdAt": "2026-04-05T08:33:19.535Z",
+      "description": "Antifungal medication.",
+      "imageUrl": "",
+      "manufacturer": "Deurali Janta",
+      "prescriptionRequired": true,
+      "price": 120,
+      "updatedAt": "2026-04-05T08:33:19.535Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d44",
+      "name": "Albendazole 400mg",
+      "__v": 0,
+      "category": "Others",
+      "createdAt": "2026-04-05T08:33:19.535Z",
+      "description": "For deworming.",
+      "imageUrl": "",
+      "manufacturer": "Lomus",
+      "prescriptionRequired": false,
+      "price": 50,
+      "updatedAt": "2026-04-05T08:33:19.535Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d45",
+      "name": "Ranitidine 150mg",
+      "__v": 0,
+      "category": "Others",
+      "createdAt": "2026-04-05T08:33:19.536Z",
+      "description": "Reduces stomach acid.",
+      "imageUrl": "",
+      "manufacturer": "Quest",
+      "prescriptionRequired": true,
+      "price": 45,
+      "updatedAt": "2026-04-05T08:33:19.536Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d46",
+      "name": "Pantoprazole 40mg",
+      "__v": 0,
+      "category": "Others",
+      "createdAt": "2026-04-05T08:33:19.536Z",
+      "description": "Proton pump inhibitor for GERD.",
+      "imageUrl": "",
+      "manufacturer": "NPL",
+      "prescriptionRequired": true,
+      "price": 90,
+      "updatedAt": "2026-04-05T08:33:19.536Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d47",
+      "name": "Simvastatin 10mg",
+      "__v": 0,
+      "category": "Others",
+      "createdAt": "2026-04-05T08:33:19.537Z",
+      "description": "Cholesterol control medication.",
+      "imageUrl": "",
+      "manufacturer": "Deurali Janta",
+      "prescriptionRequired": true,
+      "price": 115,
+      "updatedAt": "2026-04-05T08:33:19.537Z"
+    },
+    {
+      "_id": "69d21e4f5781d7f1bcec4d48",
+      "name": "Spironolactone 25mg",
+      "__v": 0,
+      "category": "Others",
+      "createdAt": "2026-04-05T08:33:19.537Z",
+      "description": "Potassium-sparing diuretic.",
+      "imageUrl": "",
+      "manufacturer": "Quest",
+      "prescriptionRequired": true,
+      "price": 140,
+      "updatedAt": "2026-04-05T08:33:19.537Z"
+    },
+    {
+      "_id": "69d228875781d7f1bcec4d63",
+      "name": "Panadol Extra (Branded)",
+      "__v": 0,
+      "category": "Pain Relief",
+      "description": "Premium branded pain relief with caffeine booster.",
+      "genericSalt": "Paracetamol 500mg",
+      "price": 150
+    },
+    {
+      "_id": "69d228875781d7f1bcec4d64",
+      "name": "G-Cetamol (Generic)",
+      "__v": 0,
+      "category": "Pain Relief",
+      "description": "Government approved generic paracetamol equivalent.",
+      "genericSalt": "Paracetamol 500mg",
+      "price": 45
+    },
+    {
+      "_id": "69d671a35426337b40999c09",
+      "name": "Methylprednisolone 2mg",
+      "__v": 0,
+      "category": "Glucocorticoids",
+      "createdAt": "2026-04-08T15:17:55.441Z",
+      "description": "Corticosteroid tablets used to treat inflammation and allergic reactions.",
+      "imageUrl": "",
+      "manufacturer": "Global Pharma",
+      "prescriptionRequired": true,
+      "price": 45,
+      "updatedAt": "2026-04-08T15:17:55.441Z"
     }
   ],
   "patienthistories": [
@@ -196,7 +1761,44 @@
         "diet": ""
       },
       "createdAt": "2026-04-04T20:14:31.391Z",
-      "updatedAt": "2026-04-04T20:14:31.391Z",
+      "updatedAt": "2026-04-05T01:00:56.731Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d66ec9b97f6c275911bc27",
+      "user": "69d666d6b97f6c275911bbdf",
+      "fullName": "Test two",
+      "dateOfBirth": "1998-09-08T00:00:00.000Z",
+      "gender": "female",
+      "bloodGroup": "AB+",
+      "height": 162,
+      "weight": 85,
+      "address": "test",
+      "phoneNumber": "12345678",
+      "emergencyContact": {
+        "name": "test3",
+        "relationship": "Sister of test2",
+        "phoneNumber": "87654321"
+      },
+      "allergies": [
+        "Painkiller"
+      ],
+      "currentMedications": [
+        "None"
+      ],
+      "pastSurgeries": [],
+      "chronicConditions": [
+        "None"
+      ],
+      "familyHistory": [],
+      "lifestyle": {
+        "smoking": "never",
+        "alcohol": "never",
+        "exercise": "never",
+        "diet": ""
+      },
+      "createdAt": "2026-04-08T15:05:45.483Z",
+      "updatedAt": "2026-04-08T15:05:45.483Z",
       "__v": 0
     }
   ],
@@ -236,6 +1838,237 @@
       "emergencyServices": true,
       "hotline": "123",
       "licenseNumber": "LIC-002"
+    },
+    {
+      "_id": "69d21f0a5781d7f1bcec4d49",
+      "licenseNumber": "L-1001",
+      "__v": 0,
+      "address": {
+        "street": "New Road",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "createdAt": "2026-04-05T08:36:26.354Z",
+      "inventory": [],
+      "name": "Sajha Swasthya Sewa",
+      "phone": "01-4221122",
+      "position": {
+        "lat": 27.7032,
+        "lng": 85.3114
+      },
+      "updatedAt": "2026-04-05T08:36:53.713Z",
+      "userId": "69d21f0aca1cafb7b0db5230"
+    },
+    {
+      "_id": "69d21f0a5781d7f1bcec4d4a",
+      "licenseNumber": "L-1002",
+      "__v": 0,
+      "address": {
+        "street": "Putalisadak",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "createdAt": "2026-04-05T08:36:26.434Z",
+      "inventory": [],
+      "name": "Nepal Pharmacy",
+      "phone": "01-4433556",
+      "position": {
+        "lat": 27.7058,
+        "lng": 85.3214
+      },
+      "updatedAt": "2026-04-05T08:36:53.718Z",
+      "userId": "69d21f0aca1cafb7b0db5234"
+    },
+    {
+      "_id": "69d21f185781d7f1bcec4d4b",
+      "licenseNumber": "L-1003",
+      "__v": 0,
+      "address": {
+        "street": "Pulchowk",
+        "city": "Lalitpur",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "createdAt": "2026-04-05T08:36:40.243Z",
+      "inventory": [],
+      "name": "Health-Care Pharmacy",
+      "phone": "01-5544332",
+      "position": {
+        "lat": 27.6766,
+        "lng": 85.315
+      },
+      "updatedAt": "2026-04-05T08:36:53.721Z",
+      "userId": "69d21f18527ac8dd73dfc0d3"
+    },
+    {
+      "_id": "69d21f185781d7f1bcec4d4c",
+      "licenseNumber": "L-1004",
+      "__v": 0,
+      "address": {
+        "street": "Lagankhel",
+        "city": "Lalitpur",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "createdAt": "2026-04-05T08:36:40.302Z",
+      "inventory": [],
+      "name": "Shuva Pharmacy",
+      "phone": "01-5522110",
+      "position": {
+        "lat": 27.669,
+        "lng": 85.3225
+      },
+      "updatedAt": "2026-04-05T08:36:53.723Z",
+      "userId": "69d21f18527ac8dd73dfc0d7"
+    },
+    {
+      "_id": "69d21f255781d7f1bcec4d4d",
+      "licenseNumber": "L-1005",
+      "__v": 0,
+      "address": {
+        "street": "Koteshwor",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "createdAt": "2026-04-05T08:36:53.792Z",
+      "inventory": [],
+      "name": "Koteshwor Polyclinic & Pharmacy",
+      "phone": "01-4488776",
+      "position": {
+        "lat": 27.6755,
+        "lng": 85.3475
+      },
+      "updatedAt": "2026-04-05T08:36:53.792Z",
+      "userId": "69d21f250fa1cc1a507c1560"
+    },
+    {
+      "_id": "69d21f255781d7f1bcec4d4e",
+      "licenseNumber": "L-1006",
+      "__v": 0,
+      "address": {
+        "street": "Chabahil",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "createdAt": "2026-04-05T08:36:53.852Z",
+      "inventory": [],
+      "name": "Chabahil Pharmacy",
+      "phone": "01-4477665",
+      "position": {
+        "lat": 27.717,
+        "lng": 85.3485
+      },
+      "updatedAt": "2026-04-05T08:36:53.852Z",
+      "userId": "69d21f250fa1cc1a507c1564"
+    },
+    {
+      "_id": "69d21f255781d7f1bcec4d4f",
+      "licenseNumber": "L-1007",
+      "__v": 0,
+      "address": {
+        "street": "Balaju",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "createdAt": "2026-04-05T08:36:53.909Z",
+      "inventory": [],
+      "name": "Balaju Pharmacy",
+      "phone": "01-4455443",
+      "position": {
+        "lat": 27.7315,
+        "lng": 85.3025
+      },
+      "updatedAt": "2026-04-05T08:36:53.909Z",
+      "userId": "69d21f250fa1cc1a507c1568"
+    },
+    {
+      "_id": "69d21f255781d7f1bcec4d50",
+      "licenseNumber": "L-1008",
+      "__v": 0,
+      "address": {
+        "street": "Satdobato",
+        "city": "Lalitpur",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "createdAt": "2026-04-05T08:36:53.971Z",
+      "inventory": [],
+      "name": "Satdobato Pharmacy",
+      "phone": "01-5588776",
+      "position": {
+        "lat": 27.6585,
+        "lng": 85.3245
+      },
+      "updatedAt": "2026-04-05T08:36:53.971Z",
+      "userId": "69d21f250fa1cc1a507c156c"
+    },
+    {
+      "_id": "69d21f265781d7f1bcec4d51",
+      "licenseNumber": "L-1009",
+      "__v": 0,
+      "address": {
+        "street": "Baneshwor",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "createdAt": "2026-04-05T08:36:54.031Z",
+      "inventory": [],
+      "name": "Baneshwor Pharmacy",
+      "phone": "01-4499887",
+      "position": {
+        "lat": 27.6915,
+        "lng": 85.3415
+      },
+      "updatedAt": "2026-04-05T08:36:54.031Z",
+      "userId": "69d21f250fa1cc1a507c1570"
+    },
+    {
+      "_id": "69d21f265781d7f1bcec4d52",
+      "licenseNumber": "L-1010",
+      "__v": 0,
+      "address": {
+        "street": "Kalimati",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "createdAt": "2026-04-05T08:36:54.093Z",
+      "inventory": [],
+      "name": "Kalimati Pharmacy",
+      "phone": "01-4270650",
+      "position": {
+        "lat": 27.7001,
+        "lng": 85.2954
+      },
+      "updatedAt": "2026-04-05T08:36:54.093Z",
+      "userId": "69d21f260fa1cc1a507c1574"
+    },
+    {
+      "_id": "69d21f265781d7f1bcec4d53",
+      "licenseNumber": "L-1011",
+      "__v": 0,
+      "address": {
+        "street": "Maharajgunj",
+        "city": "Kathmandu",
+        "state": "Bagmati"
+      },
+      "available": true,
+      "createdAt": "2026-04-05T08:36:54.151Z",
+      "inventory": [],
+      "name": "Teaching Hospital Pharmacy",
+      "phone": "01-4412345",
+      "position": {
+        "lat": 27.7303,
+        "lng": 85.334
+      },
+      "updatedAt": "2026-04-05T08:36:54.151Z",
+      "userId": "69d21f260fa1cc1a507c1578"
     }
   ],
   "systemconfigs": [
@@ -258,8 +2091,18 @@
       "role": "patient",
       "isVerified": true,
       "createdAt": "2026-04-04T18:09:30.354Z",
-      "updatedAt": "2026-04-04T23:18:23.332Z",
-      "__v": 0
+      "updatedAt": "2026-04-05T09:44:04.831Z",
+      "__v": 1,
+      "medicalProfile": {
+        "allergies": [],
+        "bloodType": "Unknown",
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": [],
+        "vitalsHistory": []
+      },
+      "profilePicture": "/uploads/profiles/profilePicture-1775382244823-435577711.png"
     },
     {
       "_id": "69d19bbca7aae9e72077e610",
@@ -301,6 +2144,680 @@
       },
       "createdAt": "2026-04-04T23:33:41.564Z",
       "updatedAt": "2026-04-04T23:33:41.564Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d21dbe3e23f07de6ed4f69",
+      "firstName": "Hospital",
+      "lastName": "Admin",
+      "username": "tuth_admin",
+      "email": "admin@tuth.edu.np",
+      "password": "$2b$10$4bFREpKe4ejCTMrPclzC5eNnUdni0yi81MhJQ0Fm2YqpQtLtReXx2",
+      "role": "hospital",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:30:54.874Z",
+      "updatedAt": "2026-04-05T08:30:54.874Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d21dbe3e23f07de6ed4f73",
+      "firstName": "Hospital",
+      "lastName": "Admin",
+      "username": "bir_admin",
+      "email": "admin@birhospital.gov.np",
+      "password": "$2b$10$x7cRXC4/osCBmX44zRz34uiLnbg6flwPDcCIaXD6ORPvbJJmlxDkC",
+      "role": "hospital",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:30:54.992Z",
+      "updatedAt": "2026-04-05T08:30:54.992Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d21dbf3e23f07de6ed4f7a",
+      "firstName": "Hospital",
+      "lastName": "Admin",
+      "username": "norvic_admin",
+      "email": "info@norvichospital.com",
+      "password": "$2b$10$Pf/105UbyFBQLnm4NFCR4OWBDUBE1kVA8avKlNFN3C4dFU3mVzEtC",
+      "role": "hospital",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:30:55.053Z",
+      "updatedAt": "2026-04-05T08:30:55.053Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d21dbf3e23f07de6ed4f81",
+      "firstName": "BloodBank",
+      "lastName": "Admin",
+      "username": "nrcs_blood",
+      "email": "admin@nrcsblood.org.np",
+      "password": "$2b$10$pve3R2bmuvzUFoVxEWnDHeRAGVoyFuvw1JJSeWFoG4pjXgMxvSjD2",
+      "role": "bloodbank",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:30:55.112Z",
+      "updatedAt": "2026-04-05T08:30:55.112Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d21dbf3e23f07de6ed4f8a",
+      "firstName": "BloodBank",
+      "lastName": "Admin",
+      "username": "hams_blood",
+      "email": "bloodbank@hams.com.np",
+      "password": "$2b$10$ByyR907d0Mp/V64eAtjgTeeFBg5GnoB/oBQlJVtNP0d2Rsgk.yKf6",
+      "role": "bloodbank",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:30:55.188Z",
+      "updatedAt": "2026-04-05T08:30:55.188Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d21f0aca1cafb7b0db5230",
+      "firstName": "Pharmacy",
+      "lastName": "Manager",
+      "username": "sajha_swasthya_sewa",
+      "email": "sajha_swasthya_sewa@pharmacy.com",
+      "password": "$2b$10$ETNGX4daN2kV5yu3KdGUd.WF9ZYji5Rc.RDdEgAsyq56D2bPfMmu2",
+      "role": "pharmacy",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:36:26.289Z",
+      "updatedAt": "2026-04-05T08:36:26.289Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d21f0aca1cafb7b0db5234",
+      "firstName": "Pharmacy",
+      "lastName": "Manager",
+      "username": "nepal_pharmacy",
+      "email": "nepal_pharmacy@pharmacy.com",
+      "password": "$2b$10$3tDZJgjaDv2tvITcn6R0TevGSRcBbSFC.Yaeb221fGbAneOOoK/fG",
+      "role": "pharmacy",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:36:26.378Z",
+      "updatedAt": "2026-04-05T08:36:26.378Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d21f18527ac8dd73dfc0d3",
+      "firstName": "Pharmacy",
+      "lastName": "Manager",
+      "username": "health_care_pharmacy",
+      "email": "health_care_pharmacy@pharmacy.com",
+      "password": "$2b$10$VSRyUwrgzTu85G4sRwR2rOxiDqfDINTeKxBJWTHPxgcmmkJ5SBz8C",
+      "role": "pharmacy",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:36:40.180Z",
+      "updatedAt": "2026-04-05T08:36:40.180Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d21f18527ac8dd73dfc0d7",
+      "firstName": "Pharmacy",
+      "lastName": "Manager",
+      "username": "shuva_pharmacy",
+      "email": "shuva_pharmacy@pharmacy.com",
+      "password": "$2b$10$M19c2euMTE2aSqSZxyUwn.kuXIVjt5NqOaEANE9Zg4ESzKe3A/Fui",
+      "role": "pharmacy",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:36:40.245Z",
+      "updatedAt": "2026-04-05T08:36:40.245Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d21f250fa1cc1a507c1560",
+      "firstName": "Pharmacy",
+      "lastName": "Manager",
+      "username": "koteshwor_polyclinic_and_pharm",
+      "email": "koteshwor_polyclinic_and_pharm@pharmacy.com",
+      "password": "$2b$10$kWWCruRB5PfN3qYwuxLLk.pnqWcYVRRpGFLt36J3/xxFr2S0sX37C",
+      "role": "pharmacy",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:36:53.729Z",
+      "updatedAt": "2026-04-05T08:36:53.729Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d21f250fa1cc1a507c1564",
+      "firstName": "Pharmacy",
+      "lastName": "Manager",
+      "username": "chabahil_pharmacy",
+      "email": "chabahil_pharmacy@pharmacy.com",
+      "password": "$2b$10$VNtLpgQHPzxb1.TeYCpotuXqxIXnQyxGMMxp90xjJ93t3Ku1WBaT6",
+      "role": "pharmacy",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:36:53.794Z",
+      "updatedAt": "2026-04-05T08:36:53.794Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d21f250fa1cc1a507c1568",
+      "firstName": "Pharmacy",
+      "lastName": "Manager",
+      "username": "balaju_pharmacy",
+      "email": "balaju_pharmacy@pharmacy.com",
+      "password": "$2b$10$s9bNhYGNDe9hcUdEh0UhgeURZZGBfhsPCNQn3jbNw1afrekLEJAHW",
+      "role": "pharmacy",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:36:53.854Z",
+      "updatedAt": "2026-04-05T08:36:53.854Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d21f250fa1cc1a507c156c",
+      "firstName": "Pharmacy",
+      "lastName": "Manager",
+      "username": "satdobato_pharmacy",
+      "email": "satdobato_pharmacy@pharmacy.com",
+      "password": "$2b$10$TNdLHfIArMTwAkel7/.cturdZpxSOtXqWZuVI2DsLYU8pKnZfoqsq",
+      "role": "pharmacy",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:36:53.911Z",
+      "updatedAt": "2026-04-05T08:36:53.911Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d21f250fa1cc1a507c1570",
+      "firstName": "Pharmacy",
+      "lastName": "Manager",
+      "username": "baneshwor_pharmacy",
+      "email": "baneshwor_pharmacy@pharmacy.com",
+      "password": "$2b$10$ArXh/0bJmXQut0wVIwCGTeGMkrUWn6B98MrD2ZRXQaeuYYqYFeVFm",
+      "role": "pharmacy",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:36:53.973Z",
+      "updatedAt": "2026-04-05T08:36:53.973Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d21f260fa1cc1a507c1574",
+      "firstName": "Pharmacy",
+      "lastName": "Manager",
+      "username": "kalimati_pharmacy",
+      "email": "kalimati_pharmacy@pharmacy.com",
+      "password": "$2b$10$xke7NrPZ8pFdvMftZUtHfOvTAFXn4P4odaWw7OumP2/753rzYcHDq",
+      "role": "pharmacy",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:36:54.033Z",
+      "updatedAt": "2026-04-05T08:36:54.033Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d21f260fa1cc1a507c1578",
+      "firstName": "Pharmacy",
+      "lastName": "Manager",
+      "username": "teaching_hospital_pharmacy",
+      "email": "teaching_hospital_pharmacy@pharmacy.com",
+      "password": "$2b$10$25bjtWidpfkXxu6Z4OFuUOUTdZRDFD6bOAxxIRGL9rdoDEaAL/wEi",
+      "role": "pharmacy",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:36:54.096Z",
+      "updatedAt": "2026-04-05T08:36:54.096Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d220ed088eb717e0d12f74",
+      "firstName": "Hospital",
+      "lastName": "Admin",
+      "username": "kanti_admin",
+      "email": "info@kantichildrenhospital.gov.np",
+      "password": "$2b$10$ld68NVXPIsPJu50lXcPvE.JGUE.BbKwbGZ/ZUOYfXPZ9Tld3GDsdS",
+      "role": "hospital",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:44:29.904Z",
+      "updatedAt": "2026-04-05T08:44:29.904Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d220ed088eb717e0d12f7d",
+      "firstName": "Hospital",
+      "lastName": "Admin",
+      "username": "nmc_admin",
+      "email": "info@nmcth.edu",
+      "password": "$2b$10$9v1vhSyq82WVdVtZ822/X.7z3OdO5e4Y7AaAIFuBs5yQFQL38e6uK",
+      "role": "hospital",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:44:29.975Z",
+      "updatedAt": "2026-04-05T08:44:29.975Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d220ee088eb717e0d12f83",
+      "firstName": "Hospital",
+      "lastName": "Admin",
+      "username": "civil_admin",
+      "email": "admin@civilhospital.gov.np",
+      "password": "$2b$10$I5V6zFQiOEfV.yhKKHxsI.5Kvb2ciIbheAg6PBKY5EAN9fjJlXEh.",
+      "role": "hospital",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:44:30.036Z",
+      "updatedAt": "2026-04-05T08:44:30.036Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d220ee088eb717e0d12f8a",
+      "firstName": "Hospital",
+      "lastName": "Admin",
+      "username": "om_admin",
+      "email": "info@omhospitalnepal.com",
+      "password": "$2b$10$J/5PFKYYagMrRl2wMAROc.S5B6m.K4oKcYN9DLlbv4ViocHH..1l6",
+      "role": "hospital",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:44:30.095Z",
+      "updatedAt": "2026-04-05T08:44:30.095Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d220ee088eb717e0d12f91",
+      "firstName": "Hospital",
+      "lastName": "Admin",
+      "username": "kmc_admin",
+      "email": "info@kmcs.edu.np",
+      "password": "$2b$10$ofMfYw2vGHy0ny6.YfuM4.gj9jgmlpiBBhpROUCM5sYTnG3pRWcSG",
+      "role": "hospital",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:44:30.154Z",
+      "updatedAt": "2026-04-05T08:44:30.154Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d220ee088eb717e0d12f98",
+      "firstName": "Hospital",
+      "lastName": "Admin",
+      "username": "gangalal_admin",
+      "email": "admin@sgnhc.org.np",
+      "password": "$2b$10$pRb/BaqT03jb1d66wuJ2rOrJYG7z9Mms5DiqgsXMzh1hFe5fB.Tlq",
+      "role": "hospital",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:44:30.217Z",
+      "updatedAt": "2026-04-05T08:44:30.217Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d220ee088eb717e0d12f9f",
+      "firstName": "Hospital",
+      "lastName": "Admin",
+      "username": "alka_admin",
+      "email": "info@alkahospital.com",
+      "password": "$2b$10$G0bZfk4OLYD4Fw7Y35/GN.NdKgNNSrBddGkhDbukoUG8aLs6KMTB.",
+      "role": "hospital",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:44:30.276Z",
+      "updatedAt": "2026-04-05T08:44:30.276Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d220ee088eb717e0d12fa6",
+      "firstName": "Hospital",
+      "lastName": "Admin",
+      "username": "mediciti_admin",
+      "email": "client@nepalmediciti.com",
+      "password": "$2b$10$FVp3LvvT78AZRSPMrTQIGezoeNh/VUd1L0fH0CdwJANoQVv6MlS5O",
+      "role": "hospital",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:44:30.335Z",
+      "updatedAt": "2026-04-05T08:44:30.335Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d220ee088eb717e0d12fad",
+      "firstName": "Hospital",
+      "lastName": "Admin",
+      "username": "bb_admin",
+      "email": "bb@hospital.com",
+      "password": "$2b$10$fEjRSe7EBj84w.0o2BZJhOslC44g6dJBunY4.MbzNI4S5y2z22842",
+      "role": "hospital",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:44:30.393Z",
+      "updatedAt": "2026-04-05T08:44:30.393Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d220ee088eb717e0d12fb3",
+      "firstName": "Hospital",
+      "lastName": "Admin",
+      "username": "vayodha_admin",
+      "email": "info@vayodha.com",
+      "password": "$2b$10$ZT1m6ygjvABkZmxe5DFIo.CaW9L1HPLXT93a2geqBlUZxvaLBJQnG",
+      "role": "hospital",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:44:30.452Z",
+      "updatedAt": "2026-04-05T08:44:30.452Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d221868774965afcfb3de1",
+      "firstName": "BloodBank",
+      "lastName": "Admin",
+      "username": "redcross_bhaktapur",
+      "email": "bhaktapur@nrcsblood.org.np",
+      "password": "$2b$10$HnLNwzKHdomnGyOJmQ50U.mulCv07fA2tOts9oEuWL17kVkr3ACsm",
+      "role": "bloodbank",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:47:02.118Z",
+      "updatedAt": "2026-04-05T08:47:02.118Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d221868774965afcfb3de9",
+      "firstName": "BloodBank",
+      "lastName": "Admin",
+      "username": "redcross_lalitpur",
+      "email": "lalitpur@nrcsblood.org.np",
+      "password": "$2b$10$Hlr7MuXtCs8yWlgC77OkIOd3o5jz1fJsCBg0XqL9C.L16JiYFhMxS",
+      "role": "bloodbank",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:47:02.190Z",
+      "updatedAt": "2026-04-05T08:47:02.190Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d221868774965afcfb3df1",
+      "firstName": "BloodBank",
+      "lastName": "Admin",
+      "username": "mediciti_blood",
+      "email": "blood@mediciti.com.np",
+      "password": "$2b$10$9BFoAgac534cgTy0mQOSMuPM8CYahCvogsg2Rjq/dpJGDcuEPqJWe",
+      "role": "bloodbank",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:47:02.249Z",
+      "updatedAt": "2026-04-05T08:47:02.249Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d221868774965afcfb3dfa",
+      "firstName": "BloodBank",
+      "lastName": "Admin",
+      "username": "civil_blood",
+      "email": "bloodbank@civilhospital.gov.np",
+      "password": "$2b$10$BhnhmT59amcCp09xtXIY3e9NNDpkq7qCSC04CCAlfFlyMXF4SOfW.",
+      "role": "bloodbank",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:47:02.309Z",
+      "updatedAt": "2026-04-05T08:47:02.309Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d221868774965afcfb3e01",
+      "firstName": "BloodBank",
+      "lastName": "Admin",
+      "username": "norvic_blood",
+      "email": "blood@norvichospital.com",
+      "password": "$2b$10$znNn6gWUPoUv.hOkGqO3Me1hqrmB.hBYg9o3FNoDJPU4wuxjphCsG",
+      "role": "bloodbank",
+      "isVerified": false,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": []
+      },
+      "createdAt": "2026-04-05T08:47:02.368Z",
+      "updatedAt": "2026-04-05T08:47:02.368Z",
+      "__v": 0
+    },
+    {
+      "_id": "69d666d6b97f6c275911bbdf",
+      "firstName": "test",
+      "profilePicture": "",
+      "lastName": "two",
+      "username": "test",
+      "email": "test@gmail.com",
+      "password": "$2b$10$tuLMvGw7WNr6mkArt1VE0OD6mwYHWe43v41ItikSEtzBcICTY3U8S",
+      "role": "patient",
+      "isVerified": true,
+      "medicalProfile": {
+        "bloodType": "Unknown",
+        "allergies": [],
+        "currentMedications": [],
+        "emergencyContactName": "",
+        "emergencyContactPhone": "",
+        "medicalConditions": [],
+        "vitalsHistory": []
+      },
+      "createdAt": "2026-04-08T14:31:50.817Z",
+      "updatedAt": "2026-04-08T14:31:50.817Z",
       "__v": 0
     }
   ]

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { API_V1_URL } from '../config/apiConfig';
 
 const EmergencyAlertButton = () => {
   const [alertStatus, setAlertStatus] = useState('');
@@ -28,7 +29,7 @@ const EmergencyAlertButton = () => {
         timestamp: new Date().toISOString()
       };
       
-      const response = await axios.post('http://localhost:3001/api/v1/emergency/alert', payload);
+      const response = await axios.post(`${API_V1_URL}/emergency/alert`, payload);
       
       if (response.data.success) {
         setAlertStatus(`Alert sent successfully! Response ID: ${response.data.alertId}`);

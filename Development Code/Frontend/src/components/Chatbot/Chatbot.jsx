@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import { getAuthToken } from "../../utils/auth";
+import { API_V1_URL } from "../../config/apiConfig";
 import "./Chatbot.css";
 
 const Chatbot = () => {
@@ -34,7 +35,7 @@ const Chatbot = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3001/api/v1/chatbot/ask",
+        `${API_V1_URL}/chatbot/ask`,
         { message: userMessage },
         {
           headers: { Authorization: `Bearer ${getAuthToken()}` },

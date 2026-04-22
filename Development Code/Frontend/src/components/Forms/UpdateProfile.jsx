@@ -45,8 +45,8 @@ function UpdateProfile() {
         }
 
         const [profileResponse, historyResponse] = await Promise.all([
-          axios.get("http://localhost:3001/api/v1/patient-history/profile"),
-          axios.get("http://localhost:3001/api/v1/patient-history/history")
+          axios.get(`${API_V1_URL}/patient-history/profile`),
+          axios.get(`${API_V1_URL}/patient-history/history`)
         ]);
 
         if (profileResponse.data.success && historyResponse.data.success) {

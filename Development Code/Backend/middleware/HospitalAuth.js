@@ -39,18 +39,29 @@ exports.validateHospital = [
     .notEmpty()
     .withMessage('Hospital name is required'),
 
-  // Contact Information - allow both contact and phone fields
+  // Contact Information - allow international prefixes and spaces
   body(['contact', 'phone'])
     .optional()
     .trim()
-    .matches(/^\d{10}$/)
-    .withMessage('Please enter a valid Nepali phone number (10 digits)'),
+    .custom((value) => {
+      // Remove spaces, dashes, and +977 for validation
+      const clean = value.replace(/[\s\-\+]/g, '').replace(/^977/, '');
+      if (clean.length < 7 || clean.length > 15) {
+        throw new Error('Please enter a valid phone number');
+      }
+      return true;
+    }),
 
   body('hotline')
     .optional()
     .trim()
-    .matches(/^\d{10}$/)
-    .withMessage('Please enter a valid Nepali hotline number (10 digits)'),
+    .custom((value) => {
+      const clean = value.replace(/[\s\-\+]/g, '').replace(/^977/, '');
+      if (clean.length < 7 || clean.length > 15) {
+        throw new Error('Please enter a valid hotline number');
+      }
+      return true;
+    }),
 
   body('email')
     .optional()

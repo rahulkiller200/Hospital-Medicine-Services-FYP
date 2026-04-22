@@ -20,6 +20,7 @@ function Login() {
   const [show2FA, setShow2FA] = useState(false);
   const [otp, setOtp] = useState('');
   const [pendingUserData, setPendingUserData] = useState(null);
+  const [showPassword, setShowPassword] = useState(false);
   
   const navigate = useNavigate();
 
@@ -111,14 +112,15 @@ function Login() {
             case "admin":
               navigate("/admin-dashboard");
               break;
-            case "medicine":
-              navigate("/medicine-dashboard");
-              break;
             case "hospital":
-              navigate("/hospital-dashboard");
+              navigate("/hospital");
+              break;
+            case "pharmacy":
+            case "medicine":
+              navigate("/medicine");
               break;
             case "bloodbank":
-              navigate("/bloodbank-dashboard");
+              navigate("/bloodbank");
               break;
             default:
               navigate("/home");
@@ -224,16 +226,29 @@ function Login() {
               <i className="fas fa-lock"></i>
               Password
             </label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Enter your password"
-              value={loginData.password}
-              onChange={handleChange}
-              required
-              autoComplete="current-password"
-            />
+            <div className="input-control-wrapper">
+              <input
+                type={showPassword ? "text" : "password"}
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                value={loginData.password}
+                onChange={handleChange}
+                required
+                autoComplete="current-password"
+                style={{ paddingRight: loginData.password.length > 0 ? '45px' : '16px' }}
+              />
+              {loginData.password.length > 0 && (
+                <button 
+                  type="button"
+                  className="password-toggle-icon"
+                  onClick={() => setShowPassword(!showPassword)}
+                  aria-label={showPassword ? "Hide password" : "Show password"}
+                >
+                  <i className={`fas ${showPassword ? 'fa-eye-slash' : 'fa-eye'}`}></i>
+                </button>
+              )}
+            </div>
           </div>
 
             <button 

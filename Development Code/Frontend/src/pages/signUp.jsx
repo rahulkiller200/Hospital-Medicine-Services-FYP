@@ -21,6 +21,8 @@ function SignUp() {
   const [passwordMatch, setPasswordMatch] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const navigate = useNavigate();
 
   function handleChange(e) {
@@ -256,15 +258,27 @@ function SignUp() {
               <i className="fas fa-lock"></i>
               Password
             </label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Create a password"
-              value={registerData.password}
-              onChange={handleChange}
-              required
-            />
+            <div className="input-control-wrapper">
+              <input
+                type={showPassword ? "text" : "password"}
+                id="password"
+                name="password"
+                placeholder="Create a password"
+                value={registerData.password}
+                onChange={handleChange}
+                required
+                style={{ paddingRight: registerData.password.length > 0 ? '45px' : '16px' }}
+              />
+              {registerData.password.length > 0 && (
+                <button 
+                  type="button"
+                  className="password-toggle-icon"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  <i className={`fas ${showPassword ? 'fa-eye-slash' : 'fa-eye'}`}></i>
+                </button>
+              )}
+            </div>
             {!passwordValid && (
               <div className="password-requirements">
                 <p>Password must contain:</p>
@@ -294,15 +308,27 @@ function SignUp() {
               <i className="fas fa-lock"></i>
               Confirm Password
             </label>
-            <input
-              type="password"
-              id="confirmPassword"
-              name="confirmPassword"
-              placeholder="Confirm your password"
-              value={registerData.confirmPassword}
-              onChange={handleChange}
-              required
-            />
+            <div className="input-control-wrapper">
+              <input
+                type={showConfirmPassword ? "text" : "password"}
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="Confirm your password"
+                value={registerData.confirmPassword}
+                onChange={handleChange}
+                required
+                style={{ paddingRight: registerData.confirmPassword.length > 0 ? '45px' : '16px' }}
+              />
+              {registerData.confirmPassword.length > 0 && (
+                <button 
+                  type="button"
+                  className="password-toggle-icon"
+                  onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                >
+                  <i className={`fas ${showConfirmPassword ? 'fa-eye-slash' : 'fa-eye'}`}></i>
+                </button>
+              )}
+            </div>
             {!passwordMatch && (
               <div className="error-message">Passwords do not match!</div>
             )}
@@ -321,7 +347,6 @@ function SignUp() {
               required
             >
               <option value="patient">🧑‍⚕️ Patient</option>
-              <option value="medicine">🚑 Medicine</option>
               <option value="hospital">🏥 Hospital</option>
               <option value="bloodbank">🩸 Blood Bank</option>
               <option value="pharmacy">💊 Pharmacy</option>

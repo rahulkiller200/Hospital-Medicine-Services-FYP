@@ -27,7 +27,8 @@ const seedData = async () => {
             { name: "ORS (Sachet)", category: "First Aid", price: 10, manufacturer: "Lomus", description: "Oral Rehydration Salts for dehydration.", prescriptionRequired: false },
             { name: "Omeprazole 20mg", category: "Chronic Diseases", price: 55, manufacturer: "Deurali Janta", description: "Reduces stomach acid production.", prescriptionRequired: true },
             { name: "Salbutamol Inhaler", category: "Others", price: 350, manufacturer: "Cipla", description: "Quick relief for asthma symptoms.", prescriptionRequired: true },
-            { name: "Betadine 100ml", category: "First Aid", price: 180, manufacturer: "Win-Medicare", description: "Antiseptic solution for wound cleaning.", prescriptionRequired: false }
+            { name: "Betadine 100ml", category: "First Aid", price: 180, manufacturer: "Win-Medicare", description: "Antiseptic solution for wound cleaning.", prescriptionRequired: false },
+            { name: "Methylprednisolone 2mg", category: "Glucocorticoids", price: 45, manufacturer: "Global Pharma", description: "Corticosteroid tablets used to treat inflammation and allergic reactions.", prescriptionRequired: true }
         ];
 
         // Append to avoid breaking existing data as per user request

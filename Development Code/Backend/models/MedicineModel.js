@@ -16,7 +16,7 @@ const medicineSchema = new mongoose.Schema({
   genericSalt: {
     type: String,
     trim: true,
-    required: [true, "Generic salt name is required for alternative matching"]
+    default: "N/A"
   },
   manufacturer: {
     type: String,

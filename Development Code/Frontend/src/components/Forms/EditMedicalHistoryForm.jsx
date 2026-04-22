@@ -36,7 +36,7 @@ const EditMedicalHistoryForm = () => {
 
         axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
         
-        const response = await axios.get('http://localhost:3001/api/v1/patients/history');
+        const response = await axios.get(`${API_V1_URL}/patients/history`);
         if (response.data.success && response.data.data) {
           const dt = response.data.data;
           setFormData(prev => ({
@@ -91,7 +91,11 @@ const EditMedicalHistoryForm = () => {
         familyHistory: formData.familyHistory.split(',').map(s => s.trim()).filter(Boolean),
       };
 
-      const response = await axios.post('http://localhost:3001/api/v1/patients', payload);
+      const response = await axios.post(`${API_V1_URL}/patients`, payload, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
       if (response.data.success) {
         setSuccess('Medical History updated successfully!');
         setTimeout(() => navigate('/profile'), 2000);

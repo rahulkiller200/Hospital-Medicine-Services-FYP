@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { FaSearch, FaEdit, FaTrash, FaPlus, FaEye, FaSpinner } from 'react-icons/fa';
+import { FaSearch, FaEdit, FaTrash, FaPlus, FaEye, FaSpinner, FaUserShield, FaHospital, FaClinicMedical, FaUserCircle, FaUserTag } from 'react-icons/fa';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
-
-// Configure axios defaults
-axios.defaults.baseURL = 'http://localhost:3001'; // Update this with your backend URL
-axios.defaults.withCredentials = true;
+import { API_V1_URL } from '../../../config/apiConfig';
+import './UserManagement.css';
 
 const UserManagement = () => {
   const navigate = useNavigate();
@@ -23,133 +21,72 @@ const UserManagement = () => {
     password: ''
   });
 
+  // Stats State
+  const [stats, setStats] = useState({
+    total: 0,
+    admins: 0,
+    hospitals: 0,
+    others: 0
+  });
+
   useEffect(() => {
-    // Check if user is logged in
-    const token = localStorage.getItem('token');
-    if (!token) {
-      toast.error('Please login to continue');
-      navigate('/login');
-      return;
-    }
-
-    // Check if user is admin
-    const userRole = localStorage.getItem('role');
-    if (userRole !== 'admin') {
-      toast.error('Access denied. Admin privileges required.');
-      navigate('/admin-dashboard'); 
-      return;
-    }
-
     fetchUsers();
-  }, [navigate]);
+  }, []);
+
+  const calculateStats = (userList) => {
+    const total = userList.length;
+    const admins = userList.filter(u => u.role === 'admin').length;
+    const hospitals = userList.filter(u => u.role === 'hospital').length;
+    const others = total - admins - hospitals;
+    setStats({ total, admins, hospitals, others });
+  };
 
   const fetchUsers = async () => {
     try {
       setLoading(true);
-      setError(null);
-      
       const token = localStorage.getItem('token');
-      if (!token) {
-        throw new Error('No authentication token found');
-      }
-
-      const response = await axios.get('/api/v1/users', {
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'Content-Type': 'application/json'
-        }
+      const response = await axios.get(`${API_V1_URL}/users`, {
+        headers: { 'Authorization': `Bearer ${token}` }
       });
-      
-      console.log('API Response:', response.data);
 
-      if (response.data && response.data.success && Array.isArray(response.data.data)) {
+      if (response.data && response.data.success) {
         setUsers(response.data.data);
-      } else {
-        console.error('Invalid response format:', response.data);
-        throw new Error('Invalid response format');
+        calculateStats(response.data.data);
       }
     } catch (error) {
-      console.error('Error details:', {
-        message: error.message,
-        response: error.response?.data,
-        status: error.response?.status
-      });
-      
-      let errorMessage = 'Failed to fetch users. Please try again later.';
-      
-      if (error.response) {
-        if (error.response.status === 401) {
-          errorMessage = 'Session expired. Please login again.';
-          localStorage.removeItem('token');
-          localStorage.removeItem('userRole');
-          navigate('/login');
-        } else if (error.response.status === 403) {
-          errorMessage = 'You do not have permission to view users.';
-        } else if (error.response.data && error.response.data.message) {
-          errorMessage = error.response.data.message;
-        }
-      } else if (error.request) {
-        errorMessage = 'No response from server. Please check your connection.';
-      }
-      
-      setError(errorMessage);
-      toast.error(errorMessage);
+      toast.error('Failed to fetch users');
     } finally {
       setLoading(false);
     }
   };
 
-  const handleSearch = (e) => {
-    setSearchTerm(e.target.value);
-  };
-
-  const filteredUsers = users.filter(user => {
-    if (!user) return false;
-    const searchLower = searchTerm.toLowerCase();
-    return (
-      (user.username?.toLowerCase().includes(searchLower) || '') ||
-      (user.email?.toLowerCase().includes(searchLower) || '')
-    );
-  });
-
-  const handleView = (user) => {
-    if (!user) return;
-    setSelectedUser(user);
-    setFormData({
-      username: user.username || '',
-      email: user.email || '',
-      role: user.role || '',
-      password: ''
-    });
-    setIsModalOpen(true);
-  };
+  const filteredUsers = users.filter(user => 
+    user.username?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    user.email?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    user.role?.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   const handleEdit = (user) => {
-    if (!user) return;
     setSelectedUser(user);
     setFormData({
-      username: user.username || '',
-      email: user.email || '',
-      role: user.role || '',
+      username: user.username,
+      email: user.email,
+      role: user.role,
       password: ''
     });
     setIsModalOpen(true);
   };
 
   const handleDelete = async (userId) => {
-    if (!userId) return;
-    
     if (window.confirm('Are you sure you want to delete this user?')) {
       try {
-        await axios.delete(`/api/v1/users/${userId}`, {
-          headers: {
-            'Authorization': `Bearer ${localStorage.getItem('token')}`
-          }
+        const token = localStorage.getItem('token');
+        await axios.delete(`${API_V1_URL}/users/${userId}`, {
+          headers: { 'Authorization': `Bearer ${token}` }
         });
-        toast.success('User deleted successfully');
+        toast.success('User deleted');
         fetchUsers();
       } catch (error) {
-        console.error('Error deleting user:', error);
         toast.error('Failed to delete user');
       }
     }
@@ -158,162 +95,195 @@ const UserManagement = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const headers = {
-        'Authorization': `Bearer ${localStorage.getItem('token')}`
-      };
+      const token = localStorage.getItem('token');
+      const headers = { 'Authorization': `Bearer ${token}` };
 
       if (selectedUser) {
-        await axios.put(`/api/v1/users/${selectedUser._id}`, formData, { headers });
-        toast.success('User updated successfully');
+        await axios.put(`${API_V1_URL}/users/${selectedUser._id}`, formData, { headers });
+        toast.success('User updated');
       } else {
-        await axios.post('/api/v1/users', formData, { headers });
-        toast.success('User created successfully');
+        await axios.post(`${API_V1_URL}/users`, formData, { headers });
+        toast.success('User created');
       }
       setIsModalOpen(false);
       fetchUsers();
     } catch (error) {
-      console.error('Error saving user:', error);
-      toast.error('Failed to save user');
+      toast.error('Operation failed');
     }
   };
 
   return (
-    <div className="user-management">
-      <div className="header">
-        <h2>User Management</h2>
-        <div className="search-bar">
-          <FaSearch />
-          <input
-            type="text"
-            placeholder="Search users..."
-            value={searchTerm}
-            onChange={handleSearch}
-          />
+    <div className="user-management-container">
+      {/* Header Section */}
+      <div className="um-header">
+        <div className="um-title">
+          <h2>User Management</h2>
+          <p>Manage and monitor all platform accounts from one central hub</p>
         </div>
-        <button 
-          className="add-button" 
-          onClick={() => {
+        <div className="um-actions">
+          <div className="um-search-wrapper">
+            <FaSearch className="search-icon" />
+            <input 
+              type="text" 
+              className="um-search-input" 
+              placeholder="Search by name, email or role..." 
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </div>
+          <button className="um-add-btn" onClick={() => {
             setSelectedUser(null);
-            setFormData({
-              username: '',
-              email: '',
-              role: '',
-              password: ''
-            });
+            setFormData({ username: '', email: '', role: '', password: '' });
             setIsModalOpen(true);
-          }}
-        >
-          <FaPlus /> Add User
-        </button>
+          }}>
+            <FaPlus /> Add New User
+          </button>
+        </div>
       </div>
 
-      {error && (
-        <div className="error-message">
-          {error}
+      {/* Stats Section */}
+      <div className="um-stats-grid">
+        <div className="um-stat-card">
+          <div className="um-stat-icon"><FaUserTag /></div>
+          <div className="um-stat-info">
+            <h4>Total Accounts</h4>
+            <p>{stats.total}</p>
+          </div>
         </div>
-      )}
+        <div className="um-stat-card" style={{borderLeftColor: '#0369a1'}}>
+          <div className="um-stat-icon" style={{color: '#0369a1'}}><FaUserShield /></div>
+          <div className="um-stat-info">
+            <h4>Admins</h4>
+            <p>{stats.admins}</p>
+          </div>
+        </div>
+        <div className="um-stat-card" style={{borderLeftColor: '#15803d'}}>
+          <div className="um-stat-icon" style={{color: '#15803d'}}><FaHospital /></div>
+          <div className="um-stat-info">
+            <h4>Hospitals</h4>
+            <p>{stats.hospitals}</p>
+          </div>
+        </div>
+        <div className="um-stat-card" style={{borderLeftColor: '#f26522'}}>
+          <div className="um-stat-icon" style={{color: '#f26522'}}><FaClinicMedical /></div>
+          <div className="um-stat-info">
+            <h4>Providers/Others</h4>
+            <p>{stats.others}</p>
+          </div>
+        </div>
+      </div>
 
-      {loading ? (
-        <div className="loading-spinner">
-          <FaSpinner className="fa-spin" />
-          <span>Loading users...</span>
-        </div>
-      ) : (
-        <div className="users-table">
-          <table>
+      {/* Table Section */}
+      <div className="um-table-card">
+        {loading ? (
+          <div style={{padding: '40px', textAlign: 'center'}}>
+            <FaSpinner className="fa-spin" style={{fontSize: '2rem', color: 'var(--color-navy)'}} />
+            <p style={{marginTop: '10px'}}>Synchronizing user data...</p>
+          </div>
+        ) : (
+          <table className="um-table">
             <thead>
               <tr>
-                <th>Username</th>
-                <th>Email</th>
-                <th>Role</th>
+                <th>Account Identity</th>
+                <th>Email Address</th>
+                <th>Assigned Role</th>
+                <th>Security Status</th>
                 <th>Actions</th>
               </tr>
             </thead>
             <tbody>
-              {filteredUsers.length > 0 ? (
-                filteredUsers.map(user => (
-                  <tr key={user._id}>
-                    <td>{user.username || 'N/A'}</td>
-                    <td>{user.email || 'N/A'}</td>
-                    <td>{user.role || 'N/A'}</td>
-                    <td className="actions">
-                      <button onClick={() => handleView(user)}>
-                        <FaEye />
-                      </button>
-                      <button onClick={() => handleEdit(user)}>
-                        <FaEdit />
-                      </button>
-                      <button onClick={() => handleDelete(user._id)}>
-                        <FaTrash />
-                      </button>
-                    </td>
-                  </tr>
-                ))
-              ) : (
-                <tr>
-                  <td colSpan="4" className="no-data">
-                    No users found
+              {filteredUsers.map(user => (
+                <tr key={user._id}>
+                  <td>
+                    <div style={{display: 'flex', alignItems: 'center', gap: '10px'}}>
+                      <FaUserCircle style={{fontSize: '1.5rem', color: '#cbd5e1'}} />
+                      <span style={{fontWeight: '600'}}>{user.username}</span>
+                    </div>
+                  </td>
+                  <td>{user.email}</td>
+                  <td>
+                    <span className={`role-badge role-${user.role}`}>
+                      {user.role}
+                    </span>
+                  </td>
+                  <td>
+                    <span style={{color: user.isVerified ? '#15803d' : '#94a3b8', fontSize: '0.85rem', fontWeight: '500'}}>
+                      {user.isVerified ? '● Verified' : '○ Pending'}
+                    </span>
+                  </td>
+                  <td className="um-actions-cell">
+                    <button className="um-action-btn" onClick={() => handleEdit(user)} title="Edit User">
+                      <FaEdit />
+                    </button>
+                    <button className="um-action-btn delete" onClick={() => handleDelete(user._id)} title="Delete User">
+                      <FaTrash />
+                    </button>
                   </td>
                 </tr>
-              )}
+              ))}
             </tbody>
           </table>
-        </div>
-      )}
+        )}
+      </div>
 
+      {/* Modal */}
       {isModalOpen && (
-        <div className="modal">
-          <div className="modal-content">
-            <h3>{selectedUser ? 'Edit User' : 'Add User'}</h3>
+        <div className="um-modal-overlay">
+          <div className="um-modal">
+            <h3>{selectedUser ? 'Modify User Profile' : 'Register New User'}</h3>
             <form onSubmit={handleSubmit}>
-              <div className="form-group">
-                <label>Username</label>
-                <input
-                  type="text"
+              <div className="um-form-group">
+                <label>System Username</label>
+                <input 
+                  className="um-input"
+                  type="text" 
                   value={formData.username}
-                  onChange={(e) => setFormData({ ...formData, username: e.target.value })}
+                  onChange={(e) => setFormData({...formData, username: e.target.value})}
                   required
                 />
               </div>
-              <div className="form-group">
-                <label>Email</label>
-                <input
-                  type="email"
+              <div className="um-form-group">
+                <label>Official Email</label>
+                <input 
+                  className="um-input"
+                  type="email" 
                   value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  onChange={(e) => setFormData({...formData, email: e.target.value})}
                   required
                 />
               </div>
-              <div className="form-group">
-                <label>Role</label>
-                <select
+              <div className="um-form-group">
+                <label>Account Role</label>
+                <select 
+                  className="um-input"
                   value={formData.role}
-                  onChange={(e) => setFormData({ ...formData, role: e.target.value })}
+                  onChange={(e) => setFormData({...formData, role: e.target.value})}
                   required
                 >
                   <option value="">Select Role</option>
-                  <option value="admin">Admin</option>
+                  <option value="patient">Patient</option>
                   <option value="hospital">Hospital</option>
-                  <option value="ambulance">Ambulance</option>
+                  <option value="pharmacy">Pharmacy</option>
                   <option value="bloodbank">Blood Bank</option>
+                  <option value="ambulance">Ambulance</option>
+                  <option value="admin">Administrator</option>
                 </select>
               </div>
               {!selectedUser && (
-                <div className="form-group">
-                  <label>Password</label>
-                  <input
-                    type="password"
+                <div className="um-form-group">
+                  <label>Initial Password</label>
+                  <input 
+                    className="um-input"
+                    type="password" 
                     value={formData.password}
-                    onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                    required={!selectedUser}
+                    onChange={(e) => setFormData({...formData, password: e.target.value})}
+                    required
                   />
                 </div>
               )}
-              <div className="modal-actions">
-                <button type="submit">Save</button>
-                <button type="button" onClick={() => setIsModalOpen(false)}>
-                  Cancel
-                </button>
+              <div className="um-modal-actions">
+                <button type="button" className="btn-secondary" onClick={() => setIsModalOpen(false)}>Cancel</button>
+                <button type="submit" className="btn-primary">Save Changes</button>
               </div>
             </form>
           </div>
@@ -323,4 +293,4 @@ const UserManagement = () => {
   );
 };
 
-export default UserManagement; 
+export default UserManagement;

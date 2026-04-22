@@ -147,7 +147,7 @@ const AddHospital = () => {
       try {
         console.log('Making POST request to create hospital');
         const createResponse = await axios.post(
-          'http://localhost:3001/api/v1/hospitals',
+          `${API_V1_URL}/hospitals`,
           formData,
           { 
             headers,
@@ -189,7 +189,7 @@ const AddHospital = () => {
           console.log('Attempting to update existing hospital');
           try {
             const updateResponse = await axios.put(
-              'http://localhost:3001/api/v1/hospitals/profile',
+              `${API_V1_URL}/hospitals/profile`,
               formData,
               { 
                 headers,

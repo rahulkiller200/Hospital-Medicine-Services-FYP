@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { API_V1_URL } from "../../config/apiConfig";
 import { useNavigate } from "react-router-dom";
 
 function PatientHistoryForm() {
@@ -218,7 +219,7 @@ function PatientHistoryForm() {
       };
       
       const response = await axios.post(
-        "http://localhost:3001/api/v1/patient-history",
+        `${API_V1_URL}/patient-history`,
         submitData,
         {
           headers: {

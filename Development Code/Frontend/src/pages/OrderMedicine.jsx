@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { API_V1_URL } from "../config/apiConfig";
 import { getAuthToken } from "../utils/auth";
 import MainHeader from "../components/Header/Header"; // Generic or we will just use native simple header
 
@@ -32,7 +33,7 @@ const OrderMedicine = () => {
   const fetchProviders = async () => {
     try {
       // Fetch both hospitals and pharmacies
-      const response = await axios.get("http://localhost:3001/api/v1/map/providers");
+      const response = await axios.get(`${API_V1_URL}/map/providers`);
       if (response.data.success) {
         // We only want pharmacies for medicine orders typically, but let's allow both if preferred.
         // Actually, let's filter to just Pharmacies to ensure they are the ones handling it.
@@ -75,7 +76,7 @@ const OrderMedicine = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:3001/api/v1/medicines/order", formData, {
+      const response = await axios.post(`${API_V1_URL}/medicines/order`, formData, {
         headers: { 
           "Authorization": `Bearer ${getAuthToken()}`,
           "Content-Type": "multipart/form-data" 

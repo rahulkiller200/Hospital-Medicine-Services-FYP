@@ -1,0 +1,261 @@
+/* HospitalDashboard.css */
+:root {
+  --hospital-navy: #0a192f;
+  --hospital-orange: #ff6b35;
+  --hospital-glass: rgba(255, 255, 255, 0.95);
+  --hospital-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+.hospital-dashboard-root {
+  display: flex;
+  min-height: calc(100vh - 150px);
+  background: #f4f7fe;
+  font-family: 'Outfit', sans-serif;
+  position: relative;
+}
+
+/* Sidebar Styling */
+.hospital-sidebar {
+  width: 280px;
+  background: var(--hospital-navy);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  position: sticky;
+  top: 0;
+  height: calc(100vh - 80px);
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.sidebar-brand {
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebar-brand h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.sidebar-nav {
+  flex-grow: 1;
+}
+
+.nav-item {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.nav-item.active {
+  background: var(--hospital-orange);
+  color: white;
+  border-right: 4px solid white;
+}
+
+.sidebar-footer {
+  padding: 2rem;
+}
+
+.btn-logout {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+  background: #ff4757;
+  border-color: #ff4757;
+}
+
+/* Main Content Area */
+.hospital-main {
+  flex-grow: 1;
+  padding: 2rem 3rem;
+  min-height: 80vh;
+}
+
+.hospital-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.welcome-text h1 {
+  font-size: 1.8rem;
+  color: var(--hospital-navy);
+  margin-bottom: 5px;
+}
+
+.welcome-text p {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.status-indicator {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-online { background: #e6fffa; color: #059669; }
+.status-offline { background: #fff5f5; color: #e53e3e; }
+
+/* Stats Grid */
+.hospital-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #edf2f7;
+}
+
+.stat-icon-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.stat-info h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--hospital-navy);
+}
+
+.stat-info p {
+  font-size: 0.85rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Content Cards */
+.glass-panel {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: var(--hospital-shadow);
+  border: 1px solid #f1f5f9;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 2rem;
+  color: var(--hospital-navy);
+  font-size: 1.2rem;
+}
+
+/* Table Styling */
+.custom-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+.custom-table th {
+  text-align: left;
+  padding: 1rem;
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.custom-table td {
+  padding: 1.2rem 1rem;
+  background: #f8fafc;
+  font-size: 0.95rem;
+}
+
+.custom-table tr td:first-child { border-radius: 12px 0 0 12px; }
+.custom-table tr td:last-child { border-radius: 0 12px 12px 0; }
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge-blue { background: #ebf8ff; color: #2b6cb0; }
+.badge-green { background: #f0fff4; color: #2f855a; }
+
+/* Form Elements */
+.form-group { margin-bottom: 1.5rem; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: #475569; }
+.input-premium {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  transition: all 0.2s ease;
+}
+
+.input-premium:focus {
+  border-color: var(--hospital-orange);
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+  outline: none;
+}
+
+.btn-primary-hms {
+  background: var(--hospital-orange);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-primary-hms:hover { transform: translateY(-2px); }
