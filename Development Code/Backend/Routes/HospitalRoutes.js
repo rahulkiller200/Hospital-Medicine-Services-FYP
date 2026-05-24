@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { addHospital, getHospitals, updateHospital, deleteHospital, getHospitalByUser, getHospitalProfile, updateHospitalProfile } = require('../controllers/hospitalController');
+const { addHospital, getHospitals, updateHospital, deleteHospital, getHospitalByUser, getHospitalProfile, updateHospitalProfile } = require('../Controllers/HospitalController');
 const authMiddleware = require('../middleware/authMiddleware');
 const { validateHospital } = require('../middleware/hospitalAuth');
 
